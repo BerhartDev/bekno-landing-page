@@ -1,16 +1,29 @@
 'use client';
 
-import Image from 'next/image';
-import aboutIllustration from '@/assets/about-illustration.svg';
-
 export default function AboutIllustration() {
   return (
     <div className="relative w-full h-full">
-      <img
-        src={aboutIllustration}
-        alt="BEKNO About Illustration"
+      <svg
+        width="500"
+        height="500"
+        viewBox="0 0 500 500"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
         className="w-full h-auto"
-      />
+      >
+        <path
+          d="M250 50C138.5 50 50 138.5 50 250C50 361.5 138.5 450 250 450C361.5 450 450 361.5 450 250C450 138.5 361.5 50 250 50ZM250 400C161.5 400 100 338.5 100 250C100 161.5 161.5 100 250 100C338.5 100 400 161.5 400 250C400 338.5 338.5 400 250 400Z"
+          fill="#4F46E5"
+        />
+        <path
+          d="M250 150C194.5 150 150 194.5 150 250C150 305.5 194.5 350 250 350C305.5 350 350 305.5 350 250C350 194.5 305.5 150 250 150ZM250 300C222.5 300 200 277.5 200 250C200 222.5 222.5 200 250 200C277.5 200 300 222.5 300 250C300 277.5 277.5 300 250 300Z"
+          fill="#4F46E5"
+        />
+        <path
+          d="M250 250C250 250 250 250 250 250C250 250 250 250 250 250Z"
+          fill="#4F46E5"
+        />
+      </svg>
     </div>
   );
 } 
