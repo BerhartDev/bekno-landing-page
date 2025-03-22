@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ScrollButton from "@/components/ScrollButton";
+import AboutIllustration from '@/components/AboutIllustration';
 
 export default function Home() {
   return (
@@ -29,28 +30,24 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="section-title">Sobre Nós</h2>
-            <p className="text-bekno-gray mb-6">
-              Na BEKNO, nossa missão é transformar negócios através de soluções digitais inovadoras. 
-              Acreditamos que cada empresa tem um potencial único, e nosso papel é ajudar a desbloquear 
-              esse potencial através da tecnologia.
-            </p>
-            <p className="text-bekno-gray">
-              Com uma equipe experiente e apaixonada, oferecemos soluções personalizadas que atendem 
-              às necessidades específicas do seu negócio, garantindo resultados excepcionais.
-            </p>
-          </div>
-          <div className="relative h-[400px]">
-            <Image
-              src="/about-illustration.svg"
-              alt="BEKNO About Illustration"
-              fill
-              className="object-contain"
-              priority
-            />
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre a BEKNO</h2>
+              <p className="text-lg text-gray-600 mb-6">
+                A BEKNO é uma empresa especializada em desenvolvimento de software e soluções digitais.
+                Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções
+                personalizadas e de alta qualidade.
+              </p>
+              <p className="text-lg text-gray-600">
+                Com uma equipe experiente e apaixonada por tecnologia, entregamos resultados
+                excepcionais que impulsionam o sucesso dos nossos clientes.
+              </p>
+            </div>
+            <div className="relative">
+              <AboutIllustration />
+            </div>
           </div>
         </div>
       </section>
