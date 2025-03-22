@@ -3,26 +3,34 @@
 export default function AboutIllustration() {
   return (
     <div className="relative w-full h-full">
-      <svg
-        width="500"
-        height="500"
-        viewBox="0 0 500 500"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-auto"
-      >
-        <path
-          d="M250 50C138.5 50 50 138.5 50 250C50 361.5 138.5 450 250 450C361.5 450 450 361.5 450 250C450 138.5 361.5 50 250 50ZM250 400C161.5 400 100 338.5 100 250C100 161.5 161.5 100 250 100C338.5 100 400 161.5 400 250C400 338.5 338.5 400 250 400Z"
-          fill="#4F46E5"
-        />
-        <path
-          d="M250 150C194.5 150 150 194.5 150 250C150 305.5 194.5 350 250 350C305.5 350 350 305.5 350 250C350 194.5 305.5 150 250 150ZM250 300C222.5 300 200 277.5 200 250C200 222.5 222.5 200 250 200C277.5 200 300 222.5 300 250C300 277.5 277.5 300 250 300Z"
-          fill="#4F46E5"
-        />
-        <path
-          d="M250 250C250 250 250 250 250 250C250 250 250 250 250 250Z"
-          fill="#4F46E5"
-        />
+      <svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+        {/* Background Elements */}
+        <rect width="800" height="600" fill="#F5F5F5"/>
+        <circle cx="400" cy="300" r="250" fill="#E5E5E5"/>
+        
+        {/* Main Illustration */}
+        <g transform="translate(200, 150)">
+          {/* Computer Screen */}
+          <rect x="0" y="0" width="400" height="300" rx="20" fill="#000000"/>
+          <rect x="20" y="20" width="360" height="260" rx="10" fill="#FFFFFF"/>
+          
+          {/* Code Lines */}
+          <g fill="#000000">
+            <rect x="40" y="40" width="200" height="10" rx="5"/>
+            <rect x="40" y="60" width="150" height="10" rx="5"/>
+            <rect x="40" y="80" width="180" height="10" rx="5"/>
+            <rect x="40" y="100" width="160" height="10" rx="5"/>
+            <rect x="40" y="120" width="140" height="10" rx="5"/>
+            <rect x="40" y="140" width="170" height="10" rx="5"/>
+            <rect x="40" y="160" width="190" height="10" rx="5"/>
+            <rect x="40" y="180" width="130" height="10" rx="5"/>
+          </g>
+          
+          {/* Decorative Elements */}
+          <circle cx="350" cy="50" r="20" fill="#FF6B6B"/>
+          <circle cx="350" cy="100" r="20" fill="#4ECDC4"/>
+          <circle cx="350" cy="150" r="20" fill="#45B7D1"/>
+        </g>
       </svg>
     </div>
   );
