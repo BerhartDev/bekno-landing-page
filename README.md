@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BEKNO Landing Page
 
-## Getting Started
+Este é o site institucional da BEKNO, desenvolvido com Next.js 14, TypeScript e Tailwind CSS.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- GitHub Actions (CI/CD)
+
+## Configuração do GitHub Pages
+
+Para configurar o deploy automático no GitHub Pages:
+
+1. No repositório do GitHub, vá para Settings > Pages
+2. Em "Source", selecione "GitHub Actions"
+3. Certifique-se de que o repositório tem as permissões necessárias:
+   - Vá para Settings > Actions > General
+   - Em "Workflow permissions", selecione "Read and write permissions"
+
+## Desenvolvimento Local
+
+Para rodar o projeto localmente:
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O site estará disponível em [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build e Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O site é automaticamente construído e deployado para o GitHub Pages quando:
 
-## Learn More
+- Uma push é feita para a branch `main`
+- Uma workflow é manualmente disparada
 
-To learn more about Next.js, take a look at the following resources:
+Para fazer o deploy manualmente:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Vá para a aba "Actions" no GitHub
+2. Selecione o workflow "Deploy to GitHub Pages"
+3. Clique em "Run workflow"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estrutura do Projeto
 
-## Deploy on Vercel
+```
+bekno-landing-page/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── public/
+│   └── about-illustration.svg
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   └── components/
+│       └── ScrollButton.tsx
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
