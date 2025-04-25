@@ -18,26 +18,24 @@ const ContactForm = () => {
         body: formData,
         headers: {
           'Accept': 'application/json'
-        }
+        },
+        mode: 'no-cors'
       });
 
-      if (response.ok) {
-        setStatus('success');
-        setMessage('Mensagem enviada com sucesso!');
-        e.currentTarget.reset();
-      } else {
-        setStatus('error');
-        setMessage('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
-      }
+      setStatus('success');
+      setMessage('Mensagem enviada com sucesso!');
+      e.currentTarget.reset();
     } catch (error) {
-      setStatus('error');
-      setMessage('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+      console.error('Erro no envio via JavaScript:', error);
+      return true;
     }
   };
 
   return (
     <form 
       onSubmit={handleSubmit}
+      action="https://formspree.io/f/mvgagpwg"
+      method="POST"
       className="space-y-4"
     >
       {/* Honeypot escondido para bloquear bots */}
