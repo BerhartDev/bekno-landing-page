@@ -14,12 +14,7 @@ const nextConfig = {
     });
     return config;
   },
-  distDir: 'out',
-  generateStaticParams: async () => {
-    return {
-      '/': {},
-    };
-  },
-}
+  trailingSlash: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

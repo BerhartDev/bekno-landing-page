@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ScrollButton from "@/components/ScrollButton";
 import AboutIllustration from '@/components/AboutIllustration';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -229,47 +230,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block mb-2">Nome</label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-                />
-              </div>
-              <div>
-                <label htmlFor="business" className="block mb-2">Negócio</label>
-                <input
-                  type="text"
-                  id="business"
-                  className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-                />
-              </div>
-              <div>
-                <label htmlFor="services" className="block mb-2">Serviços de Interesse</label>
-                <select
-                  id="services"
-                  className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-                >
-                  <option value="">Selecione um serviço</option>
-                  <option value="website">Website</option>
-                  <option value="marketing">Marketing Digital</option>
-                  <option value="ecommerce">E-commerce</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="message" className="block mb-2">Observações</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn-primary w-full">
-                Solicitar Orçamento
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

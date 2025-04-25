@@ -6,7 +6,7 @@ interface ScrollButtonProps {
   children: React.ReactNode;
 }
 
-export default function ScrollButton({ sectionId, className, children }: ScrollButtonProps) {
+export default function ScrollButton({ sectionId, className = '', children }: ScrollButtonProps) {
   const scrollToSection = () => {
     const element = document.getElementById(sectionId);
     if (element) {
