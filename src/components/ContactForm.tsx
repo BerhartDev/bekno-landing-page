@@ -40,6 +40,9 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       className="space-y-4"
     >
+      {/* Honeypot escondido para bloquear bots */}
+      <input type="text" name="_gotcha" style={{ display: 'none' }} />
+      
       <div>         
         <label htmlFor="name" className="block mb-2">Nome</label>
         <input
