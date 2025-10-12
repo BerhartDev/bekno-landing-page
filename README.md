@@ -17,11 +17,13 @@ Site institucional da BEKNO - Soluções Digitais para o Seu Negócio. Uma landi
 O site suporta múltiplos idiomas:
 - **Português (pt)** - Idioma padrão
 - **Inglês (en)**
+- **Francês (fr)**
 
 ### URLs Disponíveis
 - `/` - Redireciona para `/pt/`
 - `/pt/` - Site em português
 - `/en/` - Site em inglês
+- `/fr/` - Site em francês
 
 ## Configuração do GitHub Pages
 

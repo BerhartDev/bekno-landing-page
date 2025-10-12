@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 interface FlagIconProps {
   country: 'br' | 'fr' | 'au';
   className?: string;
@@ -13,7 +11,7 @@ export default function FlagIcon({ country, className = '' }: FlagIconProps) {
   };
 
   return (
-    <Image
+    <img
       src={flagImages[country]}
       alt={`${country} flag`}
       width={24}
