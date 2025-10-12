@@ -35,7 +35,7 @@ export default function Features() {
                   )}
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-bekno-black">{feature.title}</h3>
+              <h3 className="text-xl font-bold font-heading mb-2 text-bekno-black">{feature.title}</h3>
               <p className="text-bekno-gray">
                 {feature.description}
               </p>

@@ -15,7 +15,9 @@ module.exports = {
         'bekno-bg-light': '#f5f5f5',
       },
       fontFamily: {
-        sans: ['Inter', 'Roboto', 'Poppins', 'sans-serif'],
+        sans: ['Inter', 'DM Sans', 'Roboto', 'sans-serif'],
+        heading: ['Roboto', 'sans-serif'],
+        body: ['DM Sans', 'sans-serif'],
       },
     },
   },

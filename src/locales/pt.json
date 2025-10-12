@@ -1,29 +1,29 @@
 {
   "hero": {
-    "headline": "BEKNO",
-    "subheadline": "Soluções Digitais para o Seu Negócio",
-    "ctaPrimary": "Solicitar Orçamento",
-    "ctaSecondary": "Ver Planos"
+    "headline": "Soluções digitais que geram resultados",
+    "subheadline": "A BEKNO cria experiências digitais completas — sites, landing pages e sistemas personalizados — focadas em performance, design e crescimento.",
+    "ctaPrimary": "Solicitar orçamento",
+    "ctaSecondary": "Ver portfólio"
   },
   "about": {
     "title": "Sobre a BEKNO",
-    "description1": "A BEKNO é uma empresa especializada em desenvolvimento de software e soluções digitais. Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas e de alta qualidade.",
-    "description2": "Com uma equipe experiente e apaixonada por tecnologia, entregamos resultados excepcionais que impulsionam o sucesso dos nossos clientes."
+    "description1": "A BEKNO é uma empresa especializada em criar soluções digitais de alta performance. Nosso objetivo é ajudar negócios a crescer através de tecnologia, design e estratégia.",
+    "description2": "Com uma equipe experiente e apaixonada por resultados, desenvolvemos sites, sistemas e campanhas digitais sob medida para o seu negócio, com agilidade e qualidade."
   },
   "features": {
     "title": "Nossos Serviços",
     "items": [
       {
-        "title": "Presença Online",
-        "description": "Desenvolvimento de websites profissionais e responsivos que representam sua marca."
+        "title": "Desenvolvimento Web",
+        "description": "Sites e landing pages rápidas, seguras e otimizadas para SEO."
       },
       {
-        "title": "Comunicação e Atendimento",
-        "description": "Sistemas de atendimento ao cliente e comunicação eficiente com seu público."
+        "title": "CMS e Automação",
+        "description": "Gestão fácil de conteúdo, integrações e automações inteligentes."
       },
       {
-        "title": "Marketing Digital",
-        "description": "Estratégias de marketing digital para aumentar sua visibilidade e alcance."
+        "title": "Performance e Marketing",
+        "description": "Estratégias digitais completas para aumentar visibilidade e conversões."
       }
     ]
   },
@@ -31,32 +31,30 @@
     "title": "Nossos Planos",
     "items": [
       {
-        "name": "Essencial",
+        "name": "Starter",
         "features": [
-          "Website Responsivo",
-          "5 Páginas",
-          "Formulário de Contato",
-          "SEO Básico"
+          "Site responsivo personalizado",
+          "CMS básico para edição de conteúdo",
+          "Formulário de contato integrado",
+          "SEO inicial configurado"
         ]
       },
       {
-        "name": "Avançado",
+        "name": "Growth",
         "features": [
-          "Website Responsivo",
-          "10 Páginas",
-          "Blog Integrado",
-          "SEO Avançado",
-          "Analytics"
+          "Site ou landing page avançada",
+          "Integrações com CRM e automação",
+          "Blog e área de campanhas",
+          "SEO otimizado e relatórios mensais"
         ]
       },
       {
-        "name": "Premium",
+        "name": "Pro",
         "features": [
-          "Website Responsivo",
-          "Páginas Ilimitadas",
-          "E-commerce",
-          "SEO Premium",
-          "Marketing Digital"
+          "Solução digital completa",
+          "Integração com e-commerce ou sistemas internos",
+          "Monitoramento de performance e métricas",
+          "Suporte e consultoria dedicados"
         ]
       }
     ],
@@ -66,47 +64,48 @@
     "title": "Depoimentos",
     "items": [
       {
-        "text": "A BEKNO transformou completamente nossa presença online. O resultado superou nossas expectativas!",
+        "text": "A BEKNO elevou nossa presença digital. O novo site é rápido, bonito e gera resultados reais.",
         "author": "João Silva",
         "role": "CEO, Tech Solutions"
       },
       {
-        "text": "Profissionais extremamente competentes e atenciosos. Recomendo fortemente!",
+        "text": "Equipe excelente! Entregaram tudo com agilidade e muita atenção aos detalhes. Super recomendo.",
         "author": "Maria Santos",
         "role": "Diretora de Marketing, Fashion Store"
       },
       {
-        "text": "Excelente trabalho no desenvolvimento do nosso e-commerce. Resultados impressionantes!",
+        "text": "O projeto ficou incrível. A automação e o desempenho superaram todas as expectativas.",
         "author": "Pedro Oliveira",
-        "role": "Proprietário, Digital Shop"
+        "role": "Fundador, Digital Shop"
       }
     ]
   },
   "contact": {
     "title": "Contato",
-    "subtitle": "Entre em Contato",
+    "subtitle": "Fale com a gente",
     "email": "contato@bekno.com",
     "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
     "form": {
       "name": "Nome",
-      "business": "Negócio",
-      "email": "Email",
-      "services": "Serviços de Interesse",
-      "servicesPlaceholder": "Selecione um serviço",
+      "business": "Empresa",
+      "email": "E-mail",
+      "services": "Serviço de interesse",
+      "servicesPlaceholder": "Selecione uma opção",
       "servicesOptions": {
-        "website": "Website",
-        "marketing": "Marketing Digital",
+        "website": "Site ou Landing Page",
+        "cms": "CMS e Automação",
+        "marketing": "Performance e Marketing",
         "ecommerce": "E-commerce"
       },
-      "message": "Observações",
-      "submit": "Solicitar Orçamento",
+      "message": "Mensagem",
+      "submit": "Enviar",
       "submitting": "Enviando...",
       "success": "Mensagem enviada com sucesso!"
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Todos os direitos reservados"
+    "copyright": "© 2025 BEKNO - Soluções digitais completas para o seu negócio"
   },
   "navigation": {
     "home": "Início",
