@@ -4,10 +4,12 @@ interface FlagIconProps {
 }
 
 export default function FlagIcon({ country, className = '' }: FlagIconProps) {
+  const basePath = process.env.NODE_ENV === 'production' ? '/bekno-landing-page' : '';
+  
   const flagImages = {
-    br: '/flags/brazil.png',
-    fr: '/flags/france.png',
-    au: '/flags/australia.png'
+    br: `${basePath}/flags/brazil.png`,
+    fr: `${basePath}/flags/france.png`,
+    au: `${basePath}/flags/australia.png`
   };
 
   return (
