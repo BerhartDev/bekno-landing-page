@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "headline": "BEKNO",
+    "subheadline": "Digital Solutions for Your Business",
+    "ctaPrimary": "Request Quote",
+    "ctaSecondary": "View Plans"
+  },
+  "about": {
+    "title": "About BEKNO",
+    "description1": "BEKNO is a company specialized in software development and digital solutions. Our mission is to help companies grow through technology, offering personalized and high-quality solutions.",
+    "description2": "With an experienced team passionate about technology, we deliver exceptional results that drive our clients' success."
+  },
+  "features": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Online Presence",
+        "description": "Development of professional and responsive websites that represent your brand."
+      },
+      {
+        "title": "Communication and Support",
+        "description": "Customer service systems and efficient communication with your audience."
+      },
+      {
+        "title": "Digital Marketing",
+        "description": "Digital marketing strategies to increase your visibility and reach."
+      }
+    ]
+  },
+  "plans": {
+    "title": "Our Plans",
+    "items": [
+      {
+        "name": "Essential",
+        "features": [
+          "Responsive Website",
+          "5 Pages",
+          "Contact Form",
+          "Basic SEO"
+        ]
+      },
+      {
+        "name": "Advanced",
+        "features": [
+          "Responsive Website",
+          "10 Pages",
+          "Integrated Blog",
+          "Advanced SEO",
+          "Analytics"
+        ]
+      },
+      {
+        "name": "Premium",
+        "features": [
+          "Responsive Website",
+          "Unlimited Pages",
+          "E-commerce",
+          "Premium SEO",
+          "Digital Marketing"
+        ]
+      }
+    ],
+    "cta": "Request this plan"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "text": "BEKNO completely transformed our online presence. The result exceeded our expectations!",
+        "author": "João Silva",
+        "role": "CEO, Tech Solutions"
+      },
+      {
+        "text": "Extremely competent and attentive professionals. I highly recommend!",
+        "author": "Maria Santos",
+        "role": "Marketing Director, Fashion Store"
+      },
+      {
+        "text": "Excellent work on developing our e-commerce. Impressive results!",
+        "author": "Pedro Oliveira",
+        "role": "Owner, Digital Shop"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "email": "contato@bekno.com",
+    "phone": "+55 22 98807-1682",
+    "location": "Ipanema, RJ",
+    "form": {
+      "name": "Name",
+      "business": "Business",
+      "email": "Email",
+      "services": "Services of Interest",
+      "servicesPlaceholder": "Select a service",
+      "servicesOptions": {
+        "website": "Website",
+        "marketing": "Digital Marketing",
+        "ecommerce": "E-commerce"
+      },
+      "message": "Comments",
+      "submit": "Request Quote",
+      "submitting": "Sending...",
+      "success": "Message sent successfully!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 BEKNO - All rights reserved"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "plans": "Plans",
+    "contact": "Contact"
+  }
+}

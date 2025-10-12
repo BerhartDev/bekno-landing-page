@@ -1,8 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import Button from '@/components/ui/Button';
 
 const ContactForm = () => {
+  const t = useTranslations('contact.form');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
 
@@ -23,7 +26,7 @@ const ContactForm = () => {
       });
 
       setStatus('success');
-      setMessage('Mensagem enviada com sucesso!');
+      setMessage(t('success'));
       e.currentTarget.reset();
     } catch (error) {
       console.error('Erro no envio via JavaScript:', error);
@@ -42,7 +45,7 @@ const ContactForm = () => {
       <input type="text" name="_gotcha" style={{ display: 'none' }} />
       
       <div>         
-        <label htmlFor="name" className="block mb-2">Nome</label>
+        <label htmlFor="name" className="block mb-2">{t('name')}</label>
         <input
           type="text"
           id="name"
@@ -52,7 +55,7 @@ const ContactForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="business" className="block mb-2">Negócio</label>
+        <label htmlFor="business" className="block mb-2">{t('business')}</label>
         <input
           type="text"
           id="business"
@@ -62,7 +65,7 @@ const ContactForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="email" className="block mb-2">Email</label>
+        <label htmlFor="email" className="block mb-2">{t('email')}</label>
         <input
           type="email"
           id="email"
@@ -72,21 +75,21 @@ const ContactForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="services" className="block mb-2">Serviços de Interesse</label>
+        <label htmlFor="services" className="block mb-2">{t('services')}</label>
         <select
           id="services"
           name="services"
           required
           className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
         >
-          <option value="">Selecione um serviço</option>
-          <option value="website">Website</option>
-          <option value="marketing">Marketing Digital</option>
-          <option value="ecommerce">E-commerce</option>
+          <option value="">{t('servicesPlaceholder')}</option>
+          <option value="website">{t('servicesOptions.website')}</option>
+          <option value="marketing">{t('servicesOptions.marketing')}</option>
+          <option value="ecommerce">{t('servicesOptions.ecommerce')}</option>
         </select>
       </div>
       <div>
-        <label htmlFor="message" className="block mb-2">Observações</label>
+        <label htmlFor="message" className="block mb-2">{t('message')}</label>
         <textarea
           id="message"
           name="message"
@@ -103,13 +106,13 @@ const ContactForm = () => {
           {message}
         </div>
       )}
-      <button 
+      <Button 
         type="submit" 
-        className="btn-primary w-full"
+        className="w-full"
         disabled={status === 'loading'}
       >
-        {status === 'loading' ? 'Enviando...' : 'Solicitar Orçamento'}
-      </button>
+        {status === 'loading' ? t('submitting') : t('submit')}
+      </Button>
     </form>
   );
 };

@@ -1,13 +1,27 @@
 # BEKNO Landing Page
 
-Este é o site institucional da BEKNO, desenvolvido com Next.js 14, TypeScript e Tailwind CSS.
+Site institucional da BEKNO - Soluções Digitais para o Seu Negócio. Uma landing page moderna e responsiva desenvolvida com Next.js 14, TypeScript e Tailwind CSS, com suporte completo a internacionalização (i18n).
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- GitHub Actions (CI/CD)
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **next-intl** (Internacionalização)
+- **React 18**
+- **ESLint** (Linting)
+- **GitHub Actions** (CI/CD)
+
+## 🌍 Internacionalização
+
+O site suporta múltiplos idiomas:
+- **Português (pt)** - Idioma padrão
+- **Inglês (en)**
+
+### URLs Disponíveis
+- `/` - Redireciona para `/pt/`
+- `/pt/` - Site em português
+- `/en/` - Site em inglês
 
 ## Configuração do GitHub Pages
 
@@ -19,19 +33,35 @@ Para configurar o deploy automático no GitHub Pages:
    - Vá para Settings > Actions > General
    - Em "Workflow permissions", selecione "Read and write permissions"
 
-## Desenvolvimento Local
+## 🛠️ Desenvolvimento Local
 
-Para rodar o projeto localmente:
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
+
+### Instalação e Execução
 
 ```bash
 # Instalar dependências
 npm install
 
-# Rodar o servidor de desenvolvimento
+# Modo desenvolvimento (hot reload)
 npm run dev
+
+# Build para produção
+npm run build
+
+# Servir arquivos estáticos (após build)
+npm run start
+
+# Linting
+npm run lint
 ```
 
-O site estará disponível em [http://localhost:3000](http://localhost:3000)
+### URLs de Desenvolvimento
+- **Desenvolvimento**: [http://localhost:3000](http://localhost:3000)
+- **Português**: [http://localhost:3000/pt/](http://localhost:3000/pt/)
+- **Inglês**: [http://localhost:3000/en/](http://localhost:3000/en/)
 
 ## Build e Deploy
 
@@ -46,28 +76,75 @@ Para fazer o deploy manualmente:
 2. Selecione o workflow "Deploy to GitHub Pages"
 3. Clique em "Run workflow"
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 bekno-landing-page/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml
-├── public/
-│   └── about-illustration.svg
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   └── globals.css
-│   └── components/
-│       └── ScrollButton.tsx
+│   │   ├── [locale]/          # Rotas internacionalizadas
+│   │   │   ├── layout.tsx     # Layout com i18n
+│   │   │   └── page.tsx       # Página principal
+│   │   ├── globals.css        # Estilos globais
+│   │   ├── layout.tsx         # Layout raiz
+│   │   └── page.tsx           # Redirecionamento para /pt
+│   ├── components/
+│   │   ├── layout/            # Componentes de layout
+│   │   │   ├── Header.tsx     # Cabeçalho com navegação
+│   │   │   ├── Footer.tsx     # Rodapé
+│   │   │   └── LanguageSwitcher.tsx
+│   │   ├── sections/          # Seções da página
+│   │   │   ├── Hero.tsx       # Seção principal
+│   │   │   ├── About.tsx      # Sobre a empresa
+│   │   │   ├── Features.tsx   # Serviços
+│   │   │   ├── Plans.tsx      # Planos
+│   │   │   ├── Testimonials.tsx
+│   │   │   └── Contact.tsx    # Contato
+│   │   ├── ui/                # Componentes UI
+│   │   │   ├── Button.tsx
+│   │   │   ├── Container.tsx
+│   │   │   └── Heading.tsx
+│   │   ├── ContactForm.tsx    # Formulário de contato
+│   │   └── AboutIllustration.tsx
+│   ├── lib/
+│   │   └── i18n/              # Configuração i18n
+│   │       ├── routing.ts
+│   │       └── request.ts
+│   └── locales/               # Traduções
+│       ├── pt.json            # Português
+│       └── en.json            # Inglês
 ├── next.config.js
 ├── package.json
-├── postcss.config.js
 ├── tailwind.config.js
-└── tsconfig.json
+├── tsconfig.json
+└── README.md
 ```
+
+## 🎨 Design System
+
+### Cores da Marca
+- **bekno-black**: `#000000` - Preto principal
+- **bekno-white**: `#FFFFFF` - Branco
+- **bekno-gray**: `#666666` - Cinza médio
+- **bekno-gray-light**: `#999999` - Cinza claro
+- **bekno-bg-light**: `#f5f5f5` - Fundo claro
+
+### Tipografia
+- **Fontes**: Inter, Roboto, Poppins, sans-serif
+- **Tamanhos**: Responsivos (mobile-first)
+
+## 📱 Funcionalidades
+
+- ✅ **Design Responsivo** - Mobile-first
+- ✅ **Internacionalização** - PT/EN
+- ✅ **SEO Otimizado** - Meta tags dinâmicas
+- ✅ **Formulário de Contato** - Integração Formspree
+- ✅ **Scroll Suave** - Navegação entre seções
+- ✅ **Troca de Idioma** - Botões de idioma funcionais
+- ✅ **Build Estático** - Export para GitHub Pages
 
 ## Licença
 

@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "headline": "BEKNO",
+    "subheadline": "Soluções Digitais para o Seu Negócio",
+    "ctaPrimary": "Solicitar Orçamento",
+    "ctaSecondary": "Ver Planos"
+  },
+  "about": {
+    "title": "Sobre a BEKNO",
+    "description1": "A BEKNO é uma empresa especializada em desenvolvimento de software e soluções digitais. Nossa missão é ajudar empresas a crescer através da tecnologia, oferecendo soluções personalizadas e de alta qualidade.",
+    "description2": "Com uma equipe experiente e apaixonada por tecnologia, entregamos resultados excepcionais que impulsionam o sucesso dos nossos clientes."
+  },
+  "features": {
+    "title": "Nossos Serviços",
+    "items": [
+      {
+        "title": "Presença Online",
+        "description": "Desenvolvimento de websites profissionais e responsivos que representam sua marca."
+      },
+      {
+        "title": "Comunicação e Atendimento",
+        "description": "Sistemas de atendimento ao cliente e comunicação eficiente com seu público."
+      },
+      {
+        "title": "Marketing Digital",
+        "description": "Estratégias de marketing digital para aumentar sua visibilidade e alcance."
+      }
+    ]
+  },
+  "plans": {
+    "title": "Nossos Planos",
+    "items": [
+      {
+        "name": "Essencial",
+        "features": [
+          "Website Responsivo",
+          "5 Páginas",
+          "Formulário de Contato",
+          "SEO Básico"
+        ]
+      },
+      {
+        "name": "Avançado",
+        "features": [
+          "Website Responsivo",
+          "10 Páginas",
+          "Blog Integrado",
+          "SEO Avançado",
+          "Analytics"
+        ]
+      },
+      {
+        "name": "Premium",
+        "features": [
+          "Website Responsivo",
+          "Páginas Ilimitadas",
+          "E-commerce",
+          "SEO Premium",
+          "Marketing Digital"
+        ]
+      }
+    ],
+    "cta": "Solicitar este plano"
+  },
+  "testimonials": {
+    "title": "Depoimentos",
+    "items": [
+      {
+        "text": "A BEKNO transformou completamente nossa presença online. O resultado superou nossas expectativas!",
+        "author": "João Silva",
+        "role": "CEO, Tech Solutions"
+      },
+      {
+        "text": "Profissionais extremamente competentes e atenciosos. Recomendo fortemente!",
+        "author": "Maria Santos",
+        "role": "Diretora de Marketing, Fashion Store"
+      },
+      {
+        "text": "Excelente trabalho no desenvolvimento do nosso e-commerce. Resultados impressionantes!",
+        "author": "Pedro Oliveira",
+        "role": "Proprietário, Digital Shop"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Entre em Contato",
+    "email": "contato@bekno.com",
+    "phone": "+55 22 98807-1682",
+    "location": "Ipanema, RJ",
+    "form": {
+      "name": "Nome",
+      "business": "Negócio",
+      "email": "Email",
+      "services": "Serviços de Interesse",
+      "servicesPlaceholder": "Selecione um serviço",
+      "servicesOptions": {
+        "website": "Website",
+        "marketing": "Marketing Digital",
+        "ecommerce": "E-commerce"
+      },
+      "message": "Observações",
+      "submit": "Solicitar Orçamento",
+      "submitting": "Enviando...",
+      "success": "Mensagem enviada com sucesso!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 BEKNO - Todos os direitos reservados"
+  },
+  "navigation": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "plans": "Planos",
+    "contact": "Contato"
+  }
+}
