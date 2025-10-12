@@ -56,13 +56,6 @@ export default function PortfolioPage() {
           </div>
         </Container>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-bekno-black text-bekno-white py-8 text-center">
-        <p className="text-sm text-bekno-gray-light">
-          © 2025 BEKNO - Todos os direitos reservados
-        </p>
-      </footer>
     </div>
   );
 }
