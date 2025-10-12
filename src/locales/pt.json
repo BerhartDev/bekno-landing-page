@@ -113,5 +113,43 @@
     "services": "Serviços",
     "plans": "Planos",
     "contact": "Contato"
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Em Breve",
+    "description": "Estamos preparando uma seleção dos nossos melhores projetos para você conhecer nosso trabalho e resultados.",
+    "ctaContact": "Entrar em Contato",
+    "ctaBack": "Voltar ao Início",
+    "feature1": {
+      "title": "Projetos Web",
+      "description": "Sites e aplicações web modernas e responsivas"
+    },
+    "feature2": {
+      "title": "E-commerce",
+      "description": "Lojas virtuais completas com integração de pagamentos"
+    },
+    "feature3": {
+      "title": "Marketing Digital",
+      "description": "Campanhas e estratégias de marketing digital eficazes"
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Página não encontrada",
+    "description": "A página que você está procurando não existe ou foi movida. Que tal voltar ao início e explorar nossos serviços?",
+    "ctaContact": "Entrar em Contato",
+    "ctaBack": "Voltar ao Início",
+    "link1": {
+      "title": "Página Inicial",
+      "description": "Volte para nossa página principal"
+    },
+    "link2": {
+      "title": "Sobre Nós",
+      "description": "Conheça mais sobre a BEKNO"
+    },
+    "link3": {
+      "title": "Serviços",
+      "description": "Descubra nossas soluções digitais"
+    }
   }
 }

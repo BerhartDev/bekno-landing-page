@@ -23,10 +23,14 @@ export async function generateMetadata({
   
   const title = locale === 'pt' 
     ? 'BEKNO - Soluções Digitais para o Seu Negócio'
+    : locale === 'fr'
+    ? 'BEKNO - Solutions Numériques pour Votre Entreprise'
     : 'BEKNO - Digital Solutions for Your Business';
     
   const description = locale === 'pt'
     ? 'Transforme seu negócio com soluções digitais personalizadas da BEKNO.'
+    : locale === 'fr'
+    ? 'Transformez votre entreprise avec des solutions numériques personnalisées de BEKNO.'
     : 'Transform your business with personalized digital solutions from BEKNO.';
 
   return {

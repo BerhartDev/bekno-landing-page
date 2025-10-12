@@ -113,5 +113,43 @@
     "services": "Services",
     "plans": "Plans",
     "contact": "Contact"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Coming Soon",
+    "description": "We are preparing a selection of our best projects for you to get to know our work and results.",
+    "ctaContact": "Get in Touch",
+    "ctaBack": "Back to Home",
+    "feature1": {
+      "title": "Web Projects",
+      "description": "Modern and responsive websites and web applications"
+    },
+    "feature2": {
+      "title": "E-commerce",
+      "description": "Complete online stores with payment integration"
+    },
+    "feature3": {
+      "title": "Digital Marketing",
+      "description": "Effective digital marketing campaigns and strategies"
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved. How about going back to the beginning and exploring our services?",
+    "ctaContact": "Get in Touch",
+    "ctaBack": "Back to Home",
+    "link1": {
+      "title": "Home Page",
+      "description": "Go back to our main page"
+    },
+    "link2": {
+      "title": "About Us",
+      "description": "Learn more about BEKNO"
+    },
+    "link3": {
+      "title": "Services",
+      "description": "Discover our digital solutions"
+    }
   }
 }

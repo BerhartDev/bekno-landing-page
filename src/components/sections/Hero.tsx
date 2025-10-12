@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 import { fontClasses } from '@/lib/fonts';
+import { Link } from '@/lib/i18n/routing';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -28,12 +29,11 @@ export default function Hero() {
           >
             {t('ctaPrimary')}
           </Button>
-          <Button 
-            variant="secondary"
-            onClick={() => scrollToSection('plans')}
-          >
-            {t('ctaSecondary')}
-          </Button>
+          <Link href="/portfolio">
+            <Button variant="secondary">
+              {t('ctaSecondary')}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

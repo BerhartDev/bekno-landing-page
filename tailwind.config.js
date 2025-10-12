@@ -12,6 +12,7 @@ module.exports = {
         'bekno-white': '#FFFFFF',
         'bekno-gray': '#666666',
         'bekno-gray-light': '#999999',
+        'bekno-gray-dark': '#333333',
         'bekno-bg-light': '#f5f5f5',
       },
       fontFamily: {
