@@ -8,8 +8,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/bekno-landing-page',
-  assetPrefix: '/bekno-landing-page/',
+  // Only use basePath in production (for GitHub Pages deployment)
+  ...(process.env.NODE_ENV === 'production' && {
+    basePath: '/bekno-landing-page',
+    assetPrefix: '/bekno-landing-page/',
+  }),
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
