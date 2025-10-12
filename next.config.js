@@ -1,3 +1,7 @@
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
@@ -5,8 +9,8 @@ const nextConfig = {
     unoptimized: true,
     domains: ['localhost'],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/bekno-landing-page' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/bekno-landing-page/' : '',
+  basePath: '',
+  assetPrefix: '',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -17,4 +21,4 @@ const nextConfig = {
   trailingSlash: true,
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
