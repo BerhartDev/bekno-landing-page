@@ -8,6 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/bekno-landing-page',
+  assetPrefix: '/bekno-landing-page/',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
