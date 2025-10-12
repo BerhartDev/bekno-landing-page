@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
 import Button from '@/components/ui/Button';
 import LanguageSwitcher from './LanguageSwitcher';
+import { fontClasses } from '@/lib/fonts';
 
 export default function Header() {
   const t = useTranslations('navigation');
@@ -11,7 +12,7 @@ export default function Header() {
   return (
     <header className="bg-bekno-black text-bekno-white py-4 px-4 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold">
+        <Link href="/" className={`text-2xl ${fontClasses.title}`}>
           BEKNO
         </Link>
         

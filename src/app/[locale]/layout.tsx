@@ -1,16 +1,14 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Inter, Roboto, Poppins } from "next/font/google";
+// Fontes já configuradas no layout raiz
 import { routing } from '@/lib/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import '../globals.css';
 import type { Metadata } from 'next';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const roboto = Roboto({ weight: ["400", "500", "700"], subsets: ["latin"], variable: "--font-roboto" });
-const poppins = Poppins({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-poppins" });
+// Fontes centralizadas em @/lib/fonts.ts
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -25,10 +23,14 @@ export async function generateMetadata({
   
   const title = locale === 'pt' 
     ? 'BEKNO - Soluções Digitais para o Seu Negócio'
+    : locale === 'fr'
+    ? 'BEKNO - Solutions Numériques pour Votre Entreprise'
     : 'BEKNO - Digital Solutions for Your Business';
     
   const description = locale === 'pt'
     ? 'Transforme seu negócio com soluções digitais personalizadas da BEKNO.'
+    : locale === 'fr'
+    ? 'Transformez votre entreprise avec des solutions numériques personnalisées de BEKNO.'
     : 'Transform your business with personalized digital solutions from BEKNO.';
 
   return {

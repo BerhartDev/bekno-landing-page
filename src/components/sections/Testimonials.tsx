@@ -26,7 +26,7 @@ export default function Testimonials() {
               <p className="text-bekno-gray mb-4">
                 "{testimonial.text}"
               </p>
-              <p className="font-bold text-bekno-black">{testimonial.author}</p>
+              <p className="font-bold font-heading text-bekno-black">{testimonial.author}</p>
               <p className="text-bekno-gray-light">{testimonial.role}</p>
             </div>
           ))}

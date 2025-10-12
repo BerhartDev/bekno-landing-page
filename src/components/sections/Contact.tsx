@@ -14,7 +14,7 @@ export default function Contact() {
         <Heading level={2} className="text-center text-bekno-white">{t('title')}</Heading>
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">{t('subtitle')}</h3>
+            <h3 className="text-2xl font-bold font-heading mb-6">{t('subtitle')}</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

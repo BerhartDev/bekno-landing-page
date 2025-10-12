@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { fontClasses } from '@/lib/fonts';
 
 interface HeadingProps {
   children: ReactNode;
@@ -7,7 +8,7 @@ interface HeadingProps {
 }
 
 export default function Heading({ children, level, className = '' }: HeadingProps) {
-  const baseClasses = 'font-bold';
+  const baseClasses = fontClasses.title;
   
   const levelClasses = {
     1: 'text-5xl md:text-7xl mb-6',
