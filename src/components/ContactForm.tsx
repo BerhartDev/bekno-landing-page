@@ -35,85 +35,116 @@ const ContactForm = () => {
   };
 
   return (
-    <form 
-      onSubmit={handleSubmit}
-      action="https://formspree.io/f/mvgagpwg"
-      method="POST"
-      className="space-y-4"
-    >
-      {/* Honeypot escondido para bloquear bots */}
-      <input type="text" name="_gotcha" style={{ display: 'none' }} />
+    <div className="space-y-6">
+      <div className="text-center mb-8">
+        <h3 className="text-xl font-bold font-heading text-bekno-white mb-2">
+          Envie sua mensagem
+        </h3>
+        <p className="text-bekno-gray text-xs">
+          Preencha o formulário e entraremos em contato em breve
+        </p>
+      </div>
       
-      <div>         
-        <label htmlFor="name" className="block mb-2">{t('name')}</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-        />
-      </div>
-      <div>
-        <label htmlFor="business" className="block mb-2">{t('business')}</label>
-        <input
-          type="text"
-          id="business"
-          name="business"
-          required
-          className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block mb-2">{t('email')}</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-        />
-      </div>
-      <div>
-        <label htmlFor="services" className="block mb-2">{t('services')}</label>
-        <select
-          id="services"
-          name="services"
-          required
-          className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-        >
-          <option value="">{t('servicesPlaceholder')}</option>
-          <option value="website">{t('servicesOptions.website')}</option>
-          <option value="marketing">{t('servicesOptions.marketing')}</option>
-          <option value="ecommerce">{t('servicesOptions.ecommerce')}</option>
-        </select>
-      </div>
-      <div>
-        <label htmlFor="message" className="block mb-2">{t('message')}</label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          required
-          className="w-full px-4 py-2 rounded-lg bg-white text-bekno-black"
-        ></textarea>
-      </div>
-      {message && (
-        <div className={`p-4 rounded-lg ${
-          status === 'success' ? 'bg-green-100 text-green-700' : 
-          status === 'error' ? 'bg-red-100 text-red-700' : ''
-        }`}>
-          {message}
-        </div>
-      )}
-      <Button 
-        type="submit" 
-        className="w-full"
-        disabled={status === 'loading'}
+      <form 
+        onSubmit={handleSubmit}
+        action="https://formspree.io/f/mvgagpwg"
+        method="POST"
+        className="space-y-6"
       >
-        {status === 'loading' ? t('submitting') : t('submit')}
-      </Button>
-    </form>
+        {/* Honeypot escondido para bloquear bots */}
+        <input type="text" name="_gotcha" style={{ display: 'none' }} />
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>         
+            <label htmlFor="name" className="block mb-3 text-bekno-white font-medium">{t('name')}</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="w-full px-4 py-3 rounded-xl bg-bekno-white/10 border border-bekno-white/20 text-bekno-white placeholder-bekno-gray focus:outline-none focus:ring-2 focus:ring-bekno-white focus:border-transparent transition-all duration-300"
+              placeholder="Seu nome completo"
+            />
+          </div>
+          <div>
+            <label htmlFor="business" className="block mb-3 text-bekno-white font-medium">{t('business')}</label>
+            <input
+              type="text"
+              id="business"
+              name="business"
+              required
+              className="w-full px-4 py-3 rounded-xl bg-bekno-white/10 border border-bekno-white/20 text-bekno-white placeholder-bekno-gray focus:outline-none focus:ring-2 focus:ring-bekno-white focus:border-transparent transition-all duration-300"
+              placeholder="Nome da empresa"
+            />
+          </div>
+        </div>
+        
+        <div>
+          <label htmlFor="email" className="block mb-3 text-bekno-white font-medium">{t('email')}</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-bekno-white/10 border border-bekno-white/20 text-bekno-white placeholder-bekno-gray focus:outline-none focus:ring-2 focus:ring-bekno-primary focus:border-transparent transition-all duration-300"
+            placeholder="seu@email.com"
+          />
+        </div>
+        
+        <div>
+          <label htmlFor="services" className="block mb-3 text-bekno-white font-medium">{t('services')}</label>
+          <select
+            id="services"
+            name="services"
+            required
+            className="w-full px-4 py-3 rounded-xl bg-bekno-white/10 border border-bekno-white/20 text-bekno-white focus:outline-none focus:ring-2 focus:ring-bekno-white focus:border-transparent transition-all duration-300"
+          >
+            <option value="" className="text-bekno-gray">{t('servicesPlaceholder')}</option>
+            <option value="website" className="text-bekno-black">{t('servicesOptions.website')}</option>
+            <option value="cms" className="text-bekno-black">{t('servicesOptions.cms')}</option>
+            <option value="marketing" className="text-bekno-black">{t('servicesOptions.marketing')}</option>
+            <option value="ecommerce" className="text-bekno-black">{t('servicesOptions.ecommerce')}</option>
+          </select>
+        </div>
+        
+        <div>
+          <label htmlFor="message" className="block mb-3 text-bekno-white font-medium">{t('message')}</label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            required
+            className="w-full px-4 py-3 rounded-xl bg-bekno-white/10 border border-bekno-white/20 text-bekno-white placeholder-bekno-gray focus:outline-none focus:ring-2 focus:ring-bekno-primary focus:border-transparent transition-all duration-300 resize-none"
+            placeholder="Conte-nos sobre seu projeto..."
+          ></textarea>
+        </div>
+        
+        {message && (
+          <div className={`p-4 rounded-xl border ${
+            status === 'success' ? 'bg-green-500/10 border-green-500/20 text-green-400' : 
+            status === 'error' ? 'bg-red-500/10 border-red-500/20 text-red-400' : ''
+          }`}>
+            {message}
+          </div>
+        )}
+        
+        <Button 
+          type="submit" 
+          variant="secondary"
+          className="w-full py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
+          disabled={status === 'loading'}
+        >
+          {status === 'loading' ? (
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-5 h-5 border-2 border-bekno-black border-t-transparent rounded-full animate-spin"></div>
+              {t('submitting')}
+            </div>
+          ) : (
+            t('submit')
+          )}
+        </Button>
+      </form>
+    </div>
   );
 };
 

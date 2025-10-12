@@ -1,17 +1,31 @@
 {
   "hero": {
     "headline": "Digital solutions that drive results",
-    "subheadline": "BEKNO creates complete digital experiences — websites, landing pages, and custom systems — focused on performance, design, and growth.",
+    "subheadline": "We create complete digital experiences — websites, landing pages, and custom systems — focused on performance, design, and growth.",
     "ctaPrimary": "Request a quote",
-    "ctaSecondary": "View portfolio"
+    "ctaSecondary": "View portfolio",
+    "features": [
+      "Custom development",
+      "Optimized performance",
+      "Modern design",
+      "Dedicated support"
+    ]
   },
   "about": {
-    "title": "About BEKNO",
-    "description1": "BEKNO specializes in creating high-performance digital solutions. Our goal is to help businesses grow through technology, design, and strategy.",
-    "description2": "With an experienced and results-driven team, we develop websites, systems, and digital campaigns tailored to your business — with agility and quality."
+    "title": "About Us",
+    "subtitle": "We transform ideas into high-performance digital solutions",
+    "description1": "We are a company specialized in creating high-performance digital solutions. Our goal is to help businesses grow through technology, design, and strategy.",
+    "description2": "With an experienced and results-driven team, we develop websites, systems, and digital campaigns tailored to your business — with agility and quality.",
+    "features": [
+      "Custom development",
+      "Modern and responsive design",
+      "Optimized performance", 
+      "Dedicated technical support"
+    ]
   },
   "features": {
     "title": "Our Services",
+    "subtitle": "Complete digital solutions to boost your business",
     "items": [
       {
         "title": "Web Development",
@@ -29,39 +43,52 @@
   },
   "plans": {
     "title": "Our Plans",
+    "subtitle": "Choose the ideal solution for your business",
     "items": [
       {
         "name": "Starter",
+        "description": "Perfect for small businesses that want professional online presence",
+        "price": "starting from $160",
         "features": [
           "Custom responsive website",
           "Basic CMS for content editing",
           "Integrated contact form",
-          "Initial SEO setup"
-        ]
+          "Initial SEO setup",
+          "30 days support"
+        ],
+        "cta": "Start with Starter"
       },
       {
         "name": "Growth",
+        "description": "Ideal for growing companies that need automation and performance",
+        "price": "starting from $300",
         "features": [
           "Advanced website or landing page",
           "CRM and automation integrations",
           "Blog and campaign area",
-          "Optimized SEO and monthly reports"
-        ]
+          "Optimized SEO and monthly reports",
+          "Priority support for 60 days"
+        ],
+        "cta": "Choose Growth",
+        "popular": true
       },
       {
         "name": "Pro",
+        "description": "Complete solution for large companies with specific needs",
+        "price": "upon request",
         "features": [
           "Complete digital solution",
           "Integration with e-commerce or internal systems",
           "Performance monitoring and analytics",
           "Dedicated support and consulting"
-        ]
+        ],
+        "cta": "Talk about this project"
       }
-    ],
-    "cta": "Request this plan"
+    ]
   },
   "testimonials": {
     "title": "Testimonials",
+    "subtitle": "See what our clients say about our projects",
     "items": [
       {
         "text": "BEKNO elevated our digital presence. The new website is fast, beautiful, and delivers real results.",

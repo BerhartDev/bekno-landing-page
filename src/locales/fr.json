@@ -1,17 +1,31 @@
 {
   "hero": {
     "headline": "Solutions numériques qui génèrent des résultats",
-    "subheadline": "BEKNO crée des expériences numériques complètes — sites web, pages d'atterrissage et systèmes personnalisés — axées sur la performance, le design et la croissance.",
+    "subheadline": "Nous créons des expériences numériques complètes — sites web, pages d'atterrissage et systèmes personnalisés — axées sur la performance, le design et la croissance.",
     "ctaPrimary": "Demander un devis",
-    "ctaSecondary": "Voir le portfolio"
+    "ctaSecondary": "Voir le portfolio",
+    "features": [
+      "Développement sur mesure",
+      "Performance optimisée",
+      "Design moderne",
+      "Support dédié"
+    ]
   },
   "about": {
-    "title": "À propos de BEKNO",
-    "description1": "BEKNO est une entreprise spécialisée dans la création de solutions numériques haute performance. Notre objectif est d'aider les entreprises à croître grâce à la technologie, au design et à la stratégie.",
-    "description2": "Avec une équipe expérimentée et passionnée par les résultats, nous développons des sites web, des systèmes et des campagnes numériques sur mesure pour votre entreprise, avec agilité et qualité."
+    "title": "À propos de Nous",
+    "subtitle": "Nous transformons les idées en solutions numériques haute performance",
+    "description1": "Nous sommes une entreprise spécialisée dans la création de solutions numériques haute performance. Notre objectif est d'aider les entreprises à croître grâce à la technologie, au design et à la stratégie.",
+    "description2": "Avec une équipe expérimentée et passionnée par les résultats, nous développons des sites web, des systèmes et des campagnes numériques sur mesure pour votre entreprise, avec agilité et qualité.",
+    "features": [
+      "Développement sur mesure",
+      "Design moderne et responsive",
+      "Performance optimisée",
+      "Support technique dédié"
+    ]
   },
   "features": {
     "title": "Nos Services",
+    "subtitle": "Solutions numériques complètes pour dynamiser votre entreprise",
     "items": [
       {
         "title": "Développement Web",
@@ -29,39 +43,52 @@
   },
   "plans": {
     "title": "Nos Plans",
+    "subtitle": "Choisissez la solution idéale pour votre entreprise",
     "items": [
       {
         "name": "Starter",
+        "description": "Parfait pour les petites entreprises qui veulent une présence en ligne professionnelle",
+        "price": "à partir de 144€",
         "features": [
           "Site web responsive personnalisé",
           "CMS de base pour l'édition de contenu",
           "Formulaire de contact intégré",
-          "Configuration SEO initiale"
-        ]
+          "Configuration SEO initiale",
+          "Support pendant 30 jours"
+        ],
+        "cta": "Commencer avec Starter"
       },
       {
         "name": "Growth",
+        "description": "Idéal pour les entreprises en croissance qui ont besoin d'automatisation et de performance",
+        "price": "à partir de 270€",
         "features": [
           "Site web ou page d'atterrissage avancée",
           "Intégrations CRM et automatisation",
           "Blog et zone de campagnes",
-          "SEO optimisé et rapports mensuels"
-        ]
+          "SEO optimisé et rapports mensuels",
+          "Support prioritaire pendant 60 jours"
+        ],
+        "cta": "Choisir Growth",
+        "popular": true
       },
       {
         "name": "Pro",
+        "description": "Solution complète pour les grandes entreprises avec des besoins spécifiques",
+        "price": "sur demande",
         "features": [
           "Solution numérique complète",
           "Intégration avec e-commerce ou systèmes internes",
           "Surveillance des performances et métriques",
           "Support et conseil dédiés"
-        ]
+        ],
+        "cta": "Parler de ce projet"
       }
-    ],
-    "cta": "Demander ce plan"
+    ]
   },
   "testimonials": {
     "title": "Témoignages",
+    "subtitle": "Découvrez ce que nos clients disent de nos projets",
     "items": [
       {
         "text": "BEKNO a élevé notre présence numérique. Le nouveau site web est rapide, beau et génère de vrais résultats.",

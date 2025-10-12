@@ -14,6 +14,7 @@ module.exports = {
         'bekno-gray-light': '#999999',
         'bekno-gray-dark': '#333333',
         'bekno-bg-light': '#f5f5f5',
+        'bekno-primary': '#00D4FF',
       },
       fontFamily: {
         sans: ['Inter', 'DM Sans', 'Roboto', 'sans-serif'],
