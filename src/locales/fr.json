@@ -1,151 +1,170 @@
 {
   "hero": {
-    "headline": "Solutions numériques qui génèrent des résultats",
-    "subheadline": "Nous créons des expériences numériques complètes — sites web, pages d'atterrissage et systèmes personnalisés — axées sur la performance, le design et la croissance.",
-    "ctaPrimary": "Demander un devis",
-    "ctaSecondary": "Voir le portfolio",
-    "features": [
-      "Développement sur mesure",
-      "Performance optimisée",
-      "Design moderne",
-      "Support dédié"
-    ]
-  },
-  "about": {
-    "title": "À propos de Nous",
-    "subtitle": "Nous transformons les idées en solutions numériques haute performance",
-    "description1": "Nous sommes une entreprise spécialisée dans la création de solutions numériques haute performance. Notre objectif est d'aider les entreprises à croître grâce à la technologie, au design et à la stratégie.",
-    "description2": "Avec une équipe expérimentée et passionnée par les résultats, nous développons des sites web, des systèmes et des campagnes numériques sur mesure pour votre entreprise, avec agilité et qualité.",
-    "features": [
-      "Développement sur mesure",
-      "Design moderne et responsive",
-      "Performance optimisée",
-      "Support technique dédié"
-    ]
+    "headline": "Le site qui présente l'activité et ouvre la prochaine conversation.",
+    "kicker": "Sites, boutiques et systèmes pour les entreprises",
+    "imageAlt": "Un ordinateur portable ouvert sur un bureau.",
+    "reassurance": "Sans engagement. Réponse sous un jour ouvré.",
+    "ctaPrimary": "Parler du projet",
+    "ctaSecondary": "Voir les services"
   },
   "features": {
-    "title": "Nos Services",
-    "subtitle": "Solutions numériques complètes pour dynamiser votre entreprise",
+    "title": "Services",
+    "subtitle": "Six livraisons. Choisissez ce dont l'activité a besoin maintenant.",
+    "cta": "Parler",
     "items": [
       {
-        "title": "Développement Web",
-        "description": "Sites web et pages d'atterrissage rapides, sécurisées et optimisées pour le SEO."
+        "id": "website",
+        "service": "website",
+        "title": "Site institutionnel",
+        "description": "La page qui explique l'activité et reçoit le contact.",
+        "imageAlt": "Un ordinateur portable affichant un site avec une page produit."
       },
       {
-        "title": "CMS et Automatisation",
-        "description": "Gestion facile du contenu, intégrations intelligentes et systèmes d'automatisation."
+        "id": "landing",
+        "service": "website",
+        "title": "Page d'atterrissage",
+        "description": "Une page faite pour une offre, un événement ou une campagne.",
+        "imageAlt": "Un bureau avec des croquis d'une page pour téléphone."
       },
       {
-        "title": "Performance et Marketing",
-        "description": "Stratégies numériques complètes pour augmenter la visibilité et les conversions."
+        "id": "ecommerce",
+        "service": "ecommerce",
+        "title": "Boutique en ligne",
+        "description": "La vitrine en ligne, avec le paiement et la commande qui vous parvient.",
+        "imageAlt": "Des sacs de courses sur une table."
+      },
+      {
+        "id": "cms",
+        "service": "cms",
+        "title": "CMS et automatisations",
+        "description": "Un panneau pour mettre à jour pages, offres et contacts.",
+        "imageAlt": "Un écran avec les graphiques d'un tableau de bord."
+      },
+      {
+        "id": "seo",
+        "service": "marketing",
+        "title": "SEO et performance",
+        "description": "Une base de recherche et une lecture de ce qui génère un contact.",
+        "imageAlt": "Un ordinateur portable avec un rapport d'audience."
+      },
+      {
+        "id": "systems",
+        "service": "consult",
+        "title": "Système sur demande",
+        "description": "Un système interne quand le périmètre dépasse un site.",
+        "imageAlt": "Des baies de serveurs dans une salle technique."
       }
     ]
   },
+  "method": {
+    "title": "Comment nous travaillons",
+    "subtitle": "La conversation n'est pas facturée et ne crée pas de contrat.",
+    "steps": ["Conversation", "Périmètre", "Construction", "Publication"]
+  },
   "plans": {
-    "title": "Nos Plans",
-    "subtitle": "Choisissez la solution idéale pour votre entreprise",
+    "title": "Plans",
+    "subtitle": "Trois points de départ. Le chiffre final dépend de ce qui entre dans le périmètre.",
+    "note": "Les prix sont un point de départ. La conversation sert à figer le périmètre et ne crée pas de contrat.",
+    "popular": "Le plus demandé",
     "items": [
       {
         "name": "Starter",
-        "description": "Parfait pour les petites entreprises qui veulent une présence en ligne professionnelle",
+        "service": "website",
+        "description": "Pour un site clair, avec un formulaire et une édition simple du contenu.",
         "price": "à partir de 144€",
         "features": [
           "Site web responsive personnalisé",
-          "CMS de base pour l'édition de contenu",
           "Formulaire de contact intégré",
-          "Configuration SEO initiale",
           "Support pendant 30 jours"
         ],
-        "cta": "Commencer avec Starter"
+        "cta": "Parler de ce plan"
       },
       {
         "name": "Growth",
-        "description": "Idéal pour les entreprises en croissance qui ont besoin d'automatisation et de performance",
+        "service": "cms",
+        "description": "Pour une page, des intégrations et un espace pour publier des campagnes.",
         "price": "à partir de 270€",
         "features": [
           "Site web ou page d'atterrissage avancée",
           "Intégrations CRM et automatisation",
-          "Blog et zone de campagnes",
-          "SEO optimisé et rapports mensuels",
           "Support prioritaire pendant 60 jours"
         ],
-        "cta": "Choisir Growth",
+        "cta": "Parler de ce plan",
         "popular": true
       },
       {
         "name": "Pro",
-        "description": "Solution complète pour les grandes entreprises avec des besoins spécifiques",
+        "service": "consult",
+        "description": "Pour un périmètre plus large : boutique, système interne ou suivi continu.",
         "price": "sur demande",
         "features": [
-          "Solution numérique complète",
+          "Périmètre défini avec vous",
           "Intégration avec e-commerce ou systèmes internes",
-          "Surveillance des performances et métriques",
           "Support et conseil dédiés"
         ],
-        "cta": "Parler de ce projet"
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "Témoignages",
-    "subtitle": "Découvrez ce que nos clients disent de nos projets",
-    "items": [
-      {
-        "text": "BEKNO a élevé notre présence numérique. Le nouveau site web est rapide, beau et génère de vrais résultats.",
-        "author": "Jean Silva",
-        "role": "PDG, Tech Solutions"
-      },
-      {
-        "text": "Équipe excellente ! Ils ont livré tout rapidement et avec une grande attention aux détails. Je recommande vivement.",
-        "author": "Marie Santos",
-        "role": "Directrice Marketing, Fashion Store"
-      },
-      {
-        "text": "Le projet s'est avéré incroyable. L'automatisation et les performances ont dépassé toutes les attentes.",
-        "author": "Pierre Oliveira",
-        "role": "Fondateur, Digital Shop"
+        "cta": "Parler de ce plan"
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Entrez en contact",
+    "subtitle": "Dites ce que la page doit faire. La réponse arrive avec la prochaine étape.",
+    "after": "Nous lisons la demande, convenons de la conversation, et la proposition part avec ce qui est inclus, le délai et le prix.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Où",
     "email": "bernardoknob@gmail.com",
     "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
+    "response": "La réponse arrive sous un jour ouvré. Pour un délai court, appelez.",
     "form": {
+      "title": "Parler du projet",
+      "intro": "Sans engagement. Ces réponses servent à préparer la conversation.",
       "name": "Nom",
+      "namePlaceholder": "Nom",
       "business": "Entreprise",
+      "businessPlaceholder": "Entreprise",
       "email": "E-mail",
-      "services": "Service d'intérêt",
+      "emailPlaceholder": "email@entreprise.com",
+      "services": "Ce dont vous avez besoin",
       "servicesPlaceholder": "Sélectionnez une option",
       "servicesOptions": {
-        "website": "Site web ou Page d'atterrissage",
-        "cms": "CMS et Automatisation",
-        "marketing": "Performance et Marketing",
+        "website": "Site ou page d'atterrissage",
+        "cms": "CMS et automatisations",
+        "consult": "Projet sur demande",
+        "marketing": "Performance et marketing",
         "ecommerce": "E-commerce"
       },
       "message": "Message",
-      "submit": "Envoyer",
+      "messagePlaceholder": "Ce que la page doit expliquer, et à qui",
+      "submit": "Parler du projet",
       "submitting": "Envoi en cours...",
-      "success": "Message envoyé avec succès !"
+      "success": "Message reçu. La réponse arrive sous un jour ouvré."
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Solutions numériques complètes pour votre entreprise"
+    "copyright": "© 2025 BEKNO - Solutions numériques complètes pour votre entreprise",
+    "tagline": "Sites et pages d'atterrissage pour que l'entreprise explique ce qu'elle fait et reçoive des contacts.",
+    "links": "Navigation",
+    "backToTop": "Haut de page"
   },
   "navigation": {
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
     "plans": "Plans",
-    "contact": "Contact"
+    "projects": "Projets",
+    "contact": "Contact",
+    "cta": "Parler du projet",
+    "menu": "Menu",
+    "language": "Langue",
+    "theme": "Thème"
   },
-  "portfolio": {
-    "title": "Portfolio",
-    "subtitle": "Bientôt disponible",
-    "description": "Nous préparons une sélection de nos meilleurs projets pour que vous puissiez découvrir notre travail et nos résultats.",
-    "ctaContact": "Entrer en Contact",
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Bientôt",
+    "description": "Les études de cas sont encore en préparation. Dans la conversation, nous montrons des travaux proches de ce dont votre entreprise a besoin.",
+    "ctaContact": "Parler du projet",
     "ctaBack": "Retour à l'Accueil",
     "feature1": {
       "title": "Projets Web",

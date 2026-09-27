@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { fontClasses } from '@/lib/fonts';
 
 interface HeadingProps {
   children: ReactNode;
@@ -8,8 +7,6 @@ interface HeadingProps {
 }
 
 export default function Heading({ children, level, className = '' }: HeadingProps) {
-  const baseClasses = fontClasses.title;
-  
   const levelClasses = {
     1: 'text-5xl md:text-7xl mb-6',
     2: 'text-3xl md:text-4xl mb-6',
@@ -18,11 +15,11 @@ export default function Heading({ children, level, className = '' }: HeadingProp
     5: 'text-lg mb-2',
     6: 'text-base mb-2'
   };
-  
+
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-  
+
   return (
-    <Tag className={`${baseClasses} ${levelClasses[level]} ${className}`}>
+    <Tag className={`font-bold tracking-[-0.035em] ${levelClasses[level]} ${className}`}>
       {children}
     </Tag>
   );

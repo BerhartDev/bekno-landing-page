@@ -8,20 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bekno-black': '#000000',
-        'bekno-white': '#FFFFFF',
-        'bekno-gray': '#666666',
-        'bekno-gray-light': '#999999',
-        'bekno-gray-dark': '#333333',
-        'bekno-bg-light': '#f5f5f5',
-        'bekno-primary': '#00D4FF',
+        bg: 'var(--bg)',
+        surface: 'var(--surface)',
+        fg: 'var(--fg)',
+        muted: 'var(--muted)',
+        faint: 'var(--faint)',
+        line: 'var(--line)',
       },
       fontFamily: {
-        sans: ['Inter', 'DM Sans', 'Roboto', 'sans-serif'],
-        heading: ['Roboto', 'sans-serif'],
-        body: ['DM Sans', 'sans-serif'],
+        sans: ['var(--font-schibsted)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-plex-mono)', 'ui-monospace', 'monospace'],
+      },
+      maxWidth: {
+        page: '72rem',
       },
     },
   },
   plugins: [],
-} 
+}

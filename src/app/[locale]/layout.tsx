@@ -57,11 +57,11 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <Header />
-      <main className="min-h-screen">
-        {children}
-      </main>
-      <Footer />
+      <div id="top" className="mx-auto max-w-page px-[clamp(1rem,4vw,3rem)]">
+        <Header />
+        <main id="main">{children}</main>
+        <Footer />
+      </div>
     </NextIntlClientProvider>
   );
 }

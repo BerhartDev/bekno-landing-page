@@ -1,151 +1,170 @@
 {
   "hero": {
-    "headline": "Digital solutions that drive results",
-    "subheadline": "We create complete digital experiences — websites, landing pages, and custom systems — focused on performance, design, and growth.",
-    "ctaPrimary": "Request a quote",
-    "ctaSecondary": "View portfolio",
-    "features": [
-      "Custom development",
-      "Optimized performance",
-      "Modern design",
-      "Dedicated support"
-    ]
-  },
-  "about": {
-    "title": "About Us",
-    "subtitle": "We transform ideas into high-performance digital solutions",
-    "description1": "We are a company specialized in creating high-performance digital solutions. Our goal is to help businesses grow through technology, design, and strategy.",
-    "description2": "With an experienced and results-driven team, we develop websites, systems, and digital campaigns tailored to your business — with agility and quality.",
-    "features": [
-      "Custom development",
-      "Modern and responsive design",
-      "Optimized performance", 
-      "Dedicated technical support"
-    ]
+    "headline": "The site that presents the business and opens the next conversation.",
+    "kicker": "Websites, stores, and systems for companies",
+    "imageAlt": "An open laptop on a work desk.",
+    "reassurance": "No commitment. A reply within one business day.",
+    "ctaPrimary": "Talk about the project",
+    "ctaSecondary": "See the services"
   },
   "features": {
-    "title": "Our Services",
-    "subtitle": "Complete digital solutions to boost your business",
+    "title": "Services",
+    "subtitle": "Six deliveries. Choose what the business needs now.",
+    "cta": "Talk",
     "items": [
       {
-        "title": "Web Development",
-        "description": "Fast, secure, and SEO-optimized websites and landing pages."
+        "id": "website",
+        "service": "website",
+        "title": "Company website",
+        "description": "The page that explains the business and receives contact.",
+        "imageAlt": "A laptop showing a website with a product page."
       },
       {
-        "title": "CMS and Automation",
-        "description": "Easy content management, smart integrations, and automation systems."
+        "id": "landing",
+        "service": "website",
+        "title": "Landing page",
+        "description": "A page built for an offer, an event, or a campaign.",
+        "imageAlt": "A desk with sketches of a page for a phone."
       },
       {
-        "title": "Performance and Marketing",
-        "description": "Comprehensive digital strategies to increase visibility and conversions."
+        "id": "ecommerce",
+        "service": "ecommerce",
+        "title": "Online store",
+        "description": "The shop online, with payment and the order reaching you.",
+        "imageAlt": "Shopping bags on a table."
+      },
+      {
+        "id": "cms",
+        "service": "cms",
+        "title": "CMS and automation",
+        "description": "A panel to update pages, offers, and contact details.",
+        "imageAlt": "A screen with charts from a dashboard."
+      },
+      {
+        "id": "seo",
+        "service": "marketing",
+        "title": "SEO and performance",
+        "description": "A search foundation and a reading of what generates contact.",
+        "imageAlt": "A laptop with an audience report."
+      },
+      {
+        "id": "systems",
+        "service": "consult",
+        "title": "System on request",
+        "description": "An internal system when the scope goes beyond a website.",
+        "imageAlt": "Server racks in a technical room."
       }
     ]
   },
+  "method": {
+    "title": "How we work",
+    "subtitle": "The conversation is not billed and does not create a contract.",
+    "steps": ["Conversation", "Scope", "Build", "Publication"]
+  },
   "plans": {
-    "title": "Our Plans",
-    "subtitle": "Choose the ideal solution for your business",
+    "title": "Plans",
+    "subtitle": "Three starting points. The final number depends on what is in the scope.",
+    "note": "The prices are a starting point. The conversation is for locking the scope and does not create a contract.",
+    "popular": "Most requested",
     "items": [
       {
         "name": "Starter",
-        "description": "Perfect for small businesses that want professional online presence",
+        "service": "website",
+        "description": "For a clear site, with a form and basic content editing.",
         "price": "starting from $160",
         "features": [
           "Custom responsive website",
-          "Basic CMS for content editing",
           "Integrated contact form",
-          "Initial SEO setup",
           "30 days support"
         ],
-        "cta": "Start with Starter"
+        "cta": "Talk about this plan"
       },
       {
         "name": "Growth",
-        "description": "Ideal for growing companies that need automation and performance",
+        "service": "cms",
+        "description": "For a page, integrations, and a place to publish campaigns.",
         "price": "starting from $300",
         "features": [
           "Advanced website or landing page",
           "CRM and automation integrations",
-          "Blog and campaign area",
-          "Optimized SEO and monthly reports",
           "Priority support for 60 days"
         ],
-        "cta": "Choose Growth",
+        "cta": "Talk about this plan",
         "popular": true
       },
       {
         "name": "Pro",
-        "description": "Complete solution for large companies with specific needs",
+        "service": "consult",
+        "description": "For a larger scope: a store, an internal system, or ongoing follow-up.",
         "price": "upon request",
         "features": [
-          "Complete digital solution",
+          "Scope defined with you",
           "Integration with e-commerce or internal systems",
-          "Performance monitoring and analytics",
           "Dedicated support and consulting"
         ],
-        "cta": "Talk about this project"
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "See what our clients say about our projects",
-    "items": [
-      {
-        "text": "BEKNO elevated our digital presence. The new website is fast, beautiful, and delivers real results.",
-        "author": "John Silva",
-        "role": "CEO, Tech Solutions"
-      },
-      {
-        "text": "Excellent team! They delivered everything quickly and with great attention to detail. Highly recommend.",
-        "author": "Maria Santos",
-        "role": "Marketing Director, Fashion Store"
-      },
-      {
-        "text": "The project turned out amazing. The automation and performance exceeded all expectations.",
-        "author": "Peter Oliveira",
-        "role": "Founder, Digital Shop"
+        "cta": "Talk about this plan"
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch",
+    "subtitle": "Tell us what the page needs to do. The reply comes with the next step.",
+    "after": "We read the request, arrange the conversation, and the proposal follows with what is included, the deadline, and the price.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Where",
     "email": "bernardoknob@gmail.com",
     "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
+    "response": "The reply arrives within one business day. For a short deadline, call.",
     "form": {
+      "title": "Talk about the project",
+      "intro": "No commitment. These answers are how we prepare the conversation.",
       "name": "Name",
+      "namePlaceholder": "Name",
       "business": "Business",
+      "businessPlaceholder": "Company",
       "email": "Email",
-      "services": "Service of interest",
+      "emailPlaceholder": "email@company.com",
+      "services": "What you need",
       "servicesPlaceholder": "Select an option",
       "servicesOptions": {
-        "website": "Website or Landing Page",
-        "cms": "CMS and Automation",
-        "marketing": "Performance and Marketing",
+        "website": "Website or landing page",
+        "cms": "CMS and automation",
+        "consult": "Project on request",
+        "marketing": "Performance and marketing",
         "ecommerce": "E-commerce"
       },
       "message": "Message",
-      "submit": "Send",
+      "messagePlaceholder": "What the page needs to explain, and to whom",
+      "submit": "Talk about the project",
       "submitting": "Sending...",
-      "success": "Message sent successfully!"
+      "success": "Message received. The reply arrives within one business day."
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Complete digital solutions for your business"
+    "copyright": "© 2025 BEKNO - Complete digital solutions for your business",
+    "tagline": "Websites and landing pages so the company can explain what it does and receive contact.",
+    "links": "Navigation",
+    "backToTop": "Back to top"
   },
   "navigation": {
     "home": "Home",
     "about": "About",
     "services": "Services",
     "plans": "Plans",
-    "contact": "Contact"
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Talk about the project",
+    "menu": "Menu",
+    "language": "Language",
+    "theme": "Theme"
   },
-  "portfolio": {
-    "title": "Portfolio",
-    "subtitle": "Coming Soon",
-    "description": "We are preparing a selection of our best projects for you to get to know our work and results.",
-    "ctaContact": "Get in Touch",
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Coming soon",
+    "description": "The case studies are still in progress. In the conversation, we show work close to what your business needs.",
+    "ctaContact": "Talk about the project",
     "ctaBack": "Back to Home",
     "feature1": {
       "title": "Web Projects",

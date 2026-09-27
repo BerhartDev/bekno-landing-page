@@ -1,151 +1,170 @@
 {
   "hero": {
-    "headline": "Soluções digitais que geram resultados",
-    "subheadline": "Criamos experiências digitais completas — sites, landing pages e sistemas personalizados — focadas em performance, design e crescimento.",
-    "ctaPrimary": "Solicitar orçamento",
-    "ctaSecondary": "Ver portfólio",
-    "features": [
-      "Desenvolvimento sob medida",
-      "Performance otimizada", 
-      "Design moderno",
-      "Suporte dedicado"
-    ]
-  },
-  "about": {
-    "title": "Sobre Nós",
-    "subtitle": "Transformamos ideias em soluções digitais de alta performance",
-    "description1": "Somos uma empresa especializada em criar soluções digitais de alta performance. Nosso objetivo é ajudar negócios a crescer através de tecnologia, design e estratégia.",
-    "description2": "Com uma equipe experiente e apaixonada por resultados, desenvolvemos sites, sistemas e campanhas digitais sob medida para o seu negócio, com agilidade e qualidade.",
-    "features": [
-      "Desenvolvimento sob medida",
-      "Design moderno e responsivo", 
-      "Performance otimizada",
-      "Suporte técnico dedicado"
-    ]
+    "headline": "O site que apresenta o negócio e abre a próxima conversa.",
+    "kicker": "Sites, lojas e sistemas para empresas",
+    "imageAlt": "Notebook aberto sobre uma mesa de trabalho.",
+    "reassurance": "Sem compromisso. Resposta em até um dia útil.",
+    "ctaPrimary": "Conversar sobre o projeto",
+    "ctaSecondary": "Ver serviços"
   },
   "features": {
-    "title": "Nossos Serviços",
-    "subtitle": "Soluções digitais completas para impulsionar seu negócio",
+    "title": "Serviços",
+    "subtitle": "Seis entregas. Escolha a que o negócio precisa agora.",
+    "cta": "Conversar",
     "items": [
       {
-        "title": "Desenvolvimento Web",
-        "description": "Sites e landing pages rápidas, seguras e otimizadas para SEO."
+        "id": "website",
+        "service": "website",
+        "title": "Site institucional",
+        "description": "A página que explica o negócio e recebe contato.",
+        "imageAlt": "Notebook exibindo um site com uma página de produto."
       },
       {
-        "title": "CMS e Automação",
-        "description": "Gestão fácil de conteúdo, integrações e automações inteligentes."
+        "id": "landing",
+        "service": "website",
+        "title": "Landing page",
+        "description": "Uma página feita para uma oferta, um evento ou uma campanha.",
+        "imageAlt": "Mesa com rascunhos de uma página para celular."
       },
       {
-        "title": "Performance e Marketing",
-        "description": "Estratégias digitais completas para aumentar visibilidade e conversões."
+        "id": "ecommerce",
+        "service": "ecommerce",
+        "title": "Loja virtual",
+        "description": "A vitrine no ar, com pagamento e o pedido chegando até vocês.",
+        "imageAlt": "Sacolas de compra sobre uma mesa."
+      },
+      {
+        "id": "cms",
+        "service": "cms",
+        "title": "CMS e automações",
+        "description": "Um painel para atualizar páginas, ofertas e contatos.",
+        "imageAlt": "Tela com gráficos de um painel."
+      },
+      {
+        "id": "seo",
+        "service": "marketing",
+        "title": "SEO e performance",
+        "description": "Base de busca e leitura do que gera contato.",
+        "imageAlt": "Notebook com um relatório de audiência."
+      },
+      {
+        "id": "systems",
+        "service": "consult",
+        "title": "Sistema sob consulta",
+        "description": "Um sistema interno quando o escopo passa de um site.",
+        "imageAlt": "Racks de servidores em uma sala técnica."
       }
     ]
   },
+  "method": {
+    "title": "Como trabalhamos",
+    "subtitle": "A conversa não é cobrada e não gera contrato.",
+    "steps": ["Conversa", "Escopo", "Construção", "Publicação"]
+  },
   "plans": {
-    "title": "Nossos Planos",
-    "subtitle": "Escolha a solução ideal para o seu negócio",
+    "title": "Planos",
+    "subtitle": "Três pontos de partida. O número final depende do que entra no escopo.",
+    "note": "Os valores são um ponto de partida. A conversa serve para fechar o escopo e não gera contrato.",
+    "popular": "Mais pedido",
     "items": [
       {
         "name": "Starter",
-        "description": "Perfeito para pequenos negócios que querem presença online profissional",
+        "service": "website",
+        "description": "Para um site claro, com formulário e edição básica do conteúdo.",
         "price": "a partir de R$ 800",
         "features": [
           "Site responsivo personalizado",
-          "CMS básico para edição de conteúdo",
           "Formulário de contato integrado",
-          "SEO inicial configurado",
           "Suporte por 30 dias"
         ],
-        "cta": "Começar com o Starter"
+        "cta": "Conversar sobre este plano"
       },
       {
         "name": "Growth",
-        "description": "Ideal para empresas em expansão que precisam de automação e performance",
+        "service": "cms",
+        "description": "Para quem precisa de página, integrações e um espaço para publicar campanhas.",
         "price": "a partir de R$ 1.500",
         "features": [
           "Site ou landing page avançada",
           "Integrações com CRM e automação",
-          "Blog e área de campanhas",
-          "SEO otimizado e relatórios mensais",
           "Suporte prioritário por 60 dias"
         ],
-        "cta": "Escolher Growth",
+        "cta": "Conversar sobre este plano",
         "popular": true
       },
       {
         "name": "Pro",
-        "description": "Solução completa para grandes empresas com necessidades específicas",
+        "service": "consult",
+        "description": "Para um escopo maior: loja, sistema interno ou acompanhamento contínuo.",
         "price": "sob consulta",
         "features": [
-          "Solução digital completa",
+          "Escopo definido com vocês",
           "Integração com e-commerce ou sistemas internos",
-          "Monitoramento de performance e métricas",
           "Suporte e consultoria dedicados"
         ],
-        "cta": "Falar sobre este projeto"
-      }
-    ]
-  },
-  "testimonials": {
-    "title": "Depoimentos",
-    "subtitle": "Veja o que nossos clientes dizem sobre nossos projetos",
-    "items": [
-      {
-        "text": "A BEKNO elevou nossa presença digital. O novo site é rápido, bonito e gera resultados reais.",
-        "author": "João Silva",
-        "role": "CEO, Tech Solutions"
-      },
-      {
-        "text": "Equipe excelente! Entregaram tudo com agilidade e muita atenção aos detalhes. Super recomendo.",
-        "author": "Maria Santos",
-        "role": "Diretora de Marketing, Fashion Store"
-      },
-      {
-        "text": "O projeto ficou incrível. A automação e o desempenho superaram todas as expectativas.",
-        "author": "Pedro Oliveira",
-        "role": "Fundador, Digital Shop"
+        "cta": "Conversar sobre este plano"
       }
     ]
   },
   "contact": {
     "title": "Contato",
-    "subtitle": "Fale com a gente",
+    "subtitle": "Diga o que a página precisa fazer. A resposta vem com o próximo passo.",
+    "after": "Lemos o pedido, combinamos a conversa e a proposta sai com o que entra, o prazo e o valor.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefone",
+    "locationLabel": "Onde",
     "email": "bernardoknob@gmail.com",
     "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
+    "response": "A resposta chega em até um dia útil. Para um prazo curto, ligue.",
     "form": {
+      "title": "Conversar sobre o projeto",
+      "intro": "Sem compromisso. Estas respostas servem para preparar a conversa.",
       "name": "Nome",
+      "namePlaceholder": "Nome",
       "business": "Empresa",
+      "businessPlaceholder": "Empresa",
       "email": "E-mail",
-      "services": "Serviço de interesse",
+      "emailPlaceholder": "email@empresa.com",
+      "services": "O que você precisa",
       "servicesPlaceholder": "Selecione uma opção",
       "servicesOptions": {
-        "website": "Site ou Landing Page",
-        "cms": "CMS e Automação",
-        "marketing": "Performance e Marketing",
+        "website": "Site ou landing page",
+        "cms": "CMS e automações",
+        "consult": "Projeto sob consulta",
+        "marketing": "Performance e marketing",
         "ecommerce": "E-commerce"
       },
       "message": "Mensagem",
-      "submit": "Enviar",
+      "messagePlaceholder": "O que a página precisa explicar e para quem",
+      "submit": "Conversar sobre o projeto",
       "submitting": "Enviando...",
-      "success": "Mensagem enviada com sucesso!"
+      "success": "Mensagem recebida. A resposta chega em até um dia útil."
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Soluções digitais completas para o seu negócio"
+    "copyright": "© 2025 BEKNO - Soluções digitais completas para o seu negócio",
+    "tagline": "Sites e landing pages para a empresa explicar o que faz e receber contato.",
+    "links": "Navegação",
+    "backToTop": "Voltar ao topo"
   },
   "navigation": {
     "home": "Início",
     "about": "Sobre",
     "services": "Serviços",
     "plans": "Planos",
-    "contact": "Contato"
+    "projects": "Projetos",
+    "contact": "Contato",
+    "cta": "Conversar sobre o projeto",
+    "menu": "Menu",
+    "language": "Idioma",
+    "theme": "Tema"
   },
-  "portfolio": {
-    "title": "Portfólio",
-    "subtitle": "Em Breve",
-    "description": "Estamos preparando uma seleção dos nossos melhores projetos para você conhecer nosso trabalho e resultados.",
-    "ctaContact": "Entrar em Contato",
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Em breve",
+    "description": "Os cases ainda estão em preparação. Na conversa, mostramos trabalhos próximos do que o seu negócio precisa.",
+    "ctaContact": "Conversar sobre o projeto",
     "ctaBack": "Voltar ao Início",
     "feature1": {
       "title": "Projetos Web",

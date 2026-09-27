@@ -1,23 +1,19 @@
 'use client'
 
 export default function Error({
-  error,
   reset,
 }: {
   error: Error & { digest?: string }
   reset: () => void
 }) {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="text-center">
-        <h2 className="text-2xl font-bold text-red-600 mb-4">Algo deu errado!</h2>
-        <button
-          onClick={reset}
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-        >
-          Tentar novamente
-        </button>
-      </div>
+    <div className="mx-auto flex min-h-screen max-w-page flex-col justify-center px-[clamp(1rem,4vw,3rem)] py-16">
+      <p className="font-mono text-sm uppercase tracking-[0.04em] text-muted">Erro</p>
+      <h1 className="mt-4 text-4xl font-bold tracking-[-0.035em]">Algo deu errado.</h1>
+      <button type="button" onClick={reset} className="cta mt-8 w-fit">
+        Tentar novamente
+        <span className="arrow" aria-hidden="true">→</span>
+      </button>
     </div>
   )
-} 
+}
