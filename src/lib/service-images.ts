@@ -1,11 +1,13 @@
+const basePath = process.env.NODE_ENV === 'production' ? '/bekno-landing-page' : '';
+
 export const serviceImages = {
-  hero: '/services/hero.jpg',
-  website: '/services/website.jpg',
-  landing: '/services/landing.jpg',
-  ecommerce: '/services/ecommerce.jpg',
-  cms: '/services/cms.jpg',
-  seo: '/services/seo.jpg',
-  systems: '/services/systems.jpg',
+  hero: `${basePath}/services/hero.jpg`,
+  website: `${basePath}/services/website.jpg`,
+  landing: `${basePath}/services/landing.jpg`,
+  ecommerce: `${basePath}/services/ecommerce.jpg`,
+  cms: `${basePath}/services/cms.jpg`,
+  seo: `${basePath}/services/seo.jpg`,
+  systems: `${basePath}/services/systems.jpg`,
 } as const;
 
 export type ServiceImageId = keyof typeof serviceImages;
