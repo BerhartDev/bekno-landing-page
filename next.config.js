@@ -6,6 +6,12 @@ const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
 // and also builds with NODE_ENV=production, so the prefix must stay off that platform.
 const isGithubPages = process.env.NODE_ENV === 'production' && process.env.VERCEL !== '1';
 
+// Public URLs stay on the company domain while hosting moves between GitHub Pages and Vercel.
+function resolveSiteUrl() {
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '');
+  return configured || 'https://bekno.com.br';
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
@@ -18,6 +24,7 @@ const nextConfig = {
   }),
   env: {
     NEXT_PUBLIC_BASE_PATH: isGithubPages ? '/bekno-landing-page' : '',
+    NEXT_PUBLIC_SITE_URL: resolveSiteUrl(),
   },
   webpack(config) {
     config.module.rules.push({
