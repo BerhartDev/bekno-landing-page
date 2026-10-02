@@ -27,6 +27,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: d6c386a3-ef43-4334-acc5-9a70122c4630
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -8,7 +8,6 @@ export default function Contact() {
   const t = useTranslations('contact');
 
   const contactInfo = [
-    { label: t('emailLabel'), value: t('email'), href: `mailto:${t('email')}` },
     { label: t('phoneLabel'), value: t('phone'), href: `tel:${t('phone').replace(/\s/g, '')}` },
     { label: t('locationLabel'), value: t('location'), href: null as string | null },
   ];

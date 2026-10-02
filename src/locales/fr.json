@@ -110,11 +110,9 @@
     "title": "Contact",
     "subtitle": "Dites ce que la page doit faire. La réponse arrive avec la prochaine étape.",
     "after": "Nous lisons la demande, convenons de la conversation, et la proposition part avec ce qui est inclus, le délai et le prix.",
-    "emailLabel": "E-mail",
     "phoneLabel": "Téléphone",
+    "phone": "+55 21 97369-2691",
     "locationLabel": "Où",
-    "email": "bernardoknob@gmail.com",
-    "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
     "response": "La réponse arrive sous un jour ouvré. Pour un délai court, appelez.",
     "form": {
@@ -133,13 +131,31 @@
         "cms": "CMS et automatisations",
         "consult": "Projet sur demande",
         "marketing": "Performance et marketing",
-        "ecommerce": "E-commerce"
+        "ecommerce": "E-commerce",
+        "other": "Autre"
       },
       "message": "Message",
       "messagePlaceholder": "Ce que la page doit expliquer, et à qui",
       "submit": "Parler du projet",
       "submitting": "Envoi en cours...",
-      "success": "Message reçu. La réponse arrive sous un jour ouvré."
+      "success": "Message reçu. La réponse arrive sous un jour ouvré.",
+      "whatsapp": "Envoyer par WhatsApp",
+      "emailSubmit": "Envoyer par e-mail",
+      "sending": "Envoi",
+      "sent": "Message envoyé.",
+      "error": "L'envoi a échoué. Réessayez ou utilisez WhatsApp.",
+      "subject": "Contact via BEKNO",
+      "template": "Bonjour. Je m'appelle %name%.\nEntreprise : %business%\nE-mail : %email%\nService : %service%\n\n%message%",
+      "errName": "Indiquez votre nom.",
+      "errBusiness": "Indiquez l'entreprise.",
+      "errEmail": "L'e-mail n'est pas valide.",
+      "errEmailDomain": "Utilisez un e-mail d'un fournisseur connu, pas une boîte temporaire.",
+      "errMessage": "Le message doit compter au moins 20 caractères.",
+      "errMessageLong": "Le message dépasse 2 000 caractères.",
+      "errService": "Choisissez ce dont vous avez besoin.",
+      "errFast": "Attendez quelques secondes avant d'envoyer.",
+      "errLimit": "Attendez un moment avant d'envoyer à nouveau.",
+      "linksRemoved": "J'ai retiré les liens du message."
     }
   },
   "footer": {

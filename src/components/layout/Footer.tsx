@@ -7,7 +7,6 @@ import LanguageSwitcher from './LanguageSwitcher';
 export default function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('navigation');
-  const contact = useTranslations('contact');
   const pathname = usePathname();
   const isHome = pathname === '/';
   const sectionHref = (id: string) => (isHome ? `#${id}` : `/#${id}`);
@@ -39,9 +38,6 @@ export default function Footer() {
       <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
         <p>{t('copyright')}</p>
         <div className="flex items-center gap-4">
-          <a href={`mailto:${contact('email')}`} className="link hover:text-fg">
-            {contact('email')}
-          </a>
           <LanguageSwitcher />
           <a href="#top" className="link hover:text-fg">
             {t('backToTop')}

@@ -110,11 +110,9 @@
     "title": "Contato",
     "subtitle": "Diga o que a página precisa fazer. A resposta vem com o próximo passo.",
     "after": "Lemos o pedido, combinamos a conversa e a proposta sai com o que entra, o prazo e o valor.",
-    "emailLabel": "E-mail",
     "phoneLabel": "Telefone",
+    "phone": "+55 21 97369-2691",
     "locationLabel": "Onde",
-    "email": "bernardoknob@gmail.com",
-    "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
     "response": "A resposta chega em até um dia útil. Para um prazo curto, ligue.",
     "form": {
@@ -133,13 +131,31 @@
         "cms": "CMS e automações",
         "consult": "Projeto sob consulta",
         "marketing": "Performance e marketing",
-        "ecommerce": "E-commerce"
+        "ecommerce": "E-commerce",
+        "other": "Outros"
       },
       "message": "Mensagem",
       "messagePlaceholder": "O que a página precisa explicar e para quem",
       "submit": "Conversar sobre o projeto",
       "submitting": "Enviando...",
-      "success": "Mensagem recebida. A resposta chega em até um dia útil."
+      "success": "Mensagem recebida. A resposta chega em até um dia útil.",
+      "whatsapp": "Enviar por WhatsApp",
+      "emailSubmit": "Enviar por e-mail",
+      "sending": "Enviando",
+      "sent": "Mensagem enviada.",
+      "error": "Não foi possível enviar. Tente de novo ou use o WhatsApp.",
+      "subject": "Contato pela BEKNO",
+      "template": "Olá. Meu nome é %name%.\nEmpresa: %business%\nE-mail: %email%\nServiço: %service%\n\n%message%",
+      "errName": "Informe seu nome.",
+      "errBusiness": "Informe a empresa.",
+      "errEmail": "O e-mail não é válido.",
+      "errEmailDomain": "Use um e-mail de um provedor conhecido, não uma caixa temporária.",
+      "errMessage": "A mensagem precisa de pelo menos 20 caracteres.",
+      "errMessageLong": "A mensagem passa de 2000 caracteres.",
+      "errService": "Escolha o que você precisa.",
+      "errFast": "Espere alguns segundos antes de enviar.",
+      "errLimit": "Espere um pouco antes de enviar de novo.",
+      "linksRemoved": "Tirei os links da mensagem."
     }
   },
   "footer": {

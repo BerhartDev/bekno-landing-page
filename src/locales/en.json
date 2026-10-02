@@ -110,11 +110,9 @@
     "title": "Contact",
     "subtitle": "Tell us what the page needs to do. The reply comes with the next step.",
     "after": "We read the request, arrange the conversation, and the proposal follows with what is included, the deadline, and the price.",
-    "emailLabel": "Email",
     "phoneLabel": "Phone",
+    "phone": "+55 21 97369-2691",
     "locationLabel": "Where",
-    "email": "bernardoknob@gmail.com",
-    "phone": "+55 22 98807-1682",
     "location": "Ipanema, RJ",
     "response": "The reply arrives within one business day. For a short deadline, call.",
     "form": {
@@ -133,13 +131,31 @@
         "cms": "CMS and automation",
         "consult": "Project on request",
         "marketing": "Performance and marketing",
-        "ecommerce": "E-commerce"
+        "ecommerce": "E-commerce",
+        "other": "Other"
       },
       "message": "Message",
       "messagePlaceholder": "What the page needs to explain, and to whom",
       "submit": "Talk about the project",
       "submitting": "Sending...",
-      "success": "Message received. The reply arrives within one business day."
+      "success": "Message received. The reply arrives within one business day.",
+      "whatsapp": "Send via WhatsApp",
+      "emailSubmit": "Send by email",
+      "sending": "Sending",
+      "sent": "Message sent.",
+      "error": "Could not send. Try again or use WhatsApp.",
+      "subject": "Contact from BEKNO",
+      "template": "Hello. My name is %name%.\nBusiness: %business%\nEmail: %email%\nService: %service%\n\n%message%",
+      "errName": "Enter your name.",
+      "errBusiness": "Enter the business name.",
+      "errEmail": "The email is not valid.",
+      "errEmailDomain": "Use an email from a known provider, not a temporary inbox.",
+      "errMessage": "The message needs at least 20 characters.",
+      "errMessageLong": "The message is over 2000 characters.",
+      "errService": "Choose what you need.",
+      "errFast": "Wait a few seconds before sending.",
+      "errLimit": "Wait a while before sending again.",
+      "linksRemoved": "I removed the links from the message."
     }
   },
   "footer": {
