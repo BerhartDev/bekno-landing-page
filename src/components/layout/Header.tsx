@@ -8,7 +8,6 @@ import ThemeToggle from './ThemeToggle';
 
 const SECTIONS = [
   { id: 'services', key: 'services' },
-  { id: 'plans', key: 'plans' },
   { id: 'projects', key: 'projects' },
   { id: 'contact', key: 'contact' },
 ] as const;

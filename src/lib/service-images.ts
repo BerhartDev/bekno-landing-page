@@ -1,4 +1,4 @@
-const basePath = process.env.NODE_ENV === 'production' ? '/bekno-landing-page' : '';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 export const serviceImages = {
   hero: `${basePath}/services/hero.jpg`,

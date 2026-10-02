@@ -13,7 +13,6 @@ export default function Footer() {
 
   const links = [
     { href: sectionHref('services'), label: nav('services') },
-    { href: sectionHref('plans'), label: nav('plans') },
     { href: '/projetos', label: nav('projects') },
     { href: sectionHref('contact'), label: nav('contact') },
   ];

@@ -61,51 +61,6 @@
     "subtitle": "A conversa não é cobrada e não gera contrato.",
     "steps": ["Conversa", "Escopo", "Construção", "Publicação"]
   },
-  "plans": {
-    "title": "Planos",
-    "subtitle": "Três pontos de partida. O número final depende do que entra no escopo.",
-    "note": "Os valores são um ponto de partida. A conversa serve para fechar o escopo e não gera contrato.",
-    "popular": "Mais pedido",
-    "items": [
-      {
-        "name": "Starter",
-        "service": "website",
-        "description": "Para um site claro, com formulário e edição básica do conteúdo.",
-        "price": "a partir de R$ 800",
-        "features": [
-          "Site responsivo personalizado",
-          "Formulário de contato integrado",
-          "Suporte por 30 dias"
-        ],
-        "cta": "Conversar sobre este plano"
-      },
-      {
-        "name": "Growth",
-        "service": "cms",
-        "description": "Para quem precisa de página, integrações e um espaço para publicar campanhas.",
-        "price": "a partir de R$ 1.500",
-        "features": [
-          "Site ou landing page avançada",
-          "Integrações com CRM e automação",
-          "Suporte prioritário por 60 dias"
-        ],
-        "cta": "Conversar sobre este plano",
-        "popular": true
-      },
-      {
-        "name": "Pro",
-        "service": "consult",
-        "description": "Para um escopo maior: loja, sistema interno ou acompanhamento contínuo.",
-        "price": "sob consulta",
-        "features": [
-          "Escopo definido com vocês",
-          "Integração com e-commerce ou sistemas internos",
-          "Suporte e consultoria dedicados"
-        ],
-        "cta": "Conversar sobre este plano"
-      }
-    ]
-  },
   "contact": {
     "title": "Contato",
     "subtitle": "Diga o que a página precisa fazer. A resposta vem com o próximo passo.",
@@ -168,7 +123,6 @@
     "home": "Início",
     "about": "Sobre",
     "services": "Serviços",
-    "plans": "Planos",
     "projects": "Projetos",
     "contact": "Contato",
     "cta": "Conversar sobre o projeto",

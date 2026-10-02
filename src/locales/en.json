@@ -61,51 +61,6 @@
     "subtitle": "The conversation is not billed and does not create a contract.",
     "steps": ["Conversation", "Scope", "Build", "Publication"]
   },
-  "plans": {
-    "title": "Plans",
-    "subtitle": "Three starting points. The final number depends on what is in the scope.",
-    "note": "The prices are a starting point. The conversation is for locking the scope and does not create a contract.",
-    "popular": "Most requested",
-    "items": [
-      {
-        "name": "Starter",
-        "service": "website",
-        "description": "For a clear site, with a form and basic content editing.",
-        "price": "starting from $160",
-        "features": [
-          "Custom responsive website",
-          "Integrated contact form",
-          "30 days support"
-        ],
-        "cta": "Talk about this plan"
-      },
-      {
-        "name": "Growth",
-        "service": "cms",
-        "description": "For a page, integrations, and a place to publish campaigns.",
-        "price": "starting from $300",
-        "features": [
-          "Advanced website or landing page",
-          "CRM and automation integrations",
-          "Priority support for 60 days"
-        ],
-        "cta": "Talk about this plan",
-        "popular": true
-      },
-      {
-        "name": "Pro",
-        "service": "consult",
-        "description": "For a larger scope: a store, an internal system, or ongoing follow-up.",
-        "price": "upon request",
-        "features": [
-          "Scope defined with you",
-          "Integration with e-commerce or internal systems",
-          "Dedicated support and consulting"
-        ],
-        "cta": "Talk about this plan"
-      }
-    ]
-  },
   "contact": {
     "title": "Contact",
     "subtitle": "Tell us what the page needs to do. The reply comes with the next step.",
@@ -168,7 +123,6 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "plans": "Plans",
     "projects": "Projects",
     "contact": "Contact",
     "cta": "Talk about the project",

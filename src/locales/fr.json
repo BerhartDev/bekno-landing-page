@@ -61,51 +61,6 @@
     "subtitle": "La conversation n'est pas facturée et ne crée pas de contrat.",
     "steps": ["Conversation", "Périmètre", "Construction", "Publication"]
   },
-  "plans": {
-    "title": "Plans",
-    "subtitle": "Trois points de départ. Le chiffre final dépend de ce qui entre dans le périmètre.",
-    "note": "Les prix sont un point de départ. La conversation sert à figer le périmètre et ne crée pas de contrat.",
-    "popular": "Le plus demandé",
-    "items": [
-      {
-        "name": "Starter",
-        "service": "website",
-        "description": "Pour un site clair, avec un formulaire et une édition simple du contenu.",
-        "price": "à partir de 144€",
-        "features": [
-          "Site web responsive personnalisé",
-          "Formulaire de contact intégré",
-          "Support pendant 30 jours"
-        ],
-        "cta": "Parler de ce plan"
-      },
-      {
-        "name": "Growth",
-        "service": "cms",
-        "description": "Pour une page, des intégrations et un espace pour publier des campagnes.",
-        "price": "à partir de 270€",
-        "features": [
-          "Site web ou page d'atterrissage avancée",
-          "Intégrations CRM et automatisation",
-          "Support prioritaire pendant 60 jours"
-        ],
-        "cta": "Parler de ce plan",
-        "popular": true
-      },
-      {
-        "name": "Pro",
-        "service": "consult",
-        "description": "Pour un périmètre plus large : boutique, système interne ou suivi continu.",
-        "price": "sur demande",
-        "features": [
-          "Périmètre défini avec vous",
-          "Intégration avec e-commerce ou systèmes internes",
-          "Support et conseil dédiés"
-        ],
-        "cta": "Parler de ce plan"
-      }
-    ]
-  },
   "contact": {
     "title": "Contact",
     "subtitle": "Dites ce que la page doit faire. La réponse arrive avec la prochaine étape.",
@@ -168,7 +123,6 @@
     "home": "Accueil",
     "about": "À propos",
     "services": "Services",
-    "plans": "Plans",
     "projects": "Projets",
     "contact": "Contact",
     "cta": "Parler du projet",
