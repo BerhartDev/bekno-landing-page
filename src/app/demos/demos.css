@@ -1,0 +1,59 @@
+/* Base dos sites demo. Não importa o globals.css da BEKNO: cada demo traz a própria identidade. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: rgb(var(--d-bg));
+  color: rgb(var(--d-fg));
+  font-family: var(--d-font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--d-accent));
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgb(var(--d-accent));
+  color: rgb(var(--d-accent-fg));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Faixa rolando (academia). */
+@keyframes demo-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.demo-marquee {
+  animation: demo-marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-marquee {
+    animation: none;
+  }
+}

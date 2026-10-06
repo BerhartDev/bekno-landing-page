@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { fontVariables } from '@/lib/fonts';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Página não encontrada | BEKNO',

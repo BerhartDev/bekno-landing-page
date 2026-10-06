@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { fontVariables } from '@/lib/fonts';
+import './globals.css';
 import { routing } from '@/lib/i18n/routing';
 import { pageUrl } from '@/lib/seo';
 

@@ -31,6 +31,11 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Projets concept : des sites complets pour des entreprises fictives, chacun avec sa propre identité.",
+    "cta": "Voir tous les projets"
+  },
   "exclusivity": {
     "title": "Exclusivité",
     "subtitle": "Votre site ne ressemble à aucun autre.",
@@ -248,21 +253,44 @@
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Bientôt",
-    "description": "Les études de cas sont encore en préparation. Dans la conversation, nous montrons des travaux proches de ce dont votre entreprise a besoin.",
+    "subtitle": "Une identité pour chaque activité.",
+    "description": "Projets concept réalisés par BEKNO pour des clients fictifs. Chaque site a sa marque, sa typographie et ses interactions, comme nous le ferions pour votre entreprise.",
+    "badge": "Projet concept",
+    "open": "Ouvrir le site",
+    "disclaimer": "Les entreprises, noms, témoignages et chiffres présents dans les sites sont fictifs. Photos Unsplash.",
     "ctaContact": "Demander un devis",
-    "ctaBack": "Retour à l'Accueil",
-    "feature1": {
-      "title": "Projets Web",
-      "description": "Sites web et applications web modernes et responsives"
+    "ctaBack": "Retour à l’accueil",
+    "siteTypes": {
+      "institutional": "Site vitrine",
+      "landing": "Landing page",
+      "store": "E-commerce",
+      "platform": "Plateforme web"
     },
-    "feature2": {
-      "title": "E-commerce",
-      "description": "Boutiques en ligne complètes avec intégration de paiements"
-    },
-    "feature3": {
-      "title": "Marketing Numérique",
-      "description": "Campagnes et stratégies de marketing numérique efficaces"
+    "items": {
+      "restaurante": {
+        "niche": "Restaurant",
+        "summary": "Cuisine au feu de bois avec carte filtrable, panier de commande et réservation."
+      },
+      "saas": {
+        "niche": "Logiciel (SaaS)",
+        "summary": "Landing d’un logiciel de gestion financière avec maquette produit, calculateur et tarifs."
+      },
+      "moda": {
+        "niche": "Mode",
+        "summary": "Boutique éditoriale avec catalogue filtrable, choix de taille et panier latéral."
+      },
+      "clinica": {
+        "niche": "Cabinet dentaire",
+        "summary": "Un site chaleureux avec soins, équipe et prise de rendez-vous en trois étapes."
+      },
+      "academia": {
+        "niche": "Salle de sport",
+        "summary": "Landing énergique avec quiz de formule, planning des cours et tarifs."
+      },
+      "advocacia": {
+        "niche": "Cabinet d’avocats",
+        "summary": "Un cabinet sobre avec domaines d’expertise, articles et pré-qualification du dossier."
+      }
     }
   },
   "notFound": {

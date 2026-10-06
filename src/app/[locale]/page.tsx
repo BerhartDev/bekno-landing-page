@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
+import Portfolio from '@/components/sections/Portfolio';
 import ChecklistSection from '@/components/sections/ChecklistSection';
 import Method from '@/components/sections/Method';
 import SiteTypes from '@/components/sections/SiteTypes';
@@ -28,6 +29,7 @@ export default async function HomePage({
       <JsonLd data={jsonLd} />
       <Hero />
       <Services />
+      <Portfolio />
       <ChecklistSection namespace="exclusivity" />
       <Method />
       <ChecklistSection namespace="commitment" columns={4} />

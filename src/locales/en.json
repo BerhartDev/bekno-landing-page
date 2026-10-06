@@ -31,6 +31,11 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Concept projects: complete sites for fictional businesses, each with its own identity.",
+    "cta": "See all projects"
+  },
   "exclusivity": {
     "title": "Exclusivity",
     "subtitle": "Your site does not look like anyone else’s.",
@@ -248,21 +253,44 @@
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "Coming soon",
-    "description": "The case studies are still in progress. In the conversation, we show work close to what your business needs.",
+    "subtitle": "One identity for each business.",
+    "description": "Concept projects BEKNO built for fictional clients. Each site has its own brand, typography and interactions, the way we would build yours.",
+    "badge": "Concept project",
+    "open": "Open the site",
+    "disclaimer": "The businesses, names, testimonials and figures inside the sites are fictional. Photos from Unsplash.",
     "ctaContact": "Request a quote",
-    "ctaBack": "Back to Home",
-    "feature1": {
-      "title": "Web Projects",
-      "description": "Modern and responsive websites and web applications"
+    "ctaBack": "Back to home",
+    "siteTypes": {
+      "institutional": "Company website",
+      "landing": "Landing page",
+      "store": "E-commerce",
+      "platform": "Web platform"
     },
-    "feature2": {
-      "title": "E-commerce",
-      "description": "Complete online stores with payment integration"
-    },
-    "feature3": {
-      "title": "Digital Marketing",
-      "description": "Effective digital marketing campaigns and strategies"
+    "items": {
+      "restaurante": {
+        "niche": "Restaurant",
+        "summary": "Wood-fire kitchen with a filterable menu, order bag and table booking."
+      },
+      "saas": {
+        "niche": "Software (SaaS)",
+        "summary": "Finance software landing page with a product mockup, savings calculator and pricing."
+      },
+      "moda": {
+        "niche": "Fashion",
+        "summary": "Editorial store with a filterable catalog, size picker and side cart."
+      },
+      "clinica": {
+        "niche": "Dental clinic",
+        "summary": "A warm site with treatments, the team and three-step booking."
+      },
+      "academia": {
+        "niche": "Gym",
+        "summary": "High-energy landing page with a plan quiz, class schedule and pricing."
+      },
+      "advocacia": {
+        "niche": "Law firm",
+        "summary": "A sober firm site with practice areas, articles and case intake."
+      }
     }
   },
   "notFound": {

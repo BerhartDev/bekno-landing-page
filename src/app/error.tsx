@@ -1,6 +1,7 @@
 'use client'
 
 import { fontVariables } from '@/lib/fonts';
+import './globals.css';
 
 export default function Error({
   reset,

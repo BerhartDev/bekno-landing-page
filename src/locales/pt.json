@@ -31,6 +31,11 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Projetos conceito: sites completos para negócios fictícios, cada um com identidade própria.",
+    "cta": "Ver todos os projetos"
+  },
   "exclusivity": {
     "title": "Exclusividade",
     "subtitle": "O seu site não se parece com o de mais ninguém.",
@@ -248,21 +253,44 @@
   },
   "projects": {
     "title": "Projetos",
-    "subtitle": "Em breve",
-    "description": "Os cases ainda estão em preparação. Na conversa, mostramos trabalhos próximos do que o seu negócio precisa.",
+    "subtitle": "Uma identidade para cada negócio.",
+    "description": "Projetos conceito criados pela BEKNO para clientes fictícios. Cada site tem marca, tipografia e interações próprias, do jeito que faríamos para a sua empresa.",
+    "badge": "Projeto conceito",
+    "open": "Abrir o site",
+    "disclaimer": "Os negócios, nomes, depoimentos e números dentro dos sites são fictícios. As fotos são do Unsplash.",
     "ctaContact": "Pedir orçamento",
-    "ctaBack": "Voltar ao Início",
-    "feature1": {
-      "title": "Projetos Web",
-      "description": "Sites e aplicações web modernas e responsivas"
+    "ctaBack": "Voltar ao início",
+    "siteTypes": {
+      "institutional": "Site institucional",
+      "landing": "Landing page",
+      "store": "E-commerce",
+      "platform": "Plataforma web"
     },
-    "feature2": {
-      "title": "E-commerce",
-      "description": "Lojas virtuais completas com integração de pagamentos"
-    },
-    "feature3": {
-      "title": "Marketing Digital",
-      "description": "Campanhas e estratégias de marketing digital eficazes"
+    "items": {
+      "restaurante": {
+        "niche": "Restaurante",
+        "summary": "Cozinha de brasa com cardápio filtrável, sacola de pedido e reserva de mesa."
+      },
+      "saas": {
+        "niche": "Software (SaaS)",
+        "summary": "Landing de gestão financeira com mockup do produto, calculadora de economia e planos."
+      },
+      "moda": {
+        "niche": "Moda",
+        "summary": "Loja editorial com vitrine filtrável, escolha de tamanho e carrinho lateral."
+      },
+      "clinica": {
+        "niche": "Clínica odontológica",
+        "summary": "Site acolhedor com tratamentos, equipe e agendamento em três passos."
+      },
+      "academia": {
+        "niche": "Academia",
+        "summary": "Landing de alta energia com quiz de plano, grade de aulas e planos."
+      },
+      "advocacia": {
+        "niche": "Advocacia",
+        "summary": "Escritório sóbrio com áreas de atuação, artigos e triagem do caso."
+      }
     }
   },
   "notFound": {
