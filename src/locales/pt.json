@@ -6,7 +6,7 @@
     "imageAlt": "Notebook aberto sobre uma mesa de trabalho.",
     "reassurance": "Sem compromisso. Resposta em até um dia útil.",
     "ctaPrimary": "Pedir orçamento",
-    "ctaSecondary": "Ver serviços"
+    "ctaSecondary": "Ver projetos"
   },
   "services": {
     "title": "Serviços",
@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfólio",
-    "subtitle": "Seis negócios, seis identidades. Os estabelecimentos são fictícios, criados para mostrar o nosso trabalho.",
+    "subtitle": "Seis negócios, seis identidades, criados cuidadosamente para mostrar o nosso trabalho.",
     "cta": "Ver todos os projetos"
   },
   "exclusivity": {
@@ -138,7 +138,8 @@
         "title": "Plataforma web",
         "description": "Área de membros, cursos on-line, integrações e recursos avançados."
       }
-    ]
+    ],
+    "projectsCta": "Ver projetos"
   },
   "differentiators": {
     "title": "Diferenciais",
@@ -164,7 +165,8 @@
   "finalCta": {
     "title": "Sua empresa merece mais do que um site básico.",
     "text": "Conte o que o negócio precisa. A gente responde com uma proposta sob medida.",
-    "cta": "Pedir orçamento"
+    "cta": "Pedir orçamento",
+    "secondary": "Ver projetos"
   },
   "quote": {
     "eyebrow": "Orçamento",

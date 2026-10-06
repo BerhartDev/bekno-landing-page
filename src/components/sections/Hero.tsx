@@ -21,7 +21,7 @@ export default function Hero() {
             {t('ctaPrimary')}
             <span className="arrow" aria-hidden="true">→</span>
           </Link>
-          <a href="#services" className="link font-mono text-sm uppercase tracking-[0.04em]">
+          <a href="#portfolio" className="link font-mono text-sm uppercase tracking-[0.04em]">
             {t('ctaSecondary')}
           </a>
         </div>

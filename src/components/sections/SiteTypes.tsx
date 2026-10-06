@@ -19,25 +19,24 @@ export default function SiteTypes() {
     <Section id="site-types" title={t('title')} intro={t('subtitle')}>
       <ul className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item) => (
-          <li key={item.type} className="bg-bg">
+          <li key={item.type} className="flex flex-col gap-4 bg-bg p-6 md:p-8">
+            <h3 className="text-xl font-semibold tracking-[-0.02em]">{item.title}</h3>
+            <p className="text-sm text-muted">{item.description}</p>
             <Link
               href={{ pathname: '/orcamento', query: { tipo: item.type } }}
-              className="group flex h-full flex-col gap-4 p-6 transition-colors duration-150 hover:bg-fg hover:text-bg md:p-8"
+              className="link mt-auto w-fit pt-2 font-mono text-sm uppercase tracking-[0.04em]"
             >
-              <h3 className="text-xl font-semibold tracking-[-0.02em]">{item.title}</h3>
-              <p className="text-sm text-muted transition-colors duration-150 group-hover:text-bg">
-                {item.description}
-              </p>
-              <span className="mt-auto inline-flex items-center gap-2 pt-2 font-mono text-sm uppercase tracking-[0.04em]">
-                {t('cta')}
-                <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">
-                  →
-                </span>
-              </span>
+              {t('cta')} <span aria-hidden="true">→</span>
             </Link>
           </li>
         ))}
       </ul>
+      <div className="mt-10">
+        <Link href="/projetos" className="cta">
+          {t('projectsCta')}
+          <span className="arrow" aria-hidden="true">→</span>
+        </Link>
+      </div>
     </Section>
   );
 }

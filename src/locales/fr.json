@@ -6,7 +6,7 @@
     "imageAlt": "Un ordinateur portable ouvert sur un bureau.",
     "reassurance": "Sans engagement. Réponse sous un jour ouvré.",
     "ctaPrimary": "Demander un devis",
-    "ctaSecondary": "Voir les services"
+    "ctaSecondary": "Voir les projets"
   },
   "services": {
     "title": "Services",
@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Six entreprises, six identités. Les établissements sont fictifs, créés pour montrer notre travail.",
+    "subtitle": "Six entreprises, six identités, créées avec soin pour montrer notre travail.",
     "cta": "Voir tous les projets"
   },
   "exclusivity": {
@@ -138,7 +138,8 @@
         "title": "Plateforme web",
         "description": "Espace membres, formations en ligne, intégrations et fonctionnalités avancées."
       }
-    ]
+    ],
+    "projectsCta": "Voir les projets"
   },
   "differentiators": {
     "title": "Pourquoi BEKNO",
@@ -164,7 +165,8 @@
   "finalCta": {
     "title": "Votre entreprise mérite mieux qu’un site basique.",
     "text": "Dites-nous ce dont l’activité a besoin. Nous répondons avec une proposition sur mesure.",
-    "cta": "Demander un devis"
+    "cta": "Demander un devis",
+    "secondary": "Voir les projets"
   },
   "quote": {
     "eyebrow": "Devis",

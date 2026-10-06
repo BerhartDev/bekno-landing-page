@@ -15,10 +15,15 @@ export default function FinalCta() {
           </h2>
           <p className="max-w-[48ch] text-lg leading-relaxed text-muted">{t('text')}</p>
         </div>
-        <Link href="/orcamento" className="cta w-fit">
-          {t('cta')}
-          <span className="arrow" aria-hidden="true">→</span>
-        </Link>
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+          <Link href="/orcamento" className="cta w-fit">
+            {t('cta')}
+            <span className="arrow" aria-hidden="true">→</span>
+          </Link>
+          <Link href="/projetos" className="link font-mono text-sm uppercase tracking-[0.04em]">
+            {t('secondary')}
+          </Link>
+        </div>
       </div>
     </section>
   );

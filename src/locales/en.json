@@ -6,7 +6,7 @@
     "imageAlt": "An open laptop on a work desk.",
     "reassurance": "No commitment. A reply within one business day.",
     "ctaPrimary": "Request a quote",
-    "ctaSecondary": "See services"
+    "ctaSecondary": "See projects"
   },
   "services": {
     "title": "Services",
@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Six businesses, six identities. The businesses are fictional, created to showcase our work.",
+    "subtitle": "Six businesses, six identities, carefully created to showcase our work.",
     "cta": "See all projects"
   },
   "exclusivity": {
@@ -138,7 +138,8 @@
         "title": "Web platform",
         "description": "Member areas, online courses, integrations and advanced features."
       }
-    ]
+    ],
+    "projectsCta": "See projects"
   },
   "differentiators": {
     "title": "Why BEKNO",
@@ -164,7 +165,8 @@
   "finalCta": {
     "title": "Your company deserves more than a basic website.",
     "text": "Tell us what the business needs. We reply with a tailored proposal.",
-    "cta": "Request a quote"
+    "cta": "Request a quote",
+    "secondary": "See projects"
   },
   "quote": {
     "eyebrow": "Quote",
