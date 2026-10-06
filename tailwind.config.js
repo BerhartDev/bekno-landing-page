@@ -14,7 +14,7 @@ module.exports = {
         muted: 'var(--muted)',
         faint: 'var(--faint)',
         line: 'var(--line)',
-        // Demo sites (/demos/*) set these per client identity on <html>, as "r g b" channels
+        // Demo sites (/portfolio/*) set these per client identity on <html>, as "r g b" channels
         // so opacity modifiers like bg-d-accent/15 work.
         d: {
           bg: 'rgb(var(--d-bg) / <alpha-value>)',

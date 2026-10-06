@@ -312,7 +312,7 @@ export default function AlveaPage() {
       <footer className="border-t border-d-line py-10">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 text-sm text-d-muted md:px-8">
           <p className="font-display text-2xl italic text-d-accent">alvéa</p>
-          <p>Odontologia & estética · Responsável técnico fictício</p>
+          <p>Odontologia & estética · Moema, São Paulo</p>
         </div>
       </footer>
     </div>

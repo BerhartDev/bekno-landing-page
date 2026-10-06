@@ -6,8 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      // Sites demo de clientes fictícios (projetos conceito).
-      disallow: '/demos/',
+      // Sites de projetos conceito (negócios fictícios) não devem ser indexados.
+      disallow: '/portfolio/',
     },
     sitemap: `${getSiteUrl()}/sitemap.xml`,
   };

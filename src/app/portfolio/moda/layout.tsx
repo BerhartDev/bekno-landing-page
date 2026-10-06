@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Jost } from 'next/font/google';
 import DemoShell, { demoMetadata } from '@/components/demos/DemoShell';
 import { mareDisplay } from '@/lib/demo-fonts';
-import '../demos.css';
+import '../sites.css';
 
 const body = Jost({
   subsets: ['latin', 'latin-ext'],

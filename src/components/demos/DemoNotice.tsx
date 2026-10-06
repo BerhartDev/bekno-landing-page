@@ -34,9 +34,6 @@ export default function DemoNotice() {
     >
       {message && (
         <div className="pointer-events-auto flex max-w-md items-start gap-3 rounded-lg bg-neutral-950 px-4 py-3 font-sans text-sm text-neutral-100 shadow-2xl ring-1 ring-white/10">
-          <span className="mt-0.5 shrink-0 rounded bg-white px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-neutral-950">
-            Demo
-          </span>
           <p className="flex-1">{message}</p>
           <button
             type="button"

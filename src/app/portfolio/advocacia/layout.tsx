@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Source_Sans_3 } from 'next/font/google';
 import DemoShell, { demoMetadata } from '@/components/demos/DemoShell';
 import { altairDisplay } from '@/lib/demo-fonts';
-import '../demos.css';
+import '../sites.css';
 
 const body = Source_Sans_3({
   subsets: ['latin', 'latin-ext'],

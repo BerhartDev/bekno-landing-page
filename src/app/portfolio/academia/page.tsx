@@ -184,7 +184,7 @@ export default function ForjaPage() {
                 </div>
               ))}
             </dl>
-            <p className="mt-6 text-xs text-d-muted">Números ilustrativos de um projeto conceito.</p>
+            <p className="mt-6 text-xs text-d-muted">Números ilustrativos.</p>
             <div className="mt-20 border-t border-d-line pt-12">
               <h2 className="font-display text-6xl uppercase leading-none md:text-9xl">Bora começar?</h2>
               <TrialButton className={`${solid} mt-10`}>Agendar aula experimental</TrialButton>

@@ -252,7 +252,7 @@ export default function AltairPage() {
             <p className="font-display text-3xl font-semibold tracking-[0.25em]">ALTAIR</p>
             <p className="mt-2 text-sm text-d-muted">Av. Brigadeiro Faria Lima · São Paulo, SP</p>
           </div>
-          <p className="text-xs uppercase tracking-[0.2em] text-d-muted">Escritório fictício · projeto conceito</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-d-muted">Advocacia empresarial · desde 2007</p>
         </div>
       </footer>
     </div>

@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Barlow } from 'next/font/google';
 import DemoShell, { demoMetadata } from '@/components/demos/DemoShell';
 import { forjaDisplay } from '@/lib/demo-fonts';
-import '../demos.css';
+import '../sites.css';
 
 const body = Barlow({
   subsets: ['latin', 'latin-ext'],

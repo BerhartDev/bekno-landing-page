@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Work_Sans } from 'next/font/google';
 import DemoShell, { demoMetadata } from '@/components/demos/DemoShell';
 import { fornalhaDisplay } from '@/lib/demo-fonts';
-import '../demos.css';
+import '../sites.css';
 
 const body = Work_Sans({
   subsets: ['latin', 'latin-ext'],

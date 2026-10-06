@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { Manrope } from 'next/font/google';
 import DemoShell, { demoMetadata } from '@/components/demos/DemoShell';
 import { alveaDisplay } from '@/lib/demo-fonts';
-import '../demos.css';
+import '../sites.css';
 
 const body = Manrope({
   subsets: ['latin', 'latin-ext'],

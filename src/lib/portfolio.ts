@@ -143,12 +143,12 @@ export function demoThemeStyle(theme: DemoTheme): CSSProperties {
 }
 
 export function demoImage(path: string): string {
-  return `${basePath}/demos/${path}`;
+  return `${basePath}/portfolio/${path}`;
 }
 
-/** Os demos ficam fora de [locale]; os links usam <a> para recarregar e trocar o CSS da página. */
+/** Os sites do portfólio ficam fora de [locale]; os links usam <a> para recarregar e trocar o CSS da página. */
 export function demoHref(slug: string): string {
-  return `${basePath}/demos/${slug}/`;
+  return `${basePath}/portfolio/${slug}/`;
 }
 
 export function portfolioHref(locale = 'pt'): string {
