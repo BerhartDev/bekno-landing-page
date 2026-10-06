@@ -29,6 +29,8 @@ const nextConfig = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
+      // App Router metadata files (src/app/icon.svg) need Next's own image loader, not SVGR.
+      resourceQuery: { not: [/__next_metadata__/] },
       use: ['@svgr/webpack'],
     });
     return config;
