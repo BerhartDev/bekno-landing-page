@@ -8,8 +8,8 @@ import ThemeToggle from './ThemeToggle';
 
 const SECTIONS = [
   { id: 'services', key: 'services' },
+  { id: 'method', key: 'method' },
   { id: 'projects', key: 'projects' },
-  { id: 'contact', key: 'contact' },
 ] as const;
 
 export default function Header() {
@@ -18,6 +18,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isHome = pathname === '/';
   const onProjects = pathname.startsWith('/projetos');
+  const onQuote = pathname.startsWith('/orcamento');
 
   const sectionHref = (id: string) => (isHome ? `#${id}` : `/#${id}`);
 
@@ -49,7 +50,11 @@ export default function Header() {
         <div className="ml-auto flex items-center gap-3">
           <LanguageSwitcher />
           <ThemeToggle />
-          <Link href={sectionHref('contact')} className="cta hidden lg:inline-flex">
+          <Link
+            href="/orcamento"
+            className="cta hidden lg:inline-flex"
+            aria-current={onQuote ? 'page' : undefined}
+          >
             {t('cta')}
             <span className="arrow" aria-hidden="true">→</span>
           </Link>
@@ -87,7 +92,12 @@ export default function Header() {
               ))}
             </ul>
             <div className="px-1 pt-5">
-              <Link href={sectionHref('contact')} className="cta" onClick={closeMenu}>
+              <Link
+                href="/orcamento"
+                className="cta"
+                aria-current={onQuote ? 'page' : undefined}
+                onClick={closeMenu}
+              >
                 {t('cta')}
                 <span className="arrow" aria-hidden="true">→</span>
               </Link>

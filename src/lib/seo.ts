@@ -49,13 +49,24 @@ export function websiteId() {
 
 const PHONE = '+5521973692691';
 
+/** Título e descrição de cada rota; a home usa o hero. */
+async function pageCopy(locale: string, path: string) {
+  if (path === '/projetos') {
+    const projects = await getTranslations({ locale, namespace: 'projects' });
+    return { title: `${projects('title')} | BEKNO`, description: projects('description') };
+  }
+  if (path === '/orcamento') {
+    const quote = await getTranslations({ locale, namespace: 'quote' });
+    return { title: `${quote('eyebrow')} | BEKNO`, description: `${quote('title')} ${quote('subtitle')}` };
+  }
+  const hero = await getTranslations({ locale, namespace: 'hero' });
+  return { title: `${hero('kicker')} | BEKNO`, description: `${hero('kicker')}. ${hero('headline')}` };
+}
+
 export async function buildPageMetadata(locale: string, path = ''): Promise<Metadata> {
   const current = asLocale(locale);
   const hero = await getTranslations({ locale, namespace: 'hero' });
-  const projects = await getTranslations({ locale, namespace: 'projects' });
-  const isProjects = path === '/projetos';
-  const title = isProjects ? `${projects('title')} | BEKNO` : `${hero('kicker')} | BEKNO`;
-  const description = isProjects ? projects('description') : `${hero('kicker')}. ${hero('headline')}`;
+  const { title, description } = await pageCopy(locale, path);
   const url = pageUrl(locale, path);
   const image = {
     url: `${getSiteUrl()}/services/hero.jpg`,
@@ -142,8 +153,8 @@ function websiteNode(description: string) {
 export async function homeJsonLd(locale: string) {
   const current = asLocale(locale);
   const hero = await getTranslations({ locale, namespace: 'hero' });
-  const features = await getTranslations({ locale, namespace: 'features' });
-  const items = features.raw('items') as Array<{ title: string; description: string }>;
+  const services = await getTranslations({ locale, namespace: 'services' });
+  const items = services.raw('items') as Array<{ title: string; description: string }>;
   const description = `${hero('kicker')}. ${hero('headline')}`;
   const url = pageUrl(locale);
   const title = `${hero('kicker')} | BEKNO`;
@@ -172,7 +183,7 @@ export async function homeJsonLd(locale: string) {
       {
         '@type': 'ItemList',
         '@id': `${url}#services`,
-        name: features('title'),
+        name: services('title'),
         itemListElement: items.map((item, index) => ({
           '@type': 'ListItem',
           position: index + 1,
@@ -190,15 +201,14 @@ export async function homeJsonLd(locale: string) {
   };
 }
 
-export async function projectsJsonLd(locale: string) {
+async function subpageJsonLd(locale: string, path: string) {
   const current = asLocale(locale);
   const hero = await getTranslations({ locale, namespace: 'hero' });
-  const projects = await getTranslations({ locale, namespace: 'projects' });
   const nav = await getTranslations({ locale, namespace: 'navigation' });
-  const description = projects('description');
-  const url = pageUrl(locale, '/projetos');
+  const { title, description } = await pageCopy(locale, path);
+  const name = title.replace(/ \| BEKNO$/, '');
+  const url = pageUrl(locale, path);
   const home = pageUrl(locale);
-  const title = `${projects('title')} | BEKNO`;
 
   return {
     '@context': 'https://schema.org',
@@ -227,11 +237,19 @@ export async function projectsJsonLd(locale: string) {
           {
             '@type': 'ListItem',
             position: 2,
-            name: projects('title'),
+            name,
             item: url,
           },
         ],
       },
     ],
   };
+}
+
+export function projectsJsonLd(locale: string) {
+  return subpageJsonLd(locale, '/projetos');
+}
+
+export function quoteJsonLd(locale: string) {
+  return subpageJsonLd(locale, '/orcamento');
 }

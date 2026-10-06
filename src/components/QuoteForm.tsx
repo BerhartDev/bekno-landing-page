@@ -5,15 +5,18 @@ import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 import {
   fieldErrors,
-  isService,
+  isSiteType,
   overLimit,
   recordSend,
-  SERVICES,
+  SEGMENTS,
+  SITE_TYPES,
   stripLinks,
   tooFast,
   type FieldError,
   type FieldErrors,
-  type Service,
+  type FieldName,
+  type Segment,
+  type SiteType,
 } from '@/lib/contact';
 
 const ENDPOINT = 'https://api.web3forms.com/submit';
@@ -21,45 +24,41 @@ const WHATSAPP = '5521973692691';
 const openedAt = Date.now();
 
 type Notice = 'fast' | 'limit' | 'links' | 'sent' | 'sentLinks' | 'error';
-type FieldName = 'name' | 'business' | 'email' | 'message' | 'service';
 
 function fill(template: string, values: Record<string, string>): string {
-  return template.replace(/%(name|business|email|service|message)%/g, (_, key: string) => values[key] ?? '');
+  return template.replace(/%(name|email|phone|segment|siteType|message)%/g, (_, key: string) => values[key] ?? '');
 }
 
 function succeeded(value: unknown): boolean {
   return typeof value === 'object' && value !== null && 'success' in value && value.success === true;
 }
 
-const ContactForm = () => {
-  const t = useTranslations('contact.form');
+const QuoteForm = () => {
+  const t = useTranslations('quote.form');
   const baseId = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [notice, setNotice] = useState<Notice | null>(null);
-  const [service, setService] = useState('');
+  const [siteType, setSiteType] = useState('');
 
+  // Os cards de "Tipos de site" chegam com ?tipo=; lido no navegador para a página seguir estática.
   useEffect(() => {
-    const onSelect = (event: Event) => {
-      const value = (event as CustomEvent<string>).detail;
-      if (isService(value)) setService(value);
-    };
-
-    window.addEventListener('select-service', onSelect);
-    return () => window.removeEventListener('select-service', onSelect);
+    const requested = new URLSearchParams(window.location.search).get('tipo');
+    if (isSiteType(requested)) setSiteType(requested);
   }, []);
 
   function messageFor(code: FieldError): string {
     const map: Record<FieldError, string> = {
       name: t('errName'),
-      business: t('errBusiness'),
       email: t('errEmail'),
       emailDomain: t('errEmailDomain'),
+      phone: t('errPhone'),
+      segment: t('errSegment'),
+      siteType: t('errSiteType'),
       message: t('errMessage'),
       messageLong: t('errMessageLong'),
-      service: t('errService'),
     };
     return map[code];
   }
@@ -68,10 +67,11 @@ const ContactForm = () => {
     const data = new FormData(form);
     return {
       name: String(data.get('name') ?? '').trim(),
-      business: String(data.get('business') ?? '').trim(),
       email: String(data.get('email') ?? '').trim(),
+      phone: String(data.get('phone') ?? '').trim(),
+      segment: String(data.get('segment') ?? ''),
+      siteType: String(data.get('siteType') ?? ''),
       message: String(data.get('message') ?? '').trim(),
-      service: String(data.get('services') ?? ''),
       botcheck: data.get('botcheck') ? 'yes' : '',
     };
   }
@@ -80,7 +80,7 @@ const ContactForm = () => {
     const draft = read(form);
     const next = fieldErrors(draft);
     setErrors(next);
-    if (Object.keys(next).length > 0 || !isService(draft.service)) {
+    if (Object.keys(next).length > 0) {
       setNotice(null);
       return null;
     }
@@ -93,20 +93,20 @@ const ContactForm = () => {
       return null;
     }
     const { text: message, stripped } = stripLinks(draft.message);
-    const serviceLabel = t(`servicesOptions.${draft.service as Service}`);
+    const siteTypeLabel = t(`siteTypeOptions.${draft.siteType as SiteType}`);
     recordSend();
-    let text = fill(t('template'), {
+    const text = fill(t('template'), {
       name: draft.name,
-      business: draft.business,
       email: draft.email,
-      service: serviceLabel,
+      phone: draft.phone,
+      segment: t(`segmentOptions.${draft.segment as Segment}`),
+      siteType: siteTypeLabel,
       message,
     });
-    if (!draft.business) text = text.replace(/\n[^:\n]+:\s*(?=\n)/, '');
     return {
       name: draft.name,
       email: draft.email,
-      serviceLabel,
+      siteTypeLabel,
       botcheck: draft.botcheck,
       stripped,
       text,
@@ -140,7 +140,7 @@ const ContactForm = () => {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `${t('subject')} · ${ready.serviceLabel}`,
+          subject: `${t('subject')} · ${ready.siteTypeLabel}`,
           name: ready.name,
           email: ready.email,
           message: ready.text,
@@ -170,20 +170,25 @@ const ContactForm = () => {
                 ? t('error')
                 : null;
 
-  function field(name: FieldName, label: string, control: ReactNode) {
+  const describedBy = (name: FieldName) => (errors[name] ? `${baseId}-${name}-error` : undefined);
+
+  function errorText(name: FieldName) {
     const code = errors[name];
-    const errorId = `${baseId}-${name}-error`;
+    return code ? (
+      <span className="mt-2 block text-sm text-muted" id={`${baseId}-${name}-error`}>
+        {messageFor(code)}
+      </span>
+    ) : null;
+  }
+
+  function field(name: FieldName, label: string, control: ReactNode) {
     return (
       <div key={name}>
         <label className="field-label" htmlFor={`${baseId}-${name}`}>
           {label}
         </label>
         {control}
-        {code ? (
-          <span className="mt-2 block text-sm text-muted" id={errorId}>
-            {messageFor(code)}
-          </span>
-        ) : null}
+        {errorText(name)}
       </div>
     );
   }
@@ -191,7 +196,7 @@ const ContactForm = () => {
   return (
     <form ref={formRef} className="grid gap-5" onSubmit={onWhatsApp} aria-busy={sending} noValidate>
       <div>
-        <h3 className="text-xl font-semibold tracking-[-0.02em]">{t('title')}</h3>
+        <h2 className="text-xl font-semibold tracking-[-0.02em]">{t('title')}</h2>
         <p className="mt-2 text-sm text-muted">{t('intro')}</p>
       </div>
 
@@ -199,82 +204,113 @@ const ContactForm = () => {
         <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" />
       </div>
 
+      {field(
+        'name',
+        t('name'),
+        <input
+          className="field"
+          id={`${baseId}-name`}
+          name="name"
+          type="text"
+          required
+          autoComplete="name"
+          maxLength={80}
+          placeholder={t('namePlaceholder')}
+          aria-invalid={errors.name ? true : undefined}
+          aria-describedby={describedBy('name')}
+        />,
+      )}
+
       <div className="grid gap-5 md:grid-cols-2">
         {field(
-          'name',
-          t('name'),
+          'email',
+          t('email'),
           <input
             className="field"
-            id={`${baseId}-name`}
-            name="name"
+            id={`${baseId}-email`}
+            name="email"
             type="text"
+            inputMode="email"
             required
-            autoComplete="name"
-            maxLength={80}
-            placeholder={t('namePlaceholder')}
-            aria-invalid={errors.name ? true : undefined}
-            aria-describedby={errors.name ? `${baseId}-name-error` : undefined}
+            autoComplete="email"
+            maxLength={254}
+            spellCheck={false}
+            placeholder={t('emailPlaceholder')}
+            aria-invalid={errors.email ? true : undefined}
+            aria-describedby={describedBy('email')}
           />,
         )}
         {field(
-          'business',
-          t('business'),
+          'phone',
+          t('phone'),
           <input
             className="field"
-            id={`${baseId}-business`}
-            name="business"
-            type="text"
-            autoComplete="organization"
-            maxLength={80}
-            placeholder={t('businessPlaceholder')}
-            aria-invalid={errors.business ? true : undefined}
-            aria-describedby={errors.business ? `${baseId}-business-error` : undefined}
+            id={`${baseId}-phone`}
+            name="phone"
+            type="tel"
+            inputMode="tel"
+            required
+            autoComplete="tel"
+            maxLength={24}
+            placeholder={t('phonePlaceholder')}
+            aria-invalid={errors.phone ? true : undefined}
+            aria-describedby={describedBy('phone')}
           />,
         )}
       </div>
 
       {field(
-        'email',
-        t('email'),
-        <input
-          className="field"
-          id={`${baseId}-email`}
-          name="email"
-          type="text"
-          inputMode="email"
-          required
-          autoComplete="email"
-          maxLength={254}
-          spellCheck={false}
-          placeholder={t('emailPlaceholder')}
-          aria-invalid={errors.email ? true : undefined}
-          aria-describedby={errors.email ? `${baseId}-email-error` : undefined}
-        />,
-      )}
-
-      {field(
-        'service',
-        t('services'),
+        'segment',
+        t('segment'),
         <select
           className="field"
-          id={`${baseId}-service`}
-          name="services"
+          id={`${baseId}-segment`}
+          name="segment"
           required
-          value={service}
-          onChange={(event) => setService(event.target.value)}
-          aria-invalid={errors.service ? true : undefined}
-          aria-describedby={errors.service ? `${baseId}-service-error` : undefined}
+          defaultValue=""
+          aria-invalid={errors.segment ? true : undefined}
+          aria-describedby={describedBy('segment')}
         >
           <option value="" disabled>
-            {t('servicesPlaceholder')}
+            {t('segmentPlaceholder')}
           </option>
-          {SERVICES.map((option) => (
+          {SEGMENTS.map((option) => (
             <option key={option} value={option}>
-              {t(`servicesOptions.${option}`)}
+              {t(`segmentOptions.${option}`)}
             </option>
           ))}
         </select>,
       )}
+
+      <fieldset aria-describedby={describedBy('siteType')}>
+        <legend className="field-label">{t('siteType')}</legend>
+        <div className="grid gap-px border border-line bg-line sm:grid-cols-2">
+          {SITE_TYPES.map((option) => (
+            <label
+              key={option}
+              className="group flex cursor-pointer items-center gap-3 bg-bg px-4 py-3 text-sm transition-colors duration-150 hover:bg-surface has-[:checked]:bg-fg has-[:checked]:text-bg has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:-outline-offset-2 has-[:focus-visible]:outline-fg"
+            >
+              <input
+                type="radio"
+                name="siteType"
+                value={option}
+                checked={siteType === option}
+                onChange={() => setSiteType(option)}
+                className="sr-only"
+                aria-invalid={errors.siteType ? true : undefined}
+              />
+              <span
+                className="grid h-3 w-3 shrink-0 place-items-center border border-current"
+                aria-hidden="true"
+              >
+                <span className="hidden h-1.5 w-1.5 bg-current group-has-[:checked]:block" />
+              </span>
+              {t(`siteTypeOptions.${option}`)}
+            </label>
+          ))}
+        </div>
+        {errorText('siteType')}
+      </fieldset>
 
       {field(
         'message',
@@ -284,11 +320,11 @@ const ContactForm = () => {
           id={`${baseId}-message`}
           name="message"
           required
-          rows={4}
+          rows={5}
           maxLength={2000}
           placeholder={t('messagePlaceholder')}
           aria-invalid={errors.message ? true : undefined}
-          aria-describedby={errors.message ? `${baseId}-message-error` : undefined}
+          aria-describedby={describedBy('message')}
         />,
       )}
 
@@ -308,4 +344,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default QuoteForm;

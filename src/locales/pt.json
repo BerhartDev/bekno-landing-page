@@ -1,113 +1,229 @@
 {
   "hero": {
-    "headline": "O site que apresenta o negócio e abre a próxima conversa.",
-    "kicker": "Sites, lojas e sistemas para empresas",
+    "kicker": "Criação de sites profissionais",
+    "headline": "Um site exclusivo, feito para vender mais.",
+    "subheadline": "Cada projeto começa do zero, desenhado para o seu negócio e para quem compra de você. Nada de modelo pronto.",
     "imageAlt": "Notebook aberto sobre uma mesa de trabalho.",
     "reassurance": "Sem compromisso. Resposta em até um dia útil.",
-    "ctaPrimary": "Conversar sobre o projeto",
+    "ctaPrimary": "Pedir orçamento",
     "ctaSecondary": "Ver serviços"
   },
-  "features": {
+  "services": {
     "title": "Serviços",
-    "subtitle": "Seis entregas. Escolha a que o negócio precisa agora.",
-    "cta": "Conversar",
+    "subtitle": "Do primeiro layout à manutenção depois do lançamento, o site fica com um só parceiro.",
+    "cta": "Pedir orçamento",
     "items": [
       {
-        "id": "website",
-        "service": "website",
-        "title": "Site institucional",
-        "description": "A página que explica o negócio e recebe contato.",
-        "imageAlt": "Notebook exibindo um site com uma página de produto."
+        "title": "Criação de sites",
+        "description": "Sites, landing pages e lojas virtuais pensados para a experiência de quem visita e para gerar contatos e vendas."
       },
       {
-        "id": "landing",
-        "service": "website",
-        "title": "Landing page",
-        "description": "Uma página feita para uma oferta, um evento ou uma campanha.",
-        "imageAlt": "Mesa com rascunhos de uma página para celular."
+        "title": "Manutenção de sites",
+        "description": "Suporte técnico, correções preventivas e melhorias contínuas para o site seguir rápido, seguro e atualizado."
       },
       {
-        "id": "ecommerce",
-        "service": "ecommerce",
-        "title": "Loja virtual",
-        "description": "A vitrine no ar, com pagamento e o pedido chegando até vocês.",
-        "imageAlt": "Sacolas de compra sobre uma mesa."
+        "title": "Hospedagem em nuvem",
+        "description": "Servidores em nuvem para site, e-mails e campanhas, com mais segurança e desempenho."
       },
       {
-        "id": "cms",
-        "service": "cms",
-        "title": "CMS e automações",
-        "description": "Um painel para atualizar páginas, ofertas e contatos.",
-        "imageAlt": "Tela com gráficos de um painel."
+        "title": "Marketing digital",
+        "description": "Ações para fortalecer a presença on-line da empresa e ganhar vantagem sobre a concorrência."
+      }
+    ]
+  },
+  "exclusivity": {
+    "title": "Exclusividade",
+    "subtitle": "O seu site não se parece com o de mais ninguém.",
+    "items": [
+      {
+        "title": "Sem templates"
       },
       {
-        "id": "seo",
-        "service": "marketing",
-        "title": "SEO e performance",
-        "description": "Base de busca e leitura do que gera contato.",
-        "imageAlt": "Notebook com um relatório de audiência."
+        "title": "Layout 100% exclusivo"
       },
       {
-        "id": "systems",
-        "service": "consult",
-        "title": "Sistema sob consulta",
-        "description": "Um sistema interno quando o escopo passa de um site.",
-        "imageAlt": "Racks de servidores em uma sala técnica."
+        "title": "Prazo cumprido"
+      },
+      {
+        "title": "Manutenção contínua"
+      },
+      {
+        "title": "Atendimento humano"
+      },
+      {
+        "title": "Qualidade garantida"
       }
     ]
   },
   "method": {
-    "title": "Como trabalhamos",
-    "subtitle": "A conversa não é cobrada e não gera contrato.",
-    "steps": ["Conversa", "Escopo", "Construção", "Publicação"]
+    "title": "Método 6D",
+    "subtitle": "Seis frentes cuidadas em todo projeto, do desenho ao texto.",
+    "cta": "Agendar uma conversa",
+    "steps": [
+      {
+        "title": "Design",
+        "description": "O layout nasce do zero, a partir do negócio e do perfil de quem compra."
+      },
+      {
+        "title": "Desenvolvimento",
+        "description": "A navegação é simples e leva o visitante, sem esforço, até a ação que importa."
+      },
+      {
+        "title": "Desempenho",
+        "description": "Páginas leves e rápidas, que sobem no Google e convertem mais."
+      },
+      {
+        "title": "Defesa",
+        "description": "Proteção do site e dos dados contra ataques, com correção de vulnerabilidades."
+      },
+      {
+        "title": "Divulgação",
+        "description": "SEO feito desde o início, para aparecer nas buscas e atrair visitas qualificadas."
+      },
+      {
+        "title": "Discurso",
+        "description": "Textos originais e estratégicos, que mostram o valor do negócio e ajudam a vender."
+      }
+    ]
   },
-  "contact": {
-    "title": "Contato",
-    "subtitle": "Diga o que a página precisa fazer. A resposta vem com o próximo passo.",
-    "after": "Lemos o pedido, combinamos a conversa e a proposta sai com o que entra, o prazo e o valor.",
+  "commitment": {
+    "title": "Compromisso",
+    "subtitle": "O que você pode esperar durante e depois do projeto.",
+    "items": [
+      {
+        "title": "Transparência",
+        "description": "Cada etapa é combinada e entregue com atenção aos detalhes."
+      },
+      {
+        "title": "Sob medida e com sigilo",
+        "description": "Funcionalidades criadas para o seu caso, com as informações do negócio protegidas."
+      },
+      {
+        "title": "Parceria de longo prazo",
+        "description": "Comunicação aberta antes, durante e depois do lançamento."
+      },
+      {
+        "title": "Suporte premium",
+        "description": "Acompanhamento de desempenho, segurança e estabilidade do site."
+      }
+    ]
+  },
+  "siteTypes": {
+    "title": "Tipos de site",
+    "subtitle": "Escolha o formato que combina com o momento da empresa.",
+    "cta": "Pedir orçamento",
+    "items": [
+      {
+        "type": "institutional",
+        "title": "Site institucional",
+        "description": "Presença profissional que fortalece a marca e traz novos clientes."
+      },
+      {
+        "type": "store",
+        "title": "E-commerce",
+        "description": "Loja virtual moderna e segura, pensada para vender mais pela internet."
+      },
+      {
+        "type": "landing",
+        "title": "Landing page",
+        "description": "Uma página focada em conversão para lançamentos, captação de contatos ou venda direta."
+      },
+      {
+        "type": "platform",
+        "title": "Plataforma web",
+        "description": "Área de membros, cursos on-line, integrações e recursos avançados."
+      }
+    ]
+  },
+  "differentiators": {
+    "title": "Diferenciais",
+    "subtitle": "Por que escolher a BEKNO.",
+    "items": [
+      {
+        "title": "Metodologia própria"
+      },
+      {
+        "title": "Projetos sem templates prontos"
+      },
+      {
+        "title": "SEO e GEO desde o desenvolvimento"
+      },
+      {
+        "title": "Especialista em cada etapa"
+      },
+      {
+        "title": "Compromisso com o prazo"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Sua empresa merece mais do que um site básico.",
+    "text": "Conte o que o negócio precisa. A gente responde com uma proposta sob medida.",
+    "cta": "Pedir orçamento"
+  },
+  "quote": {
+    "eyebrow": "Orçamento",
+    "title": "Um site profissional que aparece no Google.",
+    "subtitle": "Preencha o formulário. A proposta chega com o que entra, o prazo e o valor.",
+    "benefitsTitle": "O que você recebe",
+    "benefits": [
+      "Solução sob medida para pequenas e médias empresas",
+      "Visibilidade no Google para atrair novos clientes",
+      "Design moderno e pensado na experiência do usuário",
+      "Site responsivo, que funciona bem em qualquer tela"
+    ],
     "phoneLabel": "Telefone",
     "phone": "+55 21 97369-2691",
     "locationLabel": "Onde",
     "location": "Ipanema, RJ",
     "response": "A resposta chega em até um dia útil. Para um prazo curto, ligue.",
     "form": {
-      "title": "Conversar sobre o projeto",
-      "intro": "Sem compromisso. Estas respostas servem para preparar a conversa.",
+      "title": "Pedir orçamento",
+      "intro": "Sem compromisso. Estas respostas servem para preparar a proposta.",
       "name": "Nome",
-      "namePlaceholder": "Nome",
-      "business": "Empresa",
-      "businessPlaceholder": "Empresa",
+      "namePlaceholder": "Seu nome",
       "email": "E-mail",
       "emailPlaceholder": "email@empresa.com",
-      "services": "O que você precisa",
-      "servicesPlaceholder": "Selecione uma opção",
-      "servicesOptions": {
-        "website": "Site ou landing page",
-        "cms": "CMS e automações",
-        "consult": "Projeto sob consulta",
-        "marketing": "Performance e marketing",
+      "phone": "Telefone",
+      "phonePlaceholder": "(21) 99999-9999",
+      "segment": "Qual o seu segmento?",
+      "segmentPlaceholder": "Selecione uma opção",
+      "segmentOptions": {
+        "food": "Alimentos",
+        "retail": "Comércio",
+        "education": "Educação",
         "ecommerce": "E-commerce",
-        "other": "Outros"
+        "industry": "Indústria",
+        "health": "Saúde",
+        "services": "Serviços",
+        "other": "Outro"
       },
-      "message": "Mensagem",
-      "messagePlaceholder": "O que a página precisa explicar e para quem",
-      "submit": "Conversar sobre o projeto",
-      "submitting": "Enviando...",
-      "success": "Mensagem recebida. A resposta chega em até um dia útil.",
+      "siteType": "Tipo de site",
+      "siteTypeOptions": {
+        "landing": "One page / Landing page",
+        "institutional": "Site institucional",
+        "store": "Loja virtual / Catálogo",
+        "platform": "Plataforma web",
+        "app": "Aplicativo mobile",
+        "other": "Outro tipo de site"
+      },
+      "message": "Fale sobre o seu negócio",
+      "messagePlaceholder": "O que a empresa faz, para quem, e o que o site precisa resolver",
       "whatsapp": "Enviar por WhatsApp",
       "emailSubmit": "Enviar por e-mail",
       "sending": "Enviando",
-      "sent": "Mensagem enviada.",
+      "sent": "Pedido enviado.",
       "error": "Não foi possível enviar. Tente de novo ou use o WhatsApp.",
-      "subject": "Contato pela BEKNO",
-      "template": "Olá. Meu nome é %name%.\nEmpresa: %business%\nE-mail: %email%\nServiço: %service%\n\n%message%",
+      "subject": "Orçamento pela BEKNO",
+      "template": "Olá. Meu nome é %name%.\nE-mail: %email%\nTelefone: %phone%\nSegmento: %segment%\nTipo de site: %siteType%\n\n%message%",
       "errName": "Informe seu nome.",
-      "errBusiness": "Informe a empresa.",
       "errEmail": "O e-mail não é válido.",
       "errEmailDomain": "Use um e-mail de um provedor conhecido, não uma caixa temporária.",
-      "errMessage": "A mensagem precisa de pelo menos 20 caracteres.",
-      "errMessageLong": "A mensagem passa de 2000 caracteres.",
-      "errService": "Escolha o que você precisa.",
+      "errPhone": "Informe um telefone com DDD.",
+      "errSegment": "Escolha o seu segmento.",
+      "errSiteType": "Escolha o tipo de site.",
+      "errMessage": "Conte um pouco mais, com pelo menos 20 caracteres.",
+      "errMessageLong": "O texto passa de 2000 caracteres.",
       "errFast": "Espere alguns segundos antes de enviar.",
       "errLimit": "Espere um pouco antes de enviar de novo.",
       "linksRemoved": "Tirei os links da mensagem."
@@ -121,20 +237,20 @@
   },
   "navigation": {
     "home": "Início",
-    "about": "Sobre",
     "services": "Serviços",
     "projects": "Projetos",
-    "contact": "Contato",
-    "cta": "Conversar sobre o projeto",
+    "cta": "Pedir orçamento",
     "menu": "Menu",
     "language": "Idioma",
-    "theme": "Tema"
+    "theme": "Tema",
+    "method": "Método",
+    "quote": "Orçamento"
   },
   "projects": {
     "title": "Projetos",
     "subtitle": "Em breve",
     "description": "Os cases ainda estão em preparação. Na conversa, mostramos trabalhos próximos do que o seu negócio precisa.",
-    "ctaContact": "Conversar sobre o projeto",
+    "ctaContact": "Pedir orçamento",
     "ctaBack": "Voltar ao Início",
     "feature1": {
       "title": "Projetos Web",

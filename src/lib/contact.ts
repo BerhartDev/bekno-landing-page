@@ -1,5 +1,8 @@
-export const SERVICES = ['website', 'cms', 'consult', 'marketing', 'ecommerce', 'other'] as const;
-export type Service = (typeof SERVICES)[number];
+export const SITE_TYPES = ['landing', 'institutional', 'store', 'platform', 'app', 'other'] as const;
+export type SiteType = (typeof SITE_TYPES)[number];
+
+export const SEGMENTS = ['food', 'retail', 'education', 'ecommerce', 'industry', 'health', 'services', 'other'] as const;
+export type Segment = (typeof SEGMENTS)[number];
 
 const MIN_WAIT_MS = 3_000;
 const MAX_SENDS = 3;
@@ -78,25 +81,39 @@ const DISPOSABLE_DOMAINS = new Set([
 
 export type FieldError =
   | 'name'
-  | 'business'
   | 'email'
   | 'emailDomain'
+  | 'phone'
+  | 'segment'
+  | 'siteType'
   | 'message'
-  | 'messageLong'
-  | 'service';
+  | 'messageLong';
 
-export type FieldErrors = Partial<Record<'name' | 'business' | 'email' | 'message' | 'service', FieldError>>;
+export type FieldName = 'name' | 'email' | 'phone' | 'segment' | 'siteType' | 'message';
+export type FieldErrors = Partial<Record<FieldName, FieldError>>;
 
-export type ContactDraft = {
+export type QuoteDraft = {
   name: string;
-  business: string;
   email: string;
+  phone: string;
+  segment: string;
+  siteType: string;
   message: string;
-  service: string;
 };
 
-export function isService(value: string): value is Service {
-  return (SERVICES as readonly string[]).includes(value);
+export function isSiteType(value: string | null | undefined): value is SiteType {
+  return (SITE_TYPES as readonly string[]).includes(value ?? '');
+}
+
+export function isSegment(value: string): value is Segment {
+  return (SEGMENTS as readonly string[]).includes(value);
+}
+
+/** Aceita formatos livres; conta só os dígitos (DDD + número, com ou sem código do país). */
+export function phoneValid(phone: string): boolean {
+  if (!/^[+\d\s().-]+$/.test(phone)) return false;
+  const digits = phone.replace(/\D/g, '').length;
+  return digits >= 10 && digits <= 15;
 }
 
 function listed(domain: string, list: Set<string>): boolean {
@@ -124,13 +141,14 @@ export function emailError(email: string): 'email' | 'emailDomain' | undefined {
   return 'emailDomain';
 }
 
-export function fieldErrors(draft: ContactDraft): FieldErrors {
+export function fieldErrors(draft: QuoteDraft): FieldErrors {
   const errors: FieldErrors = {};
   if (draft.name.length < 2 || draft.name.length > 80) errors.name = 'name';
-  if (draft.business.length > 0 && (draft.business.length < 2 || draft.business.length > 80)) errors.business = 'business';
   const email = emailError(draft.email);
   if (email) errors.email = email;
-  if (!isService(draft.service)) errors.service = 'service';
+  if (!phoneValid(draft.phone)) errors.phone = 'phone';
+  if (!isSegment(draft.segment)) errors.segment = 'segment';
+  if (!isSiteType(draft.siteType)) errors.siteType = 'siteType';
   if (draft.message.length < 20) errors.message = 'message';
   else if (draft.message.length > 2000) errors.message = 'messageLong';
   return errors;

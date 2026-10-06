@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/lib/i18n/routing';
 import { serviceImages } from '@/lib/service-images';
 
 export default function Hero() {
@@ -14,11 +15,12 @@ export default function Hero() {
         <h1 className="max-w-[14ch] text-[clamp(2.5rem,1.6rem+4.2vw,4.5rem)] font-bold leading-[1.02] tracking-[-0.035em]">
           {t('headline')}
         </h1>
+        <p className="max-w-[44ch] text-lg leading-relaxed text-muted">{t('subheadline')}</p>
         <div className="mt-2 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <a href="#contact" className="cta">
+          <Link href="/orcamento" className="cta">
             {t('ctaPrimary')}
             <span className="arrow" aria-hidden="true">→</span>
-          </a>
+          </Link>
           <a href="#services" className="link font-mono text-sm uppercase tracking-[0.04em]">
             {t('ctaSecondary')}
           </a>

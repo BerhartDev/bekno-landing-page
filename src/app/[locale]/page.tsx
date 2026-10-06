@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
-import Features from '@/components/sections/Features';
+import Services from '@/components/sections/Services';
+import ChecklistSection from '@/components/sections/ChecklistSection';
 import Method from '@/components/sections/Method';
-import Contact from '@/components/sections/Contact';
+import SiteTypes from '@/components/sections/SiteTypes';
+import FinalCta from '@/components/sections/FinalCta';
 import JsonLd from '@/components/seo/JsonLd';
 import { buildPageMetadata, homeJsonLd } from '@/lib/seo';
 
@@ -25,9 +27,13 @@ export default async function HomePage({
     <>
       <JsonLd data={jsonLd} />
       <Hero />
-      <Features />
+      <Services />
+      <ChecklistSection namespace="exclusivity" />
       <Method />
-      <Contact />
+      <ChecklistSection namespace="commitment" columns={4} />
+      <SiteTypes />
+      <ChecklistSection namespace="differentiators" />
+      <FinalCta />
     </>
   );
 }

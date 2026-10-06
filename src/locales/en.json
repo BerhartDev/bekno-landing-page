@@ -1,115 +1,231 @@
 {
   "hero": {
-    "headline": "The site that presents the business and opens the next conversation.",
-    "kicker": "Websites, stores, and systems for companies",
+    "kicker": "Professional website design",
+    "headline": "An exclusive website, built to sell more.",
+    "subheadline": "Every project starts from scratch, designed around your business and the people who buy from you. No ready-made themes.",
     "imageAlt": "An open laptop on a work desk.",
     "reassurance": "No commitment. A reply within one business day.",
-    "ctaPrimary": "Talk about the project",
-    "ctaSecondary": "See the services"
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "See services"
   },
-  "features": {
+  "services": {
     "title": "Services",
-    "subtitle": "Six deliveries. Choose what the business needs now.",
-    "cta": "Talk",
+    "subtitle": "From the first layout to upkeep after launch, your site stays with one partner.",
+    "cta": "Request a quote",
     "items": [
       {
-        "id": "website",
-        "service": "website",
-        "title": "Company website",
-        "description": "The page that explains the business and receives contact.",
-        "imageAlt": "A laptop showing a website with a product page."
+        "title": "Website design",
+        "description": "Websites, landing pages and online stores built around the visitor experience and around generating leads and sales."
       },
       {
-        "id": "landing",
-        "service": "website",
-        "title": "Landing page",
-        "description": "A page built for an offer, an event, or a campaign.",
-        "imageAlt": "A desk with sketches of a page for a phone."
+        "title": "Website maintenance",
+        "description": "Technical support, preventive fixes and ongoing improvements that keep the site fast, secure and up to date."
       },
       {
-        "id": "ecommerce",
-        "service": "ecommerce",
-        "title": "Online store",
-        "description": "The shop online, with payment and the order reaching you.",
-        "imageAlt": "Shopping bags on a table."
+        "title": "Cloud hosting",
+        "description": "Cloud servers for your site, email and campaigns, with stronger security and performance."
       },
       {
-        "id": "cms",
-        "service": "cms",
-        "title": "CMS and automation",
-        "description": "A panel to update pages, offers, and contact details.",
-        "imageAlt": "A screen with charts from a dashboard."
+        "title": "Digital marketing",
+        "description": "Work that strengthens the company online and gives it an edge over competitors."
+      }
+    ]
+  },
+  "exclusivity": {
+    "title": "Exclusivity",
+    "subtitle": "Your site does not look like anyone else’s.",
+    "items": [
+      {
+        "title": "No templates"
       },
       {
-        "id": "seo",
-        "service": "marketing",
-        "title": "SEO and performance",
-        "description": "A search foundation and a reading of what generates contact.",
-        "imageAlt": "A laptop with an audience report."
+        "title": "100% custom layout"
       },
       {
-        "id": "systems",
-        "service": "consult",
-        "title": "System on request",
-        "description": "An internal system when the scope goes beyond a website.",
-        "imageAlt": "Server racks in a technical room."
+        "title": "Deadlines kept"
+      },
+      {
+        "title": "Ongoing maintenance"
+      },
+      {
+        "title": "Human support"
+      },
+      {
+        "title": "Quality guaranteed"
       }
     ]
   },
   "method": {
-    "title": "How we work",
-    "subtitle": "The conversation is not billed and does not create a contract.",
-    "steps": ["Conversation", "Scope", "Build", "Publication"]
+    "title": "The 6D method",
+    "subtitle": "Six fronts covered in every project, from layout to copy.",
+    "cta": "Book a conversation",
+    "steps": [
+      {
+        "title": "Design",
+        "description": "The layout starts from scratch, shaped by the business and its buyers."
+      },
+      {
+        "title": "Development",
+        "description": "Navigation stays simple and leads visitors, effortlessly, to the action that matters."
+      },
+      {
+        "title": "Delivery speed",
+        "description": "Light, fast pages that rank higher on Google and convert better."
+      },
+      {
+        "title": "Defense",
+        "description": "Protection for the site and its data against attacks, with vulnerabilities fixed."
+      },
+      {
+        "title": "Discoverability",
+        "description": "SEO built in from day one, to show up in search and bring qualified visits."
+      },
+      {
+        "title": "Discourse",
+        "description": "Original, strategic copy that shows what the business is worth and helps it sell."
+      }
+    ]
   },
-  "contact": {
-    "title": "Contact",
-    "subtitle": "Tell us what the page needs to do. The reply comes with the next step.",
-    "after": "We read the request, arrange the conversation, and the proposal follows with what is included, the deadline, and the price.",
+  "commitment": {
+    "title": "Commitment",
+    "subtitle": "What to expect during and after the project.",
+    "items": [
+      {
+        "title": "Transparency",
+        "description": "Every step is agreed up front and delivered with care for detail."
+      },
+      {
+        "title": "Custom and confidential",
+        "description": "Features built for your case, with business information kept private."
+      },
+      {
+        "title": "Long-term partnership",
+        "description": "Open communication before, during and after launch."
+      },
+      {
+        "title": "Premium support",
+        "description": "Ongoing monitoring of site performance, security and stability."
+      }
+    ]
+  },
+  "siteTypes": {
+    "title": "Site types",
+    "subtitle": "Pick the format that fits where the company is now.",
+    "cta": "Request a quote",
+    "items": [
+      {
+        "type": "institutional",
+        "title": "Company website",
+        "description": "A professional presence that strengthens the brand and brings new clients."
+      },
+      {
+        "type": "store",
+        "title": "E-commerce",
+        "description": "A modern, secure online store designed to sell more."
+      },
+      {
+        "type": "landing",
+        "title": "Landing page",
+        "description": "A conversion-focused page for launches, lead capture or direct sales."
+      },
+      {
+        "type": "platform",
+        "title": "Web platform",
+        "description": "Member areas, online courses, integrations and advanced features."
+      }
+    ]
+  },
+  "differentiators": {
+    "title": "Why BEKNO",
+    "subtitle": "What sets the work apart.",
+    "items": [
+      {
+        "title": "Our own method"
+      },
+      {
+        "title": "No ready-made templates"
+      },
+      {
+        "title": "SEO and GEO from the start"
+      },
+      {
+        "title": "A specialist for each stage"
+      },
+      {
+        "title": "Committed to the deadline"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Your company deserves more than a basic website.",
+    "text": "Tell us what the business needs. We reply with a tailored proposal.",
+    "cta": "Request a quote"
+  },
+  "quote": {
+    "eyebrow": "Quote",
+    "title": "A professional website that shows up on Google.",
+    "subtitle": "Fill in the form. The proposal comes with scope, timeline and price.",
+    "benefitsTitle": "What you get",
+    "benefits": [
+      "A tailored solution for small and mid-sized businesses",
+      "Visibility on Google to attract new clients",
+      "Modern design focused on user experience",
+      "A responsive site that works on any screen"
+    ],
     "phoneLabel": "Phone",
     "phone": "+55 21 97369-2691",
     "locationLabel": "Where",
-    "location": "Ipanema, RJ",
-    "response": "The reply arrives within one business day. For a short deadline, call.",
+    "location": "Ipanema, Rio de Janeiro",
+    "response": "A reply arrives within one business day. For a tight deadline, call.",
     "form": {
-      "title": "Talk about the project",
-      "intro": "No commitment. These answers are how we prepare the conversation.",
+      "title": "Request a quote",
+      "intro": "No commitment. These answers help us prepare the proposal.",
       "name": "Name",
-      "namePlaceholder": "Name",
-      "business": "Business",
-      "businessPlaceholder": "Company",
+      "namePlaceholder": "Your name",
       "email": "Email",
       "emailPlaceholder": "email@company.com",
-      "services": "What you need",
-      "servicesPlaceholder": "Select an option",
-      "servicesOptions": {
-        "website": "Website or landing page",
-        "cms": "CMS and automation",
-        "consult": "Project on request",
-        "marketing": "Performance and marketing",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 555 123 4567",
+      "segment": "What is your industry?",
+      "segmentPlaceholder": "Select an option",
+      "segmentOptions": {
+        "food": "Food",
+        "retail": "Retail",
+        "education": "Education",
         "ecommerce": "E-commerce",
+        "industry": "Manufacturing",
+        "health": "Health",
+        "services": "Services",
         "other": "Other"
       },
-      "message": "Message",
-      "messagePlaceholder": "What the page needs to explain, and to whom",
-      "submit": "Talk about the project",
-      "submitting": "Sending...",
-      "success": "Message received. The reply arrives within one business day.",
+      "siteType": "Site type",
+      "siteTypeOptions": {
+        "landing": "One page / Landing page",
+        "institutional": "Company website",
+        "store": "Online store / Catalog",
+        "platform": "Web platform",
+        "app": "Mobile app",
+        "other": "Other type of site"
+      },
+      "message": "Tell us about your business",
+      "messagePlaceholder": "What the company does, for whom, and what the site needs to solve",
       "whatsapp": "Send via WhatsApp",
       "emailSubmit": "Send by email",
       "sending": "Sending",
-      "sent": "Message sent.",
+      "sent": "Request sent.",
       "error": "Could not send. Try again or use WhatsApp.",
-      "subject": "Contact from BEKNO",
-      "template": "Hello. My name is %name%.\nBusiness: %business%\nEmail: %email%\nService: %service%\n\n%message%",
+      "subject": "Quote request via BEKNO",
+      "template": "Hello. My name is %name%.\nEmail: %email%\nPhone: %phone%\nIndustry: %segment%\nSite type: %siteType%\n\n%message%",
       "errName": "Enter your name.",
-      "errBusiness": "Enter the business name.",
       "errEmail": "The email is not valid.",
       "errEmailDomain": "Use an email from a known provider, not a temporary inbox.",
-      "errMessage": "The message needs at least 20 characters.",
-      "errMessageLong": "The message is over 2000 characters.",
-      "errService": "Choose what you need.",
+      "errPhone": "Enter a phone number with area code.",
+      "errSegment": "Choose your industry.",
+      "errSiteType": "Choose the type of site.",
+      "errMessage": "Tell us a bit more, at least 20 characters.",
+      "errMessageLong": "The text is over 2000 characters.",
       "errFast": "Wait a few seconds before sending.",
-      "errLimit": "Wait a while before sending again.",
+      "errLimit": "Wait a little before sending again.",
       "linksRemoved": "I removed the links from the message."
     }
   },
@@ -121,20 +237,20 @@
   },
   "navigation": {
     "home": "Home",
-    "about": "About",
     "services": "Services",
     "projects": "Projects",
-    "contact": "Contact",
-    "cta": "Talk about the project",
+    "cta": "Request a quote",
     "menu": "Menu",
     "language": "Language",
-    "theme": "Theme"
+    "theme": "Theme",
+    "method": "Method",
+    "quote": "Quote"
   },
   "projects": {
     "title": "Projects",
     "subtitle": "Coming soon",
     "description": "The case studies are still in progress. In the conversation, we show work close to what your business needs.",
-    "ctaContact": "Talk about the project",
+    "ctaContact": "Request a quote",
     "ctaBack": "Back to Home",
     "feature1": {
       "title": "Web Projects",

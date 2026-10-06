@@ -1,116 +1,232 @@
 {
   "hero": {
-    "headline": "Le site qui présente l'activité et ouvre la prochaine conversation.",
-    "kicker": "Sites, boutiques et systèmes pour les entreprises",
+    "kicker": "Création de sites professionnels",
+    "headline": "Un site exclusif, conçu pour vendre plus.",
+    "subheadline": "Chaque projet part de zéro, pensé pour votre activité et pour vos clients. Aucun modèle tout fait.",
     "imageAlt": "Un ordinateur portable ouvert sur un bureau.",
     "reassurance": "Sans engagement. Réponse sous un jour ouvré.",
-    "ctaPrimary": "Parler du projet",
+    "ctaPrimary": "Demander un devis",
     "ctaSecondary": "Voir les services"
   },
-  "features": {
+  "services": {
     "title": "Services",
-    "subtitle": "Six livraisons. Choisissez ce dont l'activité a besoin maintenant.",
-    "cta": "Parler",
+    "subtitle": "Du premier maquettage à la maintenance après le lancement, un seul partenaire.",
+    "cta": "Demander un devis",
     "items": [
       {
-        "id": "website",
-        "service": "website",
-        "title": "Site institutionnel",
-        "description": "La page qui explique l'activité et reçoit le contact.",
-        "imageAlt": "Un ordinateur portable affichant un site avec une page produit."
+        "title": "Création de sites",
+        "description": "Sites, landing pages et boutiques en ligne pensés pour l’expérience des visiteurs et pour générer contacts et ventes."
       },
       {
-        "id": "landing",
-        "service": "website",
-        "title": "Page d'atterrissage",
-        "description": "Une page faite pour une offre, un événement ou une campagne.",
-        "imageAlt": "Un bureau avec des croquis d'une page pour téléphone."
+        "title": "Maintenance de sites",
+        "description": "Support technique, corrections préventives et améliorations continues pour un site rapide, sûr et à jour."
       },
       {
-        "id": "ecommerce",
-        "service": "ecommerce",
-        "title": "Boutique en ligne",
-        "description": "La vitrine en ligne, avec le paiement et la commande qui vous parvient.",
-        "imageAlt": "Des sacs de courses sur une table."
+        "title": "Hébergement cloud",
+        "description": "Des serveurs cloud pour le site, les e-mails et les campagnes, plus sûrs et plus performants."
       },
       {
-        "id": "cms",
-        "service": "cms",
-        "title": "CMS et automatisations",
-        "description": "Un panneau pour mettre à jour pages, offres et contacts.",
-        "imageAlt": "Un écran avec les graphiques d'un tableau de bord."
+        "title": "Marketing digital",
+        "description": "Des actions pour renforcer la présence en ligne de l’entreprise et prendre l’avantage sur la concurrence."
+      }
+    ]
+  },
+  "exclusivity": {
+    "title": "Exclusivité",
+    "subtitle": "Votre site ne ressemble à aucun autre.",
+    "items": [
+      {
+        "title": "Aucun template"
       },
       {
-        "id": "seo",
-        "service": "marketing",
-        "title": "SEO et performance",
-        "description": "Une base de recherche et une lecture de ce qui génère un contact.",
-        "imageAlt": "Un ordinateur portable avec un rapport d'audience."
+        "title": "Mise en page 100 % sur mesure"
       },
       {
-        "id": "systems",
-        "service": "consult",
-        "title": "Système sur demande",
-        "description": "Un système interne quand le périmètre dépasse un site.",
-        "imageAlt": "Des baies de serveurs dans une salle technique."
+        "title": "Délais respectés"
+      },
+      {
+        "title": "Maintenance continue"
+      },
+      {
+        "title": "Accompagnement humain"
+      },
+      {
+        "title": "Qualité garantie"
       }
     ]
   },
   "method": {
-    "title": "Comment nous travaillons",
-    "subtitle": "La conversation n'est pas facturée et ne crée pas de contrat.",
-    "steps": ["Conversation", "Périmètre", "Construction", "Publication"]
+    "title": "La méthode 6D",
+    "subtitle": "Six axes traités dans chaque projet, du design au texte.",
+    "cta": "Planifier un échange",
+    "steps": [
+      {
+        "title": "Design",
+        "description": "La mise en page part de zéro, à partir de l’activité et du profil des clients."
+      },
+      {
+        "title": "Développement",
+        "description": "Une navigation simple qui mène le visiteur, sans effort, à l’action qui compte."
+      },
+      {
+        "title": "Débit",
+        "description": "Des pages légères et rapides, mieux classées sur Google et qui convertissent plus."
+      },
+      {
+        "title": "Défense",
+        "description": "Protection du site et des données contre les attaques, avec correction des failles."
+      },
+      {
+        "title": "Diffusion",
+        "description": "Un SEO intégré dès le départ, pour apparaître dans les recherches et attirer des visites qualifiées."
+      },
+      {
+        "title": "Discours",
+        "description": "Des textes originaux et stratégiques qui montrent la valeur de l’activité et aident à vendre."
+      }
+    ]
   },
-  "contact": {
-    "title": "Contact",
-    "subtitle": "Dites ce que la page doit faire. La réponse arrive avec la prochaine étape.",
-    "after": "Nous lisons la demande, convenons de la conversation, et la proposition part avec ce qui est inclus, le délai et le prix.",
+  "commitment": {
+    "title": "Engagement",
+    "subtitle": "Ce à quoi vous attendre pendant et après le projet.",
+    "items": [
+      {
+        "title": "Transparence",
+        "description": "Chaque étape est convenue et livrée avec soin du détail."
+      },
+      {
+        "title": "Sur mesure et confidentiel",
+        "description": "Des fonctionnalités créées pour votre cas, avec vos informations protégées."
+      },
+      {
+        "title": "Partenariat durable",
+        "description": "Une communication ouverte avant, pendant et après le lancement."
+      },
+      {
+        "title": "Support premium",
+        "description": "Suivi des performances, de la sécurité et de la stabilité du site."
+      }
+    ]
+  },
+  "siteTypes": {
+    "title": "Types de site",
+    "subtitle": "Choisissez le format adapté au moment de l’entreprise.",
+    "cta": "Demander un devis",
+    "items": [
+      {
+        "type": "institutional",
+        "title": "Site vitrine",
+        "description": "Une présence professionnelle qui renforce la marque et attire de nouveaux clients."
+      },
+      {
+        "type": "store",
+        "title": "E-commerce",
+        "description": "Une boutique en ligne moderne et sûre, pensée pour vendre plus."
+      },
+      {
+        "type": "landing",
+        "title": "Landing page",
+        "description": "Une page axée sur la conversion pour un lancement, la collecte de contacts ou la vente directe."
+      },
+      {
+        "type": "platform",
+        "title": "Plateforme web",
+        "description": "Espace membres, formations en ligne, intégrations et fonctionnalités avancées."
+      }
+    ]
+  },
+  "differentiators": {
+    "title": "Pourquoi BEKNO",
+    "subtitle": "Ce qui fait la différence.",
+    "items": [
+      {
+        "title": "Une méthode propre"
+      },
+      {
+        "title": "Aucun template tout fait"
+      },
+      {
+        "title": "SEO et GEO dès le développement"
+      },
+      {
+        "title": "Un spécialiste par étape"
+      },
+      {
+        "title": "Engagement sur les délais"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Votre entreprise mérite mieux qu’un site basique.",
+    "text": "Dites-nous ce dont l’activité a besoin. Nous répondons avec une proposition sur mesure.",
+    "cta": "Demander un devis"
+  },
+  "quote": {
+    "eyebrow": "Devis",
+    "title": "Un site professionnel visible sur Google.",
+    "subtitle": "Remplissez le formulaire. La proposition arrive avec le périmètre, le délai et le prix.",
+    "benefitsTitle": "Ce que vous obtenez",
+    "benefits": [
+      "Une solution sur mesure pour les petites et moyennes entreprises",
+      "De la visibilité sur Google pour attirer de nouveaux clients",
+      "Un design moderne centré sur l’expérience utilisateur",
+      "Un site responsive, lisible sur tous les écrans"
+    ],
     "phoneLabel": "Téléphone",
     "phone": "+55 21 97369-2691",
     "locationLabel": "Où",
-    "location": "Ipanema, RJ",
+    "location": "Ipanema, Rio de Janeiro",
     "response": "La réponse arrive sous un jour ouvré. Pour un délai court, appelez.",
     "form": {
-      "title": "Parler du projet",
-      "intro": "Sans engagement. Ces réponses servent à préparer la conversation.",
+      "title": "Demander un devis",
+      "intro": "Sans engagement. Ces réponses servent à préparer la proposition.",
       "name": "Nom",
-      "namePlaceholder": "Nom",
-      "business": "Entreprise",
-      "businessPlaceholder": "Entreprise",
+      "namePlaceholder": "Votre nom",
       "email": "E-mail",
       "emailPlaceholder": "email@entreprise.com",
-      "services": "Ce dont vous avez besoin",
-      "servicesPlaceholder": "Sélectionnez une option",
-      "servicesOptions": {
-        "website": "Site ou page d'atterrissage",
-        "cms": "CMS et automatisations",
-        "consult": "Projet sur demande",
-        "marketing": "Performance et marketing",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "segment": "Quel est votre secteur ?",
+      "segmentPlaceholder": "Choisissez une option",
+      "segmentOptions": {
+        "food": "Alimentation",
+        "retail": "Commerce",
+        "education": "Éducation",
         "ecommerce": "E-commerce",
+        "industry": "Industrie",
+        "health": "Santé",
+        "services": "Services",
         "other": "Autre"
       },
-      "message": "Message",
-      "messagePlaceholder": "Ce que la page doit expliquer, et à qui",
-      "submit": "Parler du projet",
-      "submitting": "Envoi en cours...",
-      "success": "Message reçu. La réponse arrive sous un jour ouvré.",
+      "siteType": "Type de site",
+      "siteTypeOptions": {
+        "landing": "One page / Landing page",
+        "institutional": "Site vitrine",
+        "store": "Boutique en ligne / Catalogue",
+        "platform": "Plateforme web",
+        "app": "Application mobile",
+        "other": "Autre type de site"
+      },
+      "message": "Parlez-nous de votre activité",
+      "messagePlaceholder": "Ce que fait l’entreprise, pour qui, et ce que le site doit résoudre",
       "whatsapp": "Envoyer par WhatsApp",
       "emailSubmit": "Envoyer par e-mail",
       "sending": "Envoi",
-      "sent": "Message envoyé.",
-      "error": "L'envoi a échoué. Réessayez ou utilisez WhatsApp.",
-      "subject": "Contact via BEKNO",
-      "template": "Bonjour. Je m'appelle %name%.\nEntreprise : %business%\nE-mail : %email%\nService : %service%\n\n%message%",
+      "sent": "Demande envoyée.",
+      "error": "Envoi impossible. Réessayez ou utilisez WhatsApp.",
+      "subject": "Demande de devis via BEKNO",
+      "template": "Bonjour. Je m’appelle %name%.\nE-mail : %email%\nTéléphone : %phone%\nSecteur : %segment%\nType de site : %siteType%\n\n%message%",
       "errName": "Indiquez votre nom.",
-      "errBusiness": "Indiquez l'entreprise.",
-      "errEmail": "L'e-mail n'est pas valide.",
-      "errEmailDomain": "Utilisez un e-mail d'un fournisseur connu, pas une boîte temporaire.",
-      "errMessage": "Le message doit compter au moins 20 caractères.",
-      "errMessageLong": "Le message dépasse 2 000 caractères.",
-      "errService": "Choisissez ce dont vous avez besoin.",
-      "errFast": "Attendez quelques secondes avant d'envoyer.",
-      "errLimit": "Attendez un moment avant d'envoyer à nouveau.",
-      "linksRemoved": "J'ai retiré les liens du message."
+      "errEmail": "L’e-mail n’est pas valide.",
+      "errEmailDomain": "Utilisez un e-mail d’un fournisseur connu, pas une boîte temporaire.",
+      "errPhone": "Indiquez un numéro avec l’indicatif.",
+      "errSegment": "Choisissez votre secteur.",
+      "errSiteType": "Choisissez le type de site.",
+      "errMessage": "Dites-en un peu plus, au moins 20 caractères.",
+      "errMessageLong": "Le texte dépasse 2000 caractères.",
+      "errFast": "Attendez quelques secondes avant d’envoyer.",
+      "errLimit": "Attendez un peu avant d’envoyer à nouveau.",
+      "linksRemoved": "J’ai retiré les liens du message."
     }
   },
   "footer": {
@@ -121,20 +237,20 @@
   },
   "navigation": {
     "home": "Accueil",
-    "about": "À propos",
     "services": "Services",
     "projects": "Projets",
-    "contact": "Contact",
-    "cta": "Parler du projet",
+    "cta": "Demander un devis",
     "menu": "Menu",
     "language": "Langue",
-    "theme": "Thème"
+    "theme": "Thème",
+    "method": "Méthode",
+    "quote": "Devis"
   },
   "projects": {
     "title": "Projets",
     "subtitle": "Bientôt",
     "description": "Les études de cas sont encore en préparation. Dans la conversation, nous montrons des travaux proches de ce dont votre entreprise a besoin.",
-    "ctaContact": "Parler du projet",
+    "ctaContact": "Demander un devis",
     "ctaBack": "Retour à l'Accueil",
     "feature1": {
       "title": "Projets Web",

@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       </h1>
       <p className="max-w-[68ch] text-lg leading-relaxed text-muted">{t('description')}</p>
       <div className="mt-2 flex flex-wrap items-center gap-x-8 gap-y-4">
-        <Link href="/#contact" className="cta">
+        <Link href="/orcamento" className="cta">
           {t('ctaContact')}
           <span className="arrow" aria-hidden="true">→</span>
         </Link>

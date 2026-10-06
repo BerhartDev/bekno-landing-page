@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: locale === routing.defaultLocale ? 1 : 0.8,
     },
     {
+      url: pageUrl(locale, '/orcamento'),
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: pageUrl(locale, '/projetos'),
       lastModified,
       changeFrequency: 'monthly',
