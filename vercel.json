@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/pt", "destination": "/", "permanent": true },
+    { "source": "/pt/:path*", "destination": "/:path*", "permanent": true },
+    { "source": "/en/projetos", "destination": "/en/projects/", "permanent": true },
+    { "source": "/en/orcamento", "destination": "/en/quote/", "permanent": true },
+    { "source": "/es/projetos", "destination": "/es/proyectos/", "permanent": true },
+    { "source": "/es/orcamento", "destination": "/es/presupuesto/", "permanent": true },
+    { "source": "/fr/projetos", "destination": "/fr/projets/", "permanent": true },
+    { "source": "/fr/orcamento", "destination": "/fr/devis/", "permanent": true }
+  ]
+}

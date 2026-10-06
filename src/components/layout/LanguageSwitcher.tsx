@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from '@/lib/i18n/routing';
+import { getPathname, usePathname } from '@/lib/i18n/routing';
 
 const languages = [
   { code: 'pt', name: 'Português' },
@@ -14,7 +14,6 @@ const languages = [
 export default function LanguageSwitcher() {
   const t = useTranslations('navigation');
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -57,8 +56,10 @@ export default function LanguageSwitcher() {
                 lang={language.code}
                 aria-current={locale === language.code ? 'true' : undefined}
                 onClick={() => {
-                  router.replace(pathname, { locale: language.code });
-                  setIsOpen(false);
+                  // Carga completa: PT (raiz) e os outros idiomas usam layouts com <html> diferentes.
+                  const path = getPathname({ href: pathname, locale: language.code });
+                  const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+                  window.location.assign(`${base}${path.endsWith('/') ? path : `${path}/`}`);
                 }}
                 className="flex w-full items-baseline gap-3 px-3 py-2 text-left text-sm transition-colors duration-150 hover:bg-fg hover:text-bg aria-[current=true]:bg-fg aria-[current=true]:text-bg"
               >

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { routing } from '@/lib/i18n/routing';
+import { localizedPath, routing, type AppPathname } from '@/lib/i18n/routing';
 
 const HREFLANG = {
   pt: 'pt-BR',
@@ -27,9 +27,13 @@ export function getSiteUrl() {
   return (process.env.NEXT_PUBLIC_SITE_URL || 'https://bekno.com.br').replace(/\/$/, '');
 }
 
+/** URL pública de uma página: o PT fica na raiz e cada idioma usa o endereço traduzido. */
 export function pageUrl(locale: string, path = '') {
-  const normalized = path === '' || path === '/' ? '' : path.startsWith('/') ? path : `/${path}`;
-  return `${getSiteUrl()}/${locale}${normalized}/`;
+  const internal = (path === '' ? '/' : path.startsWith('/') ? path : `/${path}`) as AppPathname;
+  const localized = localizedPath(internal, locale);
+  const normalized = localized === '/' ? '' : localized;
+  const prefix = locale === routing.defaultLocale ? '' : `/${locale}`;
+  return `${getSiteUrl()}${prefix}${normalized}/`;
 }
 
 export function languageAlternates(path = '') {

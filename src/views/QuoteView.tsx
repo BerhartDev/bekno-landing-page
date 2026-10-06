@@ -1,16 +1,8 @@
-import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import QuoteForm from '@/components/QuoteForm';
 import JsonLd from '@/components/seo/JsonLd';
-import { buildPageMetadata, quoteJsonLd } from '@/lib/seo';
-
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  return buildPageMetadata(locale, '/orcamento');
-}
+import { setRequestLocale } from 'next-intl/server';
+import { quoteJsonLd } from '@/lib/seo';
 
 function QuoteContent() {
   const t = useTranslations('quote');
@@ -69,11 +61,8 @@ function QuoteContent() {
   );
 }
 
-export default async function QuotePage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function QuoteView({ locale }: { locale: string }) {
+  setRequestLocale(locale);
   const jsonLd = await quoteJsonLd(locale);
 
   return (

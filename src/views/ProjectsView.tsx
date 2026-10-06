@@ -1,13 +1,18 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import JsonLd from '@/components/seo/JsonLd';
+import { projectsJsonLd } from '@/lib/seo';
 import { Link } from '@/lib/i18n/routing';
 import PortfolioCard from '@/components/PortfolioCard';
 import { PORTFOLIO } from '@/lib/portfolio';
 
-export default function ProjectsPage() {
-  const t = useTranslations('projects');
+export default async function ProjectsView({ locale }: { locale: string }) {
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'projects' });
+  const jsonLd = await projectsJsonLd(locale);
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <section className="grid gap-6 border-t border-line py-16 md:py-24">
         <p className="font-mono text-sm uppercase tracking-[0.04em] text-muted">{t('title')}</p>
         <h1 className="max-w-[16ch] text-[clamp(2.5rem,1.6rem+4.2vw,5.25rem)] font-bold leading-[1.02] tracking-[-0.035em]">

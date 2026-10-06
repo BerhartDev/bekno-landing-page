@@ -16,11 +16,11 @@ export default function Header() {
   const t = useTranslations('navigation');
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isHome = pathname === '/';
   const onProjects = pathname.startsWith('/projetos');
   const onQuote = pathname.startsWith('/orcamento');
 
-  const sectionHref = (id: string) => (isHome ? `#${id}` : `/#${id}`);
+  // Âncoras da home; fora dela, voltam para a home do idioma atual.
+  const sectionHref = (id: string) => ({ pathname: '/' as const, hash: id });
 
   const closeMenu = () => setIsMenuOpen(false);
 

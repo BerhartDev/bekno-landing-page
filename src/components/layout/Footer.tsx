@@ -1,21 +1,20 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link, usePathname } from '@/lib/i18n/routing';
+import { Link } from '@/lib/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('navigation');
-  const pathname = usePathname();
-  const isHome = pathname === '/';
-  const sectionHref = (id: string) => (isHome ? `#${id}` : `/#${id}`);
+  // Âncoras da home; fora dela, voltam para a home do idioma atual.
+  const sectionHref = (id: string) => ({ pathname: '/' as const, hash: id });
 
   const links = [
     { href: sectionHref('services'), label: nav('services') },
     { href: sectionHref('method'), label: nav('method') },
-    { href: '/projetos', label: nav('projects') },
-    { href: '/orcamento', label: nav('quote') },
+    { href: '/projetos' as const, label: nav('projects') },
+    { href: '/orcamento' as const, label: nav('quote') },
   ];
 
   return (

@@ -151,6 +151,3 @@ export function demoHref(slug: string): string {
   return `${basePath}/portfolio/${slug}/`;
 }
 
-export function portfolioHref(locale = 'pt'): string {
-  return `${basePath}/${locale}/projetos/`;
-}

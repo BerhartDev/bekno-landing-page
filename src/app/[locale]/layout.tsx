@@ -1,51 +1,14 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { fontVariables } from '@/lib/fonts';
-import { themeScript } from '@/lib/theme-script';
+import type { ReactNode } from 'react';
+import LocaleShell from '@/components/layout/LocaleShell';
 import { routing } from '@/lib/i18n/routing';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import '../globals.css';
+
+// O idioma padrão (PT) mora na raiz, em app/(pt). Aqui ficam só os outros.
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return routing.locales.filter((locale) => locale !== routing.defaultLocale).map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params: { locale }
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages({ locale });
-
-  return (
-    <html lang={locale} className={fontVariables} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
-      <body className="font-sans antialiased">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <div id="top" className="mx-auto max-w-page px-[clamp(1rem,4vw,3rem)]">
-            <Header />
-            <main id="main">{children}</main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </html>
-  );
+export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode; params: { locale: string } }) {
+  return <LocaleShell locale={locale}>{children}</LocaleShell>;
 }
