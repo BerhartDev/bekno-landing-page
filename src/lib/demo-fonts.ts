@@ -56,10 +56,10 @@ export const altairDisplay = Cormorant_Garamond({
 });
 
 export const demoDisplayFonts: Record<string, { className: string; variable: string }> = {
-  restaurante: fornalhaDisplay,
-  saas: fluxoDisplay,
-  moda: mareDisplay,
-  clinica: alveaDisplay,
-  academia: forjaDisplay,
-  advocacia: altairDisplay,
+  fornalha: fornalhaDisplay,
+  fluxo: fluxoDisplay,
+  'mare-atelier': mareDisplay,
+  alvea: alveaDisplay,
+  forja: forjaDisplay,
+  'altair-advocacia': altairDisplay,
 };

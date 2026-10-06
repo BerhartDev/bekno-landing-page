@@ -40,7 +40,7 @@ export default function MarePage() {
             </div>
             <div className="relative order-1 aspect-[4/5] overflow-hidden md:order-2">
               <Image
-                src={demoImage('moda/hero.jpg')}
+                src={demoImage('mare-atelier/hero.jpg')}
                 alt="Modelo usando camisa branca de linho."
                 fill
                 priority
@@ -66,7 +66,7 @@ export default function MarePage() {
                   </p>
                   <div className="relative mt-12 aspect-[4/5] overflow-hidden">
                     <Image
-                      src={demoImage('moda/look-drapeado.jpg')}
+                      src={demoImage('mare-atelier/look-drapeado.jpg')}
                       alt="Modelo com camisa branca e saia marrom entre tecidos."
                       fill
                       sizes="(min-width: 768px) 40vw, 100vw"
@@ -77,7 +77,7 @@ export default function MarePage() {
                 <div className="grid gap-6 md:col-span-7 md:gap-8">
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
-                      src={demoImage('moda/look-giro.jpg')}
+                      src={demoImage('mare-atelier/look-giro.jpg')}
                       alt="Modelo girando com vestido longo bege."
                       fill
                       sizes="(min-width: 768px) 55vw, 100vw"
@@ -107,7 +107,7 @@ export default function MarePage() {
               <div className="mt-20 grid items-center gap-12 md:grid-cols-2 md:gap-20">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src={demoImage('moda/arara.jpg')}
+                    src={demoImage('mare-atelier/arara.jpg')}
                     alt="Arara com peças em tons neutros."
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"

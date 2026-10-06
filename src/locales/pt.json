@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfólio",
-    "subtitle": "Projetos conceito: sites completos para negócios fictícios, cada um com identidade própria.",
+    "subtitle": "Seis negócios, seis identidades. Os estabelecimentos são fictícios, criados para mostrar o nosso trabalho.",
     "cta": "Ver todos os projetos"
   },
   "exclusivity": {
@@ -254,10 +254,9 @@
   "projects": {
     "title": "Projetos",
     "subtitle": "Uma identidade para cada negócio.",
-    "description": "Projetos conceito criados pela BEKNO para clientes fictícios. Cada site tem marca, tipografia e interações próprias, do jeito que faríamos para a sua empresa.",
-    "badge": "Conceito",
+    "description": "Sites que desenhamos e desenvolvemos para seis negócios, cada um com marca, tipografia e interações próprias.",
     "open": "Abrir o site",
-    "disclaimer": "Os negócios, nomes, depoimentos e números dentro dos sites são fictícios. As fotos são do Unsplash.",
+    "disclaimer": "Os negócios apresentados são fictícios e foram criados pela BEKNO para mostrar o nosso trabalho. Fotos: Unsplash.",
     "ctaContact": "Pedir orçamento",
     "ctaBack": "Voltar ao início",
     "siteTypes": {
@@ -267,27 +266,27 @@
       "platform": "Plataforma web"
     },
     "items": {
-      "restaurante": {
+      "fornalha": {
         "niche": "Restaurante",
         "summary": "Cozinha de brasa com cardápio filtrável, sacola de pedido e reserva de mesa."
       },
-      "saas": {
+      "fluxo": {
         "niche": "Software (SaaS)",
         "summary": "Landing de gestão financeira com mockup do produto, calculadora de economia e planos."
       },
-      "moda": {
+      "mare-atelier": {
         "niche": "Moda",
         "summary": "Loja editorial com vitrine filtrável, escolha de tamanho e carrinho lateral."
       },
-      "clinica": {
+      "alvea": {
         "niche": "Clínica odontológica",
         "summary": "Site acolhedor com tratamentos, equipe e agendamento em três passos."
       },
-      "academia": {
+      "forja": {
         "niche": "Academia",
         "summary": "Landing de alta energia com quiz de plano, grade de aulas e planos."
       },
-      "advocacia": {
+      "altair-advocacia": {
         "niche": "Advocacia",
         "summary": "Escritório sóbrio com áreas de atuação, artigos e triagem do caso."
       }

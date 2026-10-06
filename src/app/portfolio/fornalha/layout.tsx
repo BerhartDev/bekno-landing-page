@@ -17,7 +17,7 @@ export const metadata = demoMetadata(
 
 export default function FornalhaLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="restaurante" display={fornalhaDisplay} body={body}>
+    <DemoShell slug="fornalha" display={fornalhaDisplay} body={body}>
       {children}
     </DemoShell>
   );

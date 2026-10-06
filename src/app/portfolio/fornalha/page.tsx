@@ -20,7 +20,7 @@ export default function FornalhaPage() {
         {/* Hero */}
         <section className="relative isolate flex min-h-[calc(100svh-6rem)] items-end overflow-hidden">
           <Image
-            src={demoImage('restaurante/hero.jpg')}
+            src={demoImage('fornalha/hero.jpg')}
             alt="Carne sendo virada na grelha sobre a brasa."
             fill
             priority
@@ -60,7 +60,7 @@ export default function FornalhaPage() {
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1fr_1.1fr] md:gap-20 md:px-8">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <Image
-                src={demoImage('restaurante/chef.jpg')}
+                src={demoImage('fornalha/chef.jpg')}
                 alt="Cozinheiro diante das chamas na cozinha."
                 fill
                 sizes="(min-width: 768px) 45vw, 100vw"
@@ -100,7 +100,7 @@ export default function FornalhaPage() {
             <div className="mt-12 grid gap-4 md:grid-cols-3 md:grid-rows-2">
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl md:col-span-2 md:row-span-2 md:aspect-auto">
                 <Image
-                  src={demoImage('restaurante/salao.jpg')}
+                  src={demoImage('fornalha/salao.jpg')}
                   alt="Salão do restaurante com luminárias âmbar."
                   fill
                   sizes="(min-width: 768px) 66vw, 100vw"
@@ -109,7 +109,7 @@ export default function FornalhaPage() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
                 <Image
-                  src={demoImage('restaurante/balcao.jpg')}
+                  src={demoImage('fornalha/balcao.jpg')}
                   alt="Mesas do salão em penumbra."
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
@@ -118,7 +118,7 @@ export default function FornalhaPage() {
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
                 <Image
-                  src={demoImage('restaurante/bar.jpg')}
+                  src={demoImage('fornalha/bar.jpg')}
                   alt="Balcão do bar com banquetas."
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"

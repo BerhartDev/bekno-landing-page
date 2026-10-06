@@ -10,9 +10,9 @@ type Filter = Category | 'tudo';
 type Sort = 'destaques' | 'menor' | 'maior';
 
 const TILES: { id: Category; label: string; image: string }[] = [
-  { id: 'camisas', label: 'Camisas', image: 'moda/campanha.jpg' },
-  { id: 'calcas', label: 'Calças', image: 'moda/calca-areia.jpg' },
-  { id: 'acessorios', label: 'Acessórios', image: 'moda/bolsa.jpg' },
+  { id: 'camisas', label: 'Camisas', image: 'mare-atelier/campanha.jpg' },
+  { id: 'calcas', label: 'Calças', image: 'mare-atelier/calca-areia.jpg' },
+  { id: 'acessorios', label: 'Acessórios', image: 'mare-atelier/bolsa.jpg' },
 ];
 
 function ProductCard({ product }: { product: Product }) {

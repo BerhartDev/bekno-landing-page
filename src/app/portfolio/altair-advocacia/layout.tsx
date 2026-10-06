@@ -17,7 +17,7 @@ export const metadata = demoMetadata(
 
 export default function AltairLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="advocacia" display={altairDisplay} body={body}>
+    <DemoShell slug="altair-advocacia" display={altairDisplay} body={body}>
       {children}
     </DemoShell>
   );

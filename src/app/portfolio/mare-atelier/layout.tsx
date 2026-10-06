@@ -17,7 +17,7 @@ export const metadata = demoMetadata(
 
 export default function MareLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="moda" display={mareDisplay} body={body}>
+    <DemoShell slug="mare-atelier" display={mareDisplay} body={body}>
       {children}
     </DemoShell>
   );

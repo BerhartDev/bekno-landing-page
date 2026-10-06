@@ -17,7 +17,7 @@ export const metadata = demoMetadata(
 
 export default function AlveaLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="clinica" display={alveaDisplay} body={body}>
+    <DemoShell slug="alvea" display={alveaDisplay} body={body}>
       {children}
     </DemoShell>
   );

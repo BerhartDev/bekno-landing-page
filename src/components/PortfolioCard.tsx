@@ -7,7 +7,6 @@ interface PortfolioCardProps {
   niche: string;
   summary: string;
   siteType: string;
-  badge: string;
   open: string;
 }
 
@@ -16,7 +15,7 @@ interface PortfolioCardProps {
  * o resto segue a identidade da BEKNO. O link é um <a> comum: o site tem CSS próprio
  * e precisa de uma carga de página inteira.
  */
-export default function PortfolioCard({ project, niche, summary, siteType, badge, open }: PortfolioCardProps) {
+export default function PortfolioCard({ project, niche, summary, siteType, open }: PortfolioCardProps) {
   const { theme } = project;
   const display = demoDisplayFonts[project.slug];
 
@@ -62,7 +61,7 @@ export default function PortfolioCard({ project, niche, summary, siteType, badge
       </div>
       <div className="flex flex-1 flex-col gap-3 border-t border-line p-6">
         <p className="font-mono text-xs uppercase tracking-[0.04em] text-muted">
-          {siteType} · {niche} · {badge}
+          {siteType} · {niche}
         </p>
         <p className="text-sm text-muted">{summary}</p>
         <span className="link mt-auto w-fit pt-2 font-mono text-sm uppercase tracking-[0.04em]">

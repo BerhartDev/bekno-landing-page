@@ -4,9 +4,9 @@ import Areas from './_components/Areas';
 import Intake from './_components/Intake';
 
 const PARTNERS = [
-  { name: 'Eduardo Altair', role: 'Sócio fundador · Empresarial e tributário', image: 'advocacia/socio-1.jpg' },
-  { name: 'Beatriz Lemos', role: 'Sócia · Contratos e LGPD', image: 'advocacia/socio-2.jpg' },
-  { name: 'Henrique Sato', role: 'Sócio · Trabalhista empresarial', image: 'advocacia/socio-3.jpg' },
+  { name: 'Eduardo Altair', role: 'Sócio fundador · Empresarial e tributário', image: 'altair-advocacia/socio-1.jpg' },
+  { name: 'Beatriz Lemos', role: 'Sócia · Contratos e LGPD', image: 'altair-advocacia/socio-2.jpg' },
+  { name: 'Henrique Sato', role: 'Sócio · Trabalhista empresarial', image: 'altair-advocacia/socio-3.jpg' },
 ];
 
 const STEPS = [
@@ -91,7 +91,7 @@ export default function AltairPage() {
               <div className="absolute -bottom-5 -right-5 left-5 top-5 border border-d-accent/60" aria-hidden="true" />
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src={demoImage('advocacia/hero.jpg')}
+                  src={demoImage('altair-advocacia/hero.jpg')}
                   alt="Estante de madeira com livros jurídicos encadernados."
                   fill
                   priority
@@ -137,7 +137,7 @@ export default function AltairPage() {
             <div className="grid items-center gap-12 md:grid-cols-2 md:gap-20">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src={demoImage('advocacia/escritorio.jpg')}
+                  src={demoImage('altair-advocacia/escritorio.jpg')}
                   alt="Sala de reuniões do escritório."
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
@@ -233,7 +233,7 @@ export default function AltairPage() {
               </p>
               <div className="relative mt-10 hidden aspect-[4/3] overflow-hidden md:block">
                 <Image
-                  src={demoImage('advocacia/reuniao.jpg')}
+                  src={demoImage('altair-advocacia/reuniao.jpg')}
                   alt="Advogada revisando um contrato com clientes."
                   fill
                   sizes="40vw"

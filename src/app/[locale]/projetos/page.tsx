@@ -25,7 +25,6 @@ export default function ProjectsPage() {
                 niche={t(`items.${project.slug}.niche`)}
                 summary={t(`items.${project.slug}.summary`)}
                 siteType={t(`siteTypes.${project.siteType}`)}
-                badge={t('badge')}
                 open={t('open')}
               />
             </li>

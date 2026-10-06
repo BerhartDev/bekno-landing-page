@@ -17,7 +17,7 @@ export const metadata = demoMetadata(
 
 export default function ForjaLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="academia" display={forjaDisplay} body={body}>
+    <DemoShell slug="forja" display={forjaDisplay} body={body}>
       {children}
     </DemoShell>
   );

@@ -12,8 +12,8 @@ const TREATMENTS = [
 ];
 
 const TEAM = [
-  { name: 'Dr. Rafael Moura', role: 'Implantes e reabilitação', image: 'clinica/equipe-1.jpg' },
-  { name: 'Dra. Helena Prado', role: 'Estética e lentes de porcelana', image: 'clinica/equipe-2.jpg' },
+  { name: 'Dr. Rafael Moura', role: 'Implantes e reabilitação', image: 'alvea/equipe-1.jpg' },
+  { name: 'Dra. Helena Prado', role: 'Estética e lentes de porcelana', image: 'alvea/equipe-2.jpg' },
 ];
 
 const REVIEWS = [
@@ -108,7 +108,7 @@ export default function AlveaPage() {
             <div className="relative">
               <div className="relative aspect-[4/5] overflow-hidden rounded-t-full rounded-b-[2.5rem]">
                 <Image
-                  src={demoImage('clinica/sorriso.jpg')}
+                  src={demoImage('alvea/sorriso.jpg')}
                   alt="Paciente sorrindo."
                   fill
                   priority
@@ -156,7 +156,7 @@ export default function AlveaPage() {
             <div className="grid grid-cols-5 gap-4">
               <div className="relative col-span-3 aspect-[3/4] overflow-hidden rounded-[2rem]">
                 <Image
-                  src={demoImage('clinica/hero.jpg')}
+                  src={demoImage('alvea/hero.jpg')}
                   alt="Consultório claro com cadeira odontológica."
                   fill
                   sizes="(min-width: 768px) 30vw, 60vw"
@@ -166,7 +166,7 @@ export default function AlveaPage() {
               <div className="col-span-2 grid gap-4">
                 <div className="relative overflow-hidden rounded-[2rem]">
                   <Image
-                    src={demoImage('clinica/recepcao.jpg')}
+                    src={demoImage('alvea/recepcao.jpg')}
                     alt="Recepção com sofá e planta."
                     fill
                     sizes="(min-width: 768px) 20vw, 40vw"
@@ -175,7 +175,7 @@ export default function AlveaPage() {
                 </div>
                 <div className="relative overflow-hidden rounded-[2rem]">
                   <Image
-                    src={demoImage('clinica/atendimento.jpg')}
+                    src={demoImage('alvea/atendimento.jpg')}
                     alt="Dentista atendendo um paciente."
                     fill
                     sizes="(min-width: 768px) 20vw, 40vw"

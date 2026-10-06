@@ -16,7 +16,7 @@ export const metadata = demoMetadata(
 
 export default function FluxoLayout({ children }: { children: ReactNode }) {
   return (
-    <DemoShell slug="saas" display={fluxoDisplay} body={body}>
+    <DemoShell slug="fluxo" display={fluxoDisplay} body={body}>
       {children}
     </DemoShell>
   );

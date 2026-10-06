@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Projets concept : des sites complets pour des entreprises fictives, chacun avec sa propre identité.",
+    "subtitle": "Six entreprises, six identités. Les établissements sont fictifs, créés pour montrer notre travail.",
     "cta": "Voir tous les projets"
   },
   "exclusivity": {
@@ -254,10 +254,9 @@
   "projects": {
     "title": "Projets",
     "subtitle": "Une identité pour chaque activité.",
-    "description": "Projets concept réalisés par BEKNO pour des clients fictifs. Chaque site a sa marque, sa typographie et ses interactions, comme nous le ferions pour votre entreprise.",
-    "badge": "Concept",
+    "description": "Des sites que nous avons conçus et développés pour six entreprises, chacune avec sa marque, sa typographie et ses interactions.",
     "open": "Ouvrir le site",
-    "disclaimer": "Les entreprises, noms, témoignages et chiffres présents dans les sites sont fictifs. Photos Unsplash.",
+    "disclaimer": "Les entreprises présentées sont fictives, créées par BEKNO pour montrer notre travail. Photos : Unsplash.",
     "ctaContact": "Demander un devis",
     "ctaBack": "Retour à l’accueil",
     "siteTypes": {
@@ -267,27 +266,27 @@
       "platform": "Plateforme web"
     },
     "items": {
-      "restaurante": {
+      "fornalha": {
         "niche": "Restaurant",
         "summary": "Cuisine au feu de bois avec carte filtrable, panier de commande et réservation."
       },
-      "saas": {
+      "fluxo": {
         "niche": "Logiciel (SaaS)",
         "summary": "Landing d’un logiciel de gestion financière avec maquette produit, calculateur et tarifs."
       },
-      "moda": {
+      "mare-atelier": {
         "niche": "Mode",
         "summary": "Boutique éditoriale avec catalogue filtrable, choix de taille et panier latéral."
       },
-      "clinica": {
+      "alvea": {
         "niche": "Cabinet dentaire",
         "summary": "Un site chaleureux avec soins, équipe et prise de rendez-vous en trois étapes."
       },
-      "academia": {
+      "forja": {
         "niche": "Salle de sport",
         "summary": "Landing énergique avec quiz de formule, planning des cours et tarifs."
       },
-      "advocacia": {
+      "altair-advocacia": {
         "niche": "Cabinet d’avocats",
         "summary": "Un cabinet sobre avec domaines d’expertise, articles et pré-qualification du dossier."
       }

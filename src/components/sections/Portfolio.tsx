@@ -20,7 +20,6 @@ export default function Portfolio() {
               niche={p(`items.${project.slug}.niche`)}
               summary={p(`items.${project.slug}.summary`)}
               siteType={p(`siteTypes.${project.siteType}`)}
-              badge={p('badge')}
               open={p('open')}
             />
           </li>
