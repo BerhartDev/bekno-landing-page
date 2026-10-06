@@ -1,0 +1,316 @@
+{
+  "hero": {
+    "kicker": "Creación de sitios web profesionales y personalizados",
+    "headline": "Un sitio exclusivo, hecho para vender más.",
+    "subheadline": "Cada proyecto empieza desde cero, diseñado para tu negocio y para quienes te compran. Nada de plantillas.",
+    "imageAlt": "Portátil abierto sobre una mesa de trabajo.",
+    "reassurance": "Sin compromiso. Respuesta en un día hábil.",
+    "ctaPrimary": "Pedir presupuesto",
+    "ctaSecondary": "Ver proyectos"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Del primer diseño al mantenimiento después del lanzamiento, tu sitio con un solo socio.",
+    "cta": "Pedir presupuesto",
+    "items": [
+      {
+        "title": "Creación de sitios web",
+        "description": "Sitios, landing pages y tiendas online pensados para la experiencia de quien visita y para generar contactos y ventas."
+      },
+      {
+        "title": "Mantenimiento web",
+        "description": "Soporte técnico, correcciones preventivas y mejoras continuas para que el sitio siga rápido, seguro y actualizado."
+      },
+      {
+        "title": "Hosting en la nube",
+        "description": "Servidores en la nube para el sitio, los correos y las campañas, con más seguridad y rendimiento."
+      },
+      {
+        "title": "Marketing digital",
+        "description": "Acciones para fortalecer la presencia online de la empresa y ganar ventaja sobre la competencia."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Seis negocios, seis identidades, creados con cuidado para mostrar nuestro trabajo.",
+    "cta": "Ver todos los proyectos"
+  },
+  "exclusivity": {
+    "title": "Exclusividad",
+    "subtitle": "Tu sitio no se parece al de nadie más.",
+    "items": [
+      {
+        "title": "Sin plantillas"
+      },
+      {
+        "title": "Diseño 100 % exclusivo"
+      },
+      {
+        "title": "Plazos cumplidos"
+      },
+      {
+        "title": "Mantenimiento continuo"
+      },
+      {
+        "title": "Atención humana"
+      },
+      {
+        "title": "Calidad garantizada"
+      }
+    ]
+  },
+  "method": {
+    "title": "Método 6D",
+    "subtitle": "Seis frentes cuidados en cada proyecto, del diseño al texto.",
+    "cta": "Agendar una conversación",
+    "steps": [
+      {
+        "title": "Diseño",
+        "description": "El diseño nace desde cero, a partir del negocio y del perfil de quien compra."
+      },
+      {
+        "title": "Desarrollo",
+        "description": "La navegación es simple y lleva al visitante, sin esfuerzo, a la acción que importa."
+      },
+      {
+        "title": "Desempeño",
+        "description": "Páginas ligeras y rápidas, que suben en Google y convierten más."
+      },
+      {
+        "title": "Defensa",
+        "description": "Protección del sitio y de los datos contra ataques, con corrección de vulnerabilidades."
+      },
+      {
+        "title": "Difusión",
+        "description": "SEO desde el inicio, para aparecer en las búsquedas y atraer visitas calificadas."
+      },
+      {
+        "title": "Discurso",
+        "description": "Textos originales y estratégicos, que muestran el valor del negocio y ayudan a vender."
+      }
+    ]
+  },
+  "commitment": {
+    "title": "Compromiso",
+    "subtitle": "Lo que puedes esperar durante y después del proyecto.",
+    "items": [
+      {
+        "title": "Transparencia",
+        "description": "Cada etapa se acuerda y se entrega con atención al detalle."
+      },
+      {
+        "title": "A medida y con confidencialidad",
+        "description": "Funcionalidades creadas para tu caso, con la información del negocio protegida."
+      },
+      {
+        "title": "Alianza a largo plazo",
+        "description": "Comunicación abierta antes, durante y después del lanzamiento."
+      },
+      {
+        "title": "Soporte premium",
+        "description": "Seguimiento del rendimiento, la seguridad y la estabilidad del sitio."
+      }
+    ]
+  },
+  "siteTypes": {
+    "title": "Tipos de sitio",
+    "subtitle": "Elige el formato que encaja con el momento de tu empresa.",
+    "cta": "Pedir presupuesto",
+    "items": [
+      {
+        "type": "institutional",
+        "title": "Sitio corporativo",
+        "description": "Presencia profesional que fortalece la marca y atrae nuevos clientes."
+      },
+      {
+        "type": "store",
+        "title": "E-commerce",
+        "description": "Tienda online moderna y segura, pensada para vender más por internet."
+      },
+      {
+        "type": "landing",
+        "title": "Landing page",
+        "description": "Una página enfocada en conversión para lanzamientos, captación de contactos o venta directa."
+      },
+      {
+        "type": "platform",
+        "title": "Plataforma web",
+        "description": "Área de miembros, cursos online, integraciones y funciones avanzadas."
+      }
+    ],
+    "projectsCta": "Ver proyectos"
+  },
+  "differentiators": {
+    "title": "Diferenciales",
+    "subtitle": "Por qué elegir BEKNO.",
+    "items": [
+      {
+        "title": "Metodología propia"
+      },
+      {
+        "title": "Proyectos sin plantillas prediseñadas"
+      },
+      {
+        "title": "SEO y GEO desde el desarrollo"
+      },
+      {
+        "title": "Un especialista en cada etapa"
+      },
+      {
+        "title": "Compromiso con los plazos"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Tu empresa merece más que un sitio básico.",
+    "text": "Cuéntanos qué necesita tu negocio. Te respondemos con una propuesta a medida.",
+    "cta": "Pedir presupuesto",
+    "secondary": "Ver proyectos"
+  },
+  "quote": {
+    "eyebrow": "Presupuesto",
+    "title": "Un sitio profesional que aparece en Google.",
+    "subtitle": "Completa el formulario. La propuesta llega con el alcance, el plazo y el precio.",
+    "benefitsTitle": "Lo que recibes",
+    "benefits": [
+      "Solución a medida para pequeñas y medianas empresas",
+      "Visibilidad en Google para atraer nuevos clientes",
+      "Diseño moderno y pensado en la experiencia del usuario",
+      "Sitio responsive, que funciona bien en cualquier pantalla"
+    ],
+    "phoneLabel": "Teléfono",
+    "phone": "+55 21 97369-2691",
+    "locationLabel": "Dónde",
+    "location": "Ipanema, Río de Janeiro",
+    "response": "La respuesta llega en un día hábil. Si tienes poco tiempo, llámanos.",
+    "form": {
+      "title": "Pedir presupuesto",
+      "intro": "Sin compromiso. Estas respuestas sirven para preparar la propuesta.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "correo@empresa.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+34 612 345 678",
+      "segment": "¿Cuál es tu sector?",
+      "segmentPlaceholder": "Selecciona una opción",
+      "segmentOptions": {
+        "food": "Alimentación",
+        "retail": "Comercio",
+        "education": "Educación",
+        "ecommerce": "E-commerce",
+        "industry": "Industria",
+        "health": "Salud",
+        "services": "Servicios",
+        "other": "Otro"
+      },
+      "siteType": "Tipo de sitio",
+      "siteTypeOptions": {
+        "landing": "One page / Landing page",
+        "institutional": "Sitio corporativo",
+        "store": "Tienda online / Catálogo",
+        "platform": "Plataforma web",
+        "app": "Aplicación móvil",
+        "other": "Otro tipo de sitio"
+      },
+      "message": "Cuéntanos sobre tu negocio",
+      "messagePlaceholder": "Qué hace la empresa, para quién y qué necesita resolver el sitio",
+      "whatsapp": "Enviar por WhatsApp",
+      "emailSubmit": "Enviar por correo",
+      "sending": "Enviando",
+      "sent": "Solicitud enviada.",
+      "error": "No se pudo enviar. Inténtalo de nuevo o usa WhatsApp.",
+      "subject": "Presupuesto vía BEKNO",
+      "template": "Hola. Me llamo %name%.\nCorreo: %email%\nTeléfono: %phone%\nSector: %segment%\nTipo de sitio: %siteType%\n\n%message%",
+      "errName": "Escribe tu nombre.",
+      "errEmail": "El correo no es válido.",
+      "errEmailDomain": "Usa un correo de un proveedor conocido, no una bandeja temporal.",
+      "errPhone": "Escribe un teléfono con código de área.",
+      "errSegment": "Elige tu sector.",
+      "errSiteType": "Elige el tipo de sitio.",
+      "errMessage": "Cuéntanos un poco más, con al menos 20 caracteres.",
+      "errMessageLong": "El texto supera los 2000 caracteres.",
+      "errFast": "Espera unos segundos antes de enviar.",
+      "errLimit": "Espera un poco antes de volver a enviar.",
+      "linksRemoved": "Quité los enlaces del mensaje."
+    }
+  },
+  "footer": {
+    "copyright": "© 2022 BEKNO - Soluciones digitales completas para tu negocio",
+    "tagline": "Sitios y landing pages para que la empresa explique lo que hace y reciba contactos.",
+    "links": "Navegación",
+    "backToTop": "Volver arriba"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "cta": "Pedir presupuesto",
+    "menu": "Menú",
+    "language": "Idioma",
+    "theme": "Tema",
+    "method": "Método",
+    "quote": "Presupuesto"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una identidad para cada negocio.",
+    "description": "Sitios que diseñamos y desarrollamos para seis negocios, cada uno con marca, tipografía e interacciones propias.",
+    "open": "Abrir el sitio",
+    "disclaimer": "Los negocios presentados son ficticios y fueron creados por BEKNO para mostrar nuestro trabajo. Fotos: Unsplash.",
+    "ctaContact": "Pedir presupuesto",
+    "ctaBack": "Volver al inicio",
+    "siteTypes": {
+      "institutional": "Sitio corporativo",
+      "landing": "Landing page",
+      "store": "E-commerce",
+      "platform": "Plataforma web"
+    },
+    "items": {
+      "fornalha": {
+        "niche": "Restaurante",
+        "summary": "Cocina a la brasa con carta filtrable, bolsa de pedido y reserva de mesa."
+      },
+      "fluxo": {
+        "niche": "Software (SaaS)",
+        "summary": "Landing de gestión financiera con maqueta del producto, calculadora de ahorro y planes."
+      },
+      "mare-atelier": {
+        "niche": "Moda",
+        "summary": "Tienda editorial con catálogo filtrable, selección de talla y carrito lateral."
+      },
+      "alvea": {
+        "niche": "Clínica dental",
+        "summary": "Sitio cálido con tratamientos, equipo y reserva de cita en tres pasos."
+      },
+      "forja": {
+        "niche": "Gimnasio",
+        "summary": "Landing de alta energía con quiz de plan, horario de clases y planes."
+      },
+      "altair-advocacia": {
+        "niche": "Abogados",
+        "summary": "Despacho sobrio con áreas de práctica, artículos y evaluación inicial del caso."
+      }
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida. ¿Qué tal volver al inicio y explorar nuestros servicios?",
+    "ctaContact": "Contactar",
+    "ctaBack": "Volver al inicio",
+    "link1": {
+      "title": "Página de inicio",
+      "description": "Vuelve a nuestra página principal"
+    },
+    "link2": {
+      "title": "Sobre nosotros",
+      "description": "Conoce más sobre BEKNO"
+    },
+    "link3": {
+      "title": "Servicios",
+      "description": "Descubre nuestras soluciones digitales"
+    }
+  }
+}

@@ -36,7 +36,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
-        <p>{t('copyright', { year: new Date().getFullYear() })}</p>
+        <p>{t('copyright')}</p>
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
           <a href="#top" className="link hover:text-fg">

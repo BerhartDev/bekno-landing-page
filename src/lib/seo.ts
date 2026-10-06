@@ -5,12 +5,14 @@ import { routing } from '@/lib/i18n/routing';
 const HREFLANG = {
   pt: 'pt-BR',
   en: 'en',
+  es: 'es',
   fr: 'fr',
 } as const;
 
 const OG_LOCALE = {
   pt: 'pt_BR',
   en: 'en_US',
+  es: 'es_ES',
   fr: 'fr_FR',
 } as const;
 
@@ -134,7 +136,7 @@ function organizationNode(description: string) {
       '@type': 'Country',
       name: 'BR',
     },
-    knowsLanguage: ['pt-BR', 'en', 'fr'],
+    knowsLanguage: ['pt-BR', 'en', 'es', 'fr'],
   };
 }
 
@@ -145,7 +147,7 @@ function websiteNode(description: string) {
     name: 'BEKNO',
     url: `${getSiteUrl()}/`,
     description,
-    inLanguage: ['pt-BR', 'en', 'fr'],
+    inLanguage: ['pt-BR', 'en', 'es', 'fr'],
     publisher: { '@id': organizationId() },
   };
 }

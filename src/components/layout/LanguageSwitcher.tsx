@@ -7,6 +7,7 @@ import { usePathname, useRouter } from '@/lib/i18n/routing';
 const languages = [
   { code: 'pt', name: 'Português' },
   { code: 'en', name: 'English' },
+  { code: 'es', name: 'Español' },
   { code: 'fr', name: 'Français' },
 ];
 
