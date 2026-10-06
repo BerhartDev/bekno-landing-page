@@ -1,6 +1,6 @@
 {
   "hero": {
-    "kicker": "Création de sites professionnels",
+    "kicker": "Création de sites professionnels et sur mesure",
     "headline": "Un site exclusif, conçu pour vendre plus.",
     "subheadline": "Chaque projet part de zéro, pensé pour votre activité et pour vos clients. Aucun modèle tout fait.",
     "imageAlt": "Un ordinateur portable ouvert sur un bureau.",
@@ -237,7 +237,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Solutions numériques complètes pour votre entreprise",
+    "copyright": "© 2022–{year} BEKNO - Solutions numériques complètes pour votre entreprise",
     "tagline": "Sites et pages d'atterrissage pour que l'entreprise explique ce qu'elle fait et reçoive des contacts.",
     "links": "Navigation",
     "backToTop": "Haut de page"

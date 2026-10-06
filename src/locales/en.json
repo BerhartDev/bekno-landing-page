@@ -1,6 +1,6 @@
 {
   "hero": {
-    "kicker": "Professional website design",
+    "kicker": "Professional, custom website design",
     "headline": "An exclusive website, built to sell more.",
     "subheadline": "Every project starts from scratch, designed around your business and the people who buy from you. No ready-made themes.",
     "imageAlt": "An open laptop on a work desk.",
@@ -237,7 +237,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 BEKNO - Complete digital solutions for your business",
+    "copyright": "© 2022–{year} BEKNO - Complete digital solutions for your business",
     "tagline": "Websites and landing pages so the company can explain what it does and receive contact.",
     "links": "Navigation",
     "backToTop": "Back to top"
