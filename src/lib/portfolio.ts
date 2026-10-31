@@ -23,8 +23,8 @@ export type PortfolioProject = {
 };
 
 /**
- * Projetos conceito: clientes fictícios criados para mostrar o trabalho da BEKNO.
- * Todo card e todo demo exibe o selo "Projeto conceito".
+ * Cada projeto é uma versão de demonstração anonimizada de projeto real, com nome, marca,
+ * imagens e textos alterados. Todo card exibe o selo "Projeto real · nome alterado".
  */
 export const PORTFOLIO: PortfolioProject[] = [
   {

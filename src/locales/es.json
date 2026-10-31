@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portafolio",
-    "subtitle": "Seis negocios, seis identidades, creados con cuidado para mostrar nuestro trabajo.",
+    "subtitle": "Seis clientes reales, cada uno con identidad propia. Los nombres fueron cambiados para proteger a cada uno de ellos.",
     "cta": "Ver todos los proyectos"
   },
   "exclusivity": {
@@ -264,9 +264,10 @@
   "projects": {
     "title": "Proyectos",
     "subtitle": "Una identidad para cada negocio.",
-    "description": "Sitios que diseñamos y desarrollamos para seis negocios, cada uno con marca, tipografía e interacciones propias.",
+    "description": "Seis proyectos de clientes reales, cada uno con marca, tipografía e interacciones propias.",
     "open": "Abrir el sitio",
-    "disclaimer": "Los negocios presentados son ficticios y fueron creados por BEKNO para mostrar nuestro trabajo. Fotos: Unsplash.",
+    "badge": "Proyecto real · nombre cambiado",
+    "disclaimer": "<strong>Todos los proyectos son de clientes reales.</strong> Aquí ves versiones de demostración, con nombres, marcas, imágenes y textos cambiados para proteger la privacidad de cada cliente. Es el mismo cuidado que tendremos con tu negocio. Algunas fotos son de Unsplash.",
     "ctaContact": "Pedir presupuesto",
     "ctaBack": "Volver al inicio",
     "siteTypes": {

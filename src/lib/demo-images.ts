@@ -1,4 +1,4 @@
-/** Unsplash License allows commercial use. These photos illustrate fictional concept projects. */
+/** Unsplash License allows commercial use. These photos illustrate the anonymized demo versions of real projects. */
 type Credit = { source: string; author: string };
 
 const unsplash = (id: string, author: string): Credit => ({

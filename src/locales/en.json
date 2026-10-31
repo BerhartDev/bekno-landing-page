@@ -33,7 +33,7 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Six businesses, six identities, carefully created to showcase our work.",
+    "subtitle": "Six real clients, each with its own identity. The names were changed to protect each of them.",
     "cta": "See all projects"
   },
   "exclusivity": {
@@ -264,9 +264,10 @@
   "projects": {
     "title": "Projects",
     "subtitle": "One identity for each business.",
-    "description": "Sites we designed and built for six businesses, each with its own brand, typography and interactions.",
+    "description": "Six projects for real clients, each with its own brand, typography and interactions.",
     "open": "Open the site",
-    "disclaimer": "The businesses shown are fictional, created by BEKNO to showcase our work. Photos: Unsplash.",
+    "badge": "Real project · name changed",
+    "disclaimer": "<strong>All projects belong to real clients.</strong> Here you see demo versions, with names, brands, images and text changed to protect each client's privacy. It's the same care we'll take with your business. Some photos are from Unsplash.",
     "ctaContact": "Request a quote",
     "ctaBack": "Back to home",
     "siteTypes": {
