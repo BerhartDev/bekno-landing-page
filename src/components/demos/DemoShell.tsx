@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react';
 import type { Metadata } from 'next';
+import DemoCredit from './DemoCredit';
 import DemoNotice from './DemoNotice';
 import { demoThemeStyle, getProject } from '@/lib/portfolio';
 
@@ -24,6 +25,7 @@ export default function DemoShell({ slug, display, body, children }: DemoShellPr
     <html lang="pt-BR" style={style}>
       <body className="min-h-screen bg-d-bg font-body text-d-fg antialiased">
         {children}
+        <DemoCredit />
         <DemoNotice />
       </body>
     </html>
