@@ -235,9 +235,13 @@
     }
   },
   "footer": {
-    "copyright": "© 2022 BEKNO - Complete digital solutions for your business",
-    "tagline": "Websites and landing pages so the company can explain what it does and receive contact.",
+    "copyright": "© {start}–{year} BEKNO. All rights reserved.",
+    "tagline": "Websites, design and marketing for businesses that want to grow online.",
     "links": "Navigation",
+    "contact": "Contact",
+    "coverage": "Serving clients all over Brazil",
+    "social": "Social media",
+    "socialLink": "BEKNO on {network}",
     "backToTop": "Back to top"
   },
   "navigation": {
@@ -249,7 +253,13 @@
     "language": "Language",
     "theme": "Theme",
     "method": "Method",
-    "quote": "Quote"
+    "quote": "Quote",
+    "design": "Design",
+    "marketing": "Marketing",
+    "about": "About",
+    "faq": "FAQ",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
   },
   "projects": {
     "title": "Projects",

@@ -235,9 +235,13 @@
     }
   },
   "footer": {
-    "copyright": "© 2022 BEKNO - Solutions numériques complètes pour votre entreprise",
-    "tagline": "Sites et pages d'atterrissage pour que l'entreprise explique ce qu'elle fait et reçoive des contacts.",
+    "copyright": "© {start}–{year} BEKNO. Tous droits réservés.",
+    "tagline": "Sites, design et marketing pour les entreprises qui veulent se développer sur internet.",
     "links": "Navigation",
+    "contact": "Contact",
+    "coverage": "Partout au Brésil",
+    "social": "Réseaux sociaux",
+    "socialLink": "BEKNO sur {network}",
     "backToTop": "Haut de page"
   },
   "navigation": {
@@ -249,7 +253,13 @@
     "language": "Langue",
     "theme": "Thème",
     "method": "Méthode",
-    "quote": "Devis"
+    "quote": "Devis",
+    "design": "Design",
+    "marketing": "Marketing",
+    "about": "À propos",
+    "faq": "Questions fréquentes",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   },
   "projects": {
     "title": "Projets",

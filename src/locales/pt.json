@@ -235,9 +235,13 @@
     }
   },
   "footer": {
-    "copyright": "© 2022 BEKNO - Soluções digitais completas para o seu negócio",
-    "tagline": "Sites e landing pages para a empresa explicar o que faz e receber contato.",
+    "copyright": "© {start}–{year} BEKNO. Todos os direitos reservados.",
+    "tagline": "Sites, design e marketing para negócios que querem crescer na internet.",
     "links": "Navegação",
+    "contact": "Contato",
+    "coverage": "Atendimento em todo o Brasil",
+    "social": "Redes sociais",
+    "socialLink": "BEKNO no {network}",
     "backToTop": "Voltar ao topo"
   },
   "navigation": {
@@ -249,7 +253,13 @@
     "language": "Idioma",
     "theme": "Tema",
     "method": "Método",
-    "quote": "Orçamento"
+    "quote": "Orçamento",
+    "design": "Design",
+    "marketing": "Marketing",
+    "about": "Sobre",
+    "faq": "Perguntas frequentes",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso"
   },
   "projects": {
     "title": "Projetos",
