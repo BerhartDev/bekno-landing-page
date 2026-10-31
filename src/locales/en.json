@@ -203,59 +203,6 @@
       }
     ]
   },
-  "faq": {
-    "title": "Frequently asked questions",
-    "subtitle": "Straight answers to the most common questions.",
-    "groups": [
-      {
-        "title": "Timeline and process",
-        "items": [
-          {
-            "q": "How does it work?",
-            "a": "We talk about your business, you approve the look, we build the site, test it and put it online. You follow every step."
-          },
-          {
-            "q": "What do you need from me?",
-            "a": "Your logo, information about the business and photos (if you don't have any, we suggest options). And someone to approve each step."
-          }
-        ]
-      },
-      {
-        "title": "The site is yours",
-        "items": [
-          {
-            "q": "Are the site and its address (domain) in my name?",
-            "a": "Yes. The site's address is registered in your name, and the site is yours once it's paid for."
-          },
-          {
-            "q": "If I ever want to leave BEKNO, can I take the site with me?",
-            "a": "Yes. We hand over the files and the logins."
-          }
-        ]
-      },
-      {
-        "title": "Results",
-        "items": [
-          {
-            "q": "Will the site show up on Google?",
-            "a": "Yes, it's ready and registered with Google from the start. Ranking near the top also depends on content and competition, and that's where our marketing service comes in."
-          },
-          {
-            "q": "Does it work on phones?",
-            "a": "Yes. Most of your customers will see the site on a phone, so it's designed for the small screen first."
-          },
-          {
-            "q": "I already have a site. Do you rebuild it or improve it?",
-            "a": "We do both. We look at your current site for free and tell you what's worth changing."
-          },
-          {
-            "q": "Do you work with clients outside Rio?",
-            "a": "Yes, we work with businesses all over Brazil by video call and WhatsApp."
-          }
-        ]
-      }
-    ]
-  },
   "finalCta": {
     "title": "Your company deserves more than a basic website.",
     "text": "Tell us what the business needs. We reply with a tailored proposal.",

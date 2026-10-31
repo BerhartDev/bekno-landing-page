@@ -203,59 +203,6 @@
       }
     ]
   },
-  "faq": {
-    "title": "Preguntas frecuentes",
-    "subtitle": "Respuestas directas a las dudas más comunes.",
-    "groups": [
-      {
-        "title": "Plazo y proceso",
-        "items": [
-          {
-            "q": "¿Cómo funciona?",
-            "a": "Hablamos sobre tu negocio, apruebas el aspecto, construimos el sitio, lo probamos y lo ponemos en línea. Sigues cada etapa."
-          },
-          {
-            "q": "¿Qué necesitan de mí?",
-            "a": "Tu logo, información sobre el negocio y fotos (si no tienes, te sugerimos opciones). Y alguien que apruebe las etapas."
-          }
-        ]
-      },
-      {
-        "title": "El sitio es tuyo",
-        "items": [
-          {
-            "q": "¿El sitio y la dirección (dominio) quedan a mi nombre?",
-            "a": "Sí. La dirección del sitio se registra a tu nombre, y el sitio es tuyo una vez pagado."
-          },
-          {
-            "q": "Si algún día quiero dejar BEKNO, ¿me llevo el sitio?",
-            "a": "Sí. Te entregamos los archivos y los accesos."
-          }
-        ]
-      },
-      {
-        "title": "Resultados",
-        "items": [
-          {
-            "q": "¿El sitio va a aparecer en Google?",
-            "a": "Sí, sale preparado y registrado en Google. Quedar entre los primeros depende también del contenido y de la competencia, y ahí entra nuestro servicio de marketing."
-          },
-          {
-            "q": "¿Funciona en el celular?",
-            "a": "Sí. La mayoría de tus clientes va a ver el sitio en el celular, así que está pensado primero para la pantalla pequeña."
-          },
-          {
-            "q": "Ya tengo un sitio. ¿Lo rehacen o lo mejoran?",
-            "a": "Hacemos las dos cosas. Revisamos tu sitio actual gratis y te decimos qué vale la pena cambiar."
-          },
-          {
-            "q": "¿Atienden fuera de Río?",
-            "a": "Sí, atendemos empresas de todo Brasil por videollamada y WhatsApp."
-          }
-        ]
-      }
-    ]
-  },
   "finalCta": {
     "title": "Tu empresa merece más que un sitio básico.",
     "text": "Cuéntanos qué necesita tu negocio. Te respondemos con una propuesta a medida.",

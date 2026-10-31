@@ -6,7 +6,6 @@ import ChecklistSection from '@/components/sections/ChecklistSection';
 import Method from '@/components/sections/Method';
 import Process from '@/components/sections/Process';
 import SiteTypes from '@/components/sections/SiteTypes';
-import Faq from '@/components/sections/Faq';
 import FinalCta from '@/components/sections/FinalCta';
 import JsonLd from '@/components/seo/JsonLd';
 import { homeJsonLd } from '@/lib/seo';
@@ -33,7 +32,6 @@ export default async function HomeView({ locale }: { locale: string }) {
       <ChecklistSection namespace="commitment" columns={4} />
       <SiteTypes />
       <ChecklistSection namespace="whyBekno" />
-      <Faq id="perguntas" />
       <FinalCta />
     </>
   );
