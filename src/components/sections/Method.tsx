@@ -9,6 +9,8 @@ type Step = {
   description: string;
 };
 
+// TODO [CONFIRMAR] a etapa 04 (Defesa) promete proteção contra invasões, cópia de segurança e
+// acompanhamento para o site não sair do ar. Confirmar que isso está incluso em todo projeto.
 export default function Method() {
   const t = useTranslations('method');
   const steps = t.raw('steps') as Step[];

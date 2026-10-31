@@ -2,13 +2,16 @@
 
 import { useTranslations } from 'next-intl';
 import Section from '@/components/ui/Section';
+import { hasValue, SITE } from '@/lib/site';
 
 type ChecklistItem = {
   title: string;
   description?: string;
+  /** Variante usada quando SITE.responseTimeHours está preenchido; {h} vira o número de horas. */
+  descriptionResponseTime?: string;
 };
 
-type ChecklistNamespace = 'exclusivity' | 'commitment' | 'differentiators';
+type ChecklistNamespace = 'commitment' | 'whyBekno';
 
 const COLUMNS = {
   2: 'sm:grid-cols-2',
@@ -21,10 +24,15 @@ interface ChecklistSectionProps {
   columns?: keyof typeof COLUMNS;
 }
 
-/** Lista de itens com marcador, usada por Exclusividade, Compromisso e Diferenciais. */
+/** Lista de itens com marcador, usada por Compromisso e Por que escolher a BEKNO. */
 export default function ChecklistSection({ namespace, columns = 3 }: ChecklistSectionProps) {
   const t = useTranslations(namespace);
   const items = t.raw('items') as ChecklistItem[];
+
+  const describe = (item: ChecklistItem) =>
+    item.descriptionResponseTime && hasValue(SITE.responseTimeHours)
+      ? item.descriptionResponseTime.replace('{h}', String(SITE.responseTimeHours))
+      : item.description;
 
   return (
     <Section title={t('title')} intro={t('subtitle')}>
@@ -36,7 +44,7 @@ export default function ChecklistSection({ namespace, columns = 3 }: ChecklistSe
             </span>
             <div className="grid gap-2">
               <h3 className="text-lg font-semibold leading-7 tracking-[-0.02em]">{item.title}</h3>
-              {item.description && <p className="text-sm text-muted">{item.description}</p>}
+              {describe(item) && <p className="text-sm text-muted">{describe(item)}</p>}
             </div>
           </li>
         ))}

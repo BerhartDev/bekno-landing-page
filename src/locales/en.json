@@ -36,58 +36,34 @@
     "subtitle": "Six real clients, each with its own identity. The names were changed to protect each of them.",
     "cta": "See all projects"
   },
-  "exclusivity": {
-    "title": "Exclusivity",
-    "subtitle": "Your site does not look like anyone else’s.",
-    "items": [
-      {
-        "title": "No templates"
-      },
-      {
-        "title": "100% custom layout"
-      },
-      {
-        "title": "Deadlines kept"
-      },
-      {
-        "title": "Ongoing maintenance"
-      },
-      {
-        "title": "Human support"
-      },
-      {
-        "title": "Quality guaranteed"
-      }
-    ]
-  },
   "method": {
     "title": "The 6D method",
-    "subtitle": "Six fronts covered in every project, from layout to copy.",
+    "subtitle": "Six things we take care of in every project, so your site looks good, loads fast, stays safe and brings in customers.",
     "cta": "Book a conversation",
     "steps": [
       {
         "title": "Design",
-        "description": "The layout starts from scratch, shaped by the business and its buyers."
+        "description": "Before we build anything, you see and approve how the site will look. You can ask for changes until it feels right."
       },
       {
         "title": "Development",
-        "description": "Navigation stays simple and leads visitors, effortlessly, to the action that matters."
+        "description": "Your site works well on phones, tablets and computers. We test it on several devices before delivery."
       },
       {
-        "title": "Delivery speed",
-        "description": "Light, fast pages that rank higher on Google and convert better."
+        "title": "Speed",
+        "description": "A fast site: it opens in a few seconds, even on a phone. A slow site makes customers give up and go to a competitor."
       },
       {
-        "title": "Defense",
-        "description": "Protection for the site and its data against attacks, with vulnerabilities fixed."
+        "title": "Protection",
+        "description": "Your site is protected against break-ins, with a safety copy and monitoring so it doesn't go offline."
       },
       {
-        "title": "Discoverability",
-        "description": "SEO built in from day one, to show up in search and bring qualified visits."
+        "title": "Promotion",
+        "description": "Your site is ready from day one to be found on Google and recommended by assistants like ChatGPT."
       },
       {
-        "title": "Discourse",
-        "description": "Original, strategic copy that shows what the business is worth and helps it sell."
+        "title": "Messaging",
+        "description": "We write the site's text to explain what you do in a way that convinces readers. You don't have to write anything yourself."
       }
     ]
   },
@@ -97,19 +73,20 @@
     "items": [
       {
         "title": "Transparency",
-        "description": "Every step is agreed up front and delivered with care for detail."
+        "description": "You know what is being done at each step and approve it before we move on."
       },
       {
-        "title": "Custom and confidential",
-        "description": "Features built for your case, with business information kept private."
+        "title": "Made for you, kept private",
+        "description": "Your site is built for your case, and your business information stays protected. That's why we show our projects with the names changed."
       },
       {
         "title": "Long-term partnership",
-        "description": "Open communication before, during and after launch."
+        "description": "We stay close after your site goes live."
       },
       {
         "title": "Premium support",
-        "description": "Ongoing monitoring of site performance, security and stability."
+        "description": "We reply quickly on WhatsApp and keep an eye on whether your site is fast, safe and online.",
+        "descriptionResponseTime": "We reply within {h} business hours on WhatsApp and keep an eye on whether your site is fast, safe and online."
       }
     ]
   },
@@ -141,24 +118,33 @@
     ],
     "projectsCta": "See projects"
   },
-  "differentiators": {
-    "title": "Why BEKNO",
-    "subtitle": "What sets the work apart.",
+  "whyBekno": {
+    "title": "Why choose BEKNO",
+    "subtitle": "What changes for you when we build your site.",
     "items": [
       {
-        "title": "Our own method"
+        "title": "Your site is one of a kind",
+        "description": "Built from scratch for your business, with no off-the-shelf design."
       },
       {
-        "title": "No ready-made templates"
+        "title": "The agreed date is the delivery date",
+        "description": "You know when your site will be ready from the start."
       },
       {
-        "title": "SEO and GEO from the start"
+        "title": "Real people looking after you",
+        "description": "You talk directly to the people building your site."
       },
       {
-        "title": "A specialist for each stage"
+        "title": "Made to show up on Google",
+        "description": "Ready from day one to be found."
       },
       {
-        "title": "Committed to the deadline"
+        "title": "Care after delivery",
+        "description": "We keep looking after your site once it's live."
+      },
+      {
+        "title": "Our own method",
+        "description": "Six things we take care of in every project, from looks to text."
       }
     ]
   },

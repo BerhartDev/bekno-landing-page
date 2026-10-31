@@ -19,11 +19,10 @@ export default async function HomeView({ locale }: { locale: string }) {
       <Hero />
       <Services />
       <Portfolio />
-      <ChecklistSection namespace="exclusivity" />
       <Method />
       <ChecklistSection namespace="commitment" columns={4} />
       <SiteTypes />
-      <ChecklistSection namespace="differentiators" />
+      <ChecklistSection namespace="whyBekno" />
       <FinalCta />
     </>
   );

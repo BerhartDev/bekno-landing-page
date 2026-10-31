@@ -36,58 +36,34 @@
     "subtitle": "Seis clientes reales, cada uno con identidad propia. Los nombres fueron cambiados para proteger a cada uno de ellos.",
     "cta": "Ver todos los proyectos"
   },
-  "exclusivity": {
-    "title": "Exclusividad",
-    "subtitle": "Tu sitio no se parece al de nadie más.",
-    "items": [
-      {
-        "title": "Sin plantillas"
-      },
-      {
-        "title": "Diseño 100 % exclusivo"
-      },
-      {
-        "title": "Plazos cumplidos"
-      },
-      {
-        "title": "Mantenimiento continuo"
-      },
-      {
-        "title": "Atención humana"
-      },
-      {
-        "title": "Calidad garantizada"
-      }
-    ]
-  },
   "method": {
     "title": "Método 6D",
-    "subtitle": "Seis frentes cuidados en cada proyecto, del diseño al texto.",
+    "subtitle": "Seis cuidados en cada proyecto, para que tu sitio sea bonito, rápido, seguro y te traiga clientes.",
     "cta": "Agendar una conversación",
     "steps": [
       {
         "title": "Diseño",
-        "description": "El diseño nace desde cero, a partir del negocio y del perfil de quien compra."
+        "description": "Antes de construir, ves y apruebas cómo va a quedar el sitio. Puedes pedir cambios hasta que quede a tu gusto."
       },
       {
         "title": "Desarrollo",
-        "description": "La navegación es simple y lleva al visitante, sin esfuerzo, a la acción que importa."
+        "description": "Tu sitio funciona bien en el celular, la tablet y la computadora. Lo probamos en varios aparatos antes de entregarlo."
       },
       {
-        "title": "Desempeño",
-        "description": "Páginas ligeras y rápidas, que suben en Google y convierten más."
+        "title": "Velocidad",
+        "description": "Sitio rápido: abre en pocos segundos, incluso en el celular. Un sitio lento hace que el cliente se canse y se vaya a la competencia."
       },
       {
         "title": "Defensa",
-        "description": "Protección del sitio y de los datos contra ataques, con corrección de vulnerabilidades."
+        "description": "Tu sitio queda protegido contra intrusos, con copia de seguridad y seguimiento para que no se caiga."
       },
       {
         "title": "Difusión",
-        "description": "SEO desde el inicio, para aparecer en las búsquedas y atraer visitas calificadas."
+        "description": "Tu sitio nace preparado para que lo encuentren en Google y lo recomienden asistentes como ChatGPT."
       },
       {
         "title": "Discurso",
-        "description": "Textos originales y estratégicos, que muestran el valor del negocio y ayudan a vender."
+        "description": "Escribimos los textos del sitio para explicar lo que haces de una forma que convence a quien lee. No tienes que escribir nada solo."
       }
     ]
   },
@@ -97,19 +73,20 @@
     "items": [
       {
         "title": "Transparencia",
-        "description": "Cada etapa se acuerda y se entrega con atención al detalle."
+        "description": "Sabes lo que se está haciendo en cada etapa y lo apruebas antes de seguir."
       },
       {
-        "title": "A medida y con confidencialidad",
-        "description": "Funcionalidades creadas para tu caso, con la información del negocio protegida."
+        "title": "A medida y con discreción",
+        "description": "Tu sitio se hace para tu caso, y la información de tu negocio queda protegida. Por eso mostramos nuestros proyectos con los nombres cambiados."
       },
       {
-        "title": "Alianza a largo plazo",
-        "description": "Comunicación abierta antes, durante y después del lanzamiento."
+        "title": "Relación a largo plazo",
+        "description": "Seguimos cerca después de que el sitio sale al aire."
       },
       {
         "title": "Soporte premium",
-        "description": "Seguimiento del rendimiento, la seguridad y la estabilidad del sitio."
+        "description": "Respondemos rápido por WhatsApp y vigilamos que tu sitio esté rápido, seguro y en línea.",
+        "descriptionResponseTime": "Respondemos en hasta {h} horas hábiles por WhatsApp y vigilamos que tu sitio esté rápido, seguro y en línea."
       }
     ]
   },
@@ -141,24 +118,33 @@
     ],
     "projectsCta": "Ver proyectos"
   },
-  "differentiators": {
-    "title": "Diferenciales",
-    "subtitle": "Por qué elegir BEKNO.",
+  "whyBekno": {
+    "title": "Por qué elegir BEKNO",
+    "subtitle": "Lo que cambia para ti cuando el sitio lo hacemos nosotros.",
     "items": [
       {
-        "title": "Metodología propia"
+        "title": "Tu sitio es único",
+        "description": "Creado desde cero para tu negocio, sin plantilla prefabricada."
       },
       {
-        "title": "Proyectos sin plantillas prediseñadas"
+        "title": "Plazo acordado es plazo cumplido",
+        "description": "Sabes la fecha de entrega desde el principio."
       },
       {
-        "title": "SEO y GEO desde el desarrollo"
+        "title": "Personas reales atendiéndote",
+        "description": "Hablas directamente con quien hace tu sitio."
       },
       {
-        "title": "Un especialista en cada etapa"
+        "title": "Hecho para aparecer en Google",
+        "description": "Preparado desde el primer día para que lo encuentren."
       },
       {
-        "title": "Compromiso con los plazos"
+        "title": "Cuidado después de la entrega",
+        "description": "Seguimos cuidando tu sitio cuando ya está en línea."
+      },
+      {
+        "title": "Método propio",
+        "description": "Seis cuidados en cada proyecto, del aspecto al texto."
       }
     ]
   },
