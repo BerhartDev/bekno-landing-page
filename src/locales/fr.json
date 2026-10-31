@@ -148,6 +148,7 @@
     "title": "Types de site",
     "subtitle": "Choisissez le format adapté au moment de l’entreprise.",
     "cta": "Demander un devis",
+    "priceFrom": "À partir de {price}",
     "items": [
       {
         "type": "institutional",
@@ -199,6 +200,59 @@
       {
         "title": "Une méthode à nous",
         "description": "Six points soignés dans chaque projet, de l’apparence au texte."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Des réponses claires aux questions les plus courantes.",
+    "groups": [
+      {
+        "title": "Délais et déroulement",
+        "items": [
+          {
+            "q": "Comment ça se passe ?",
+            "a": "Nous parlons de votre activité, vous validez l’apparence, nous construisons le site, le testons et le mettons en ligne. Vous suivez chaque étape."
+          },
+          {
+            "q": "De quoi avez-vous besoin de ma part ?",
+            "a": "Votre logo, des informations sur l’activité et des photos (si vous n’en avez pas, nous proposons des options). Et quelqu’un pour valider les étapes."
+          }
+        ]
+      },
+      {
+        "title": "Le site vous appartient",
+        "items": [
+          {
+            "q": "Le site et son adresse (nom de domaine) sont-ils à mon nom ?",
+            "a": "Oui. L’adresse du site est enregistrée à votre nom, et le site est à vous une fois payé."
+          },
+          {
+            "q": "Si un jour je veux quitter BEKNO, je garde le site ?",
+            "a": "Oui. Nous vous remettons les fichiers et les accès."
+          }
+        ]
+      },
+      {
+        "title": "Résultats",
+        "items": [
+          {
+            "q": "Le site va-t-il apparaître sur Google ?",
+            "a": "Oui, il est prêt et inscrit sur Google dès le départ. Être dans les premiers résultats dépend aussi du contenu et de la concurrence, et c’est là qu’intervient notre service marketing."
+          },
+          {
+            "q": "Est-ce que ça marche sur téléphone ?",
+            "a": "Oui. La plupart de vos clients verront le site sur téléphone, donc il est pensé d’abord pour les petits écrans."
+          },
+          {
+            "q": "J’ai déjà un site. Vous le refaites ou vous l’améliorez ?",
+            "a": "Les deux. Nous regardons votre site actuel gratuitement et vous disons ce qui vaut la peine d’être changé."
+          },
+          {
+            "q": "Travaillez-vous en dehors de Rio ?",
+            "a": "Oui, nous travaillons avec des entreprises de tout le Brésil par visioconférence et WhatsApp."
+          }
+        ]
       }
     ]
   },

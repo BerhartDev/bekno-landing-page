@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import QuoteForm from '@/components/QuoteForm';
+import Faq from '@/components/sections/Faq';
 import JsonLd from '@/components/seo/JsonLd';
 import { setRequestLocale } from 'next-intl/server';
 import { quoteJsonLd } from '@/lib/seo';
@@ -77,6 +78,7 @@ export default async function QuoteView({ locale }: { locale: string }) {
     <>
       <JsonLd data={jsonLd} />
       <QuoteContent />
+      <Faq id="perguntas" />
     </>
   );
 }

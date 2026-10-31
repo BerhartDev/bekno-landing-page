@@ -12,7 +12,7 @@ export const NAV_LINKS = [
   { key: 'design', href: '/design', enabled: false },
   { key: 'marketing', href: '/marketing', enabled: false },
   { key: 'about', href: '/sobre', enabled: false },
-  { key: 'faq', href: '/perguntas-frequentes', enabled: false },
+  { key: 'faq', href: '#perguntas', enabled: true },
   { key: 'privacy', href: '/politica-de-privacidade', enabled: false },
   { key: 'terms', href: '/termos-de-uso', enabled: false },
 ] as const;

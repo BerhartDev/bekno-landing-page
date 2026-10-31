@@ -155,6 +155,26 @@ function websiteNode(description: string) {
   };
 }
 
+/** FAQPage com as mesmas perguntas do componente Faq (faq.groups). */
+async function faqNode(locale: string, url: string) {
+  const faq = await getTranslations({ locale, namespace: 'faq' });
+  const groups = faq.raw('groups') as Array<{ items: Array<{ q: string; a: string }> }>;
+
+  return {
+    '@type': 'FAQPage',
+    '@id': `${url}#faq`,
+    inLanguage: HREFLANG[asLocale(locale)],
+    isPartOf: { '@id': `${url}#webpage` },
+    mainEntity: groups.flatMap((group) =>
+      group.items.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    ),
+  };
+}
+
 export async function homeJsonLd(locale: string) {
   const current = asLocale(locale);
   const hero = await getTranslations({ locale, namespace: 'hero' });
@@ -202,6 +222,7 @@ export async function homeJsonLd(locale: string) {
           },
         })),
       },
+      await faqNode(locale, url),
     ],
   };
 }
@@ -255,6 +276,7 @@ export function projectsJsonLd(locale: string) {
   return subpageJsonLd(locale, '/projetos');
 }
 
-export function quoteJsonLd(locale: string) {
-  return subpageJsonLd(locale, '/orcamento');
+export async function quoteJsonLd(locale: string) {
+  const data = await subpageJsonLd(locale, '/orcamento');
+  return { ...data, '@graph': [...data['@graph'], await faqNode(locale, pageUrl(locale, '/orcamento'))] };
 }
