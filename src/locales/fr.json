@@ -166,7 +166,8 @@
     "title": "Votre entreprise mérite mieux qu’un site basique.",
     "text": "Dites-nous ce dont l’activité a besoin. Nous répondons avec une proposition sur mesure.",
     "cta": "Demander un devis",
-    "secondary": "Voir les projets"
+    "secondary": "Voir les projets",
+    "talkNow": "Vous préférez parler maintenant ?"
   },
   "quote": {
     "eyebrow": "Devis",
@@ -180,6 +181,8 @@
       "Un site responsive, lisible sur tous les écrans"
     ],
     "phoneLabel": "Téléphone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mail",
     "locationLabel": "Où",
     "response": "La réponse arrive sous un jour ouvré. Pour un délai court, appelez.",
     "form": {
@@ -321,5 +324,9 @@
       "title": "Services",
       "description": "Découvrez nos solutions numériques"
     }
+  },
+  "whatsapp": {
+    "label": "Écrire à BEKNO sur WhatsApp",
+    "message": "Bonjour ! Je viens du site de BEKNO et j’aimerais un devis."
   }
 }

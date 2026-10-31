@@ -3,15 +3,19 @@ import QuoteForm from '@/components/QuoteForm';
 import JsonLd from '@/components/seo/JsonLd';
 import { setRequestLocale } from 'next-intl/server';
 import { quoteJsonLd } from '@/lib/seo';
-import { SITE } from '@/lib/site';
+import { hasValue, SITE, whatsappUrl } from '@/lib/site';
 
 function QuoteContent() {
   const t = useTranslations('quote');
   const benefits = t.raw('benefits') as string[];
 
   const contactInfo = [
-    { label: t('phoneLabel'), value: SITE.phoneDisplay, href: `tel:${SITE.phoneE164}` },
-    { label: t('locationLabel'), value: `${SITE.neighborhood}, ${SITE.region}`, href: null as string | null },
+    { label: t('whatsappLabel'), value: SITE.phoneDisplay, href: whatsappUrl() as string | null, external: true },
+    { label: t('phoneLabel'), value: SITE.phoneDisplay, href: `tel:${SITE.phoneE164}`, external: false },
+    ...(hasValue(SITE.email)
+      ? [{ label: t('emailLabel'), value: SITE.email as string, href: `mailto:${SITE.email}`, external: false }]
+      : []),
+    { label: t('locationLabel'), value: `${SITE.neighborhood}, ${SITE.region}`, href: null, external: false },
   ];
 
   return (
@@ -42,7 +46,10 @@ function QuoteContent() {
             <li key={item.label} className="grid gap-1 border-t border-line py-4 md:grid-cols-[8rem_1fr] md:items-baseline">
               <span className="font-mono text-sm text-muted">{item.label}</span>
               {item.href ? (
-                <a href={item.href} className="link inline-flex w-fit items-baseline gap-3 text-xl tracking-[-0.01em]">
+                <a
+                  href={item.href}
+                  {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className="link inline-flex w-fit items-baseline gap-3 text-xl tracking-[-0.01em]">
                   {item.value}
                   <span className="font-mono text-base" aria-hidden="true">→</span>
                 </a>

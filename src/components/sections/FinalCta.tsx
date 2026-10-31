@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
+import { hasValue, SITE, whatsappUrl } from '@/lib/site';
 
 export default function FinalCta() {
   const t = useTranslations('finalCta');
@@ -24,6 +25,22 @@ export default function FinalCta() {
             {t('secondary')}
           </Link>
         </div>
+        <p className="flex flex-wrap items-center gap-x-5 gap-y-1 font-mono text-sm text-muted md:col-span-2">
+          <span>{t('talkNow')}</span>
+          <a
+            href={whatsappUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link inline-flex min-h-[44px] items-center text-fg md:min-h-0"
+          >
+            WhatsApp {SITE.phoneDisplay}
+          </a>
+          {hasValue(SITE.email) && (
+            <a href={`mailto:${SITE.email}`} className="link inline-flex min-h-[44px] items-center text-fg md:min-h-0">
+              {SITE.email}
+            </a>
+          )}
+        </p>
       </div>
     </section>
   );

@@ -166,7 +166,8 @@
     "title": "Your company deserves more than a basic website.",
     "text": "Tell us what the business needs. We reply with a tailored proposal.",
     "cta": "Request a quote",
-    "secondary": "See projects"
+    "secondary": "See projects",
+    "talkNow": "Rather talk right now?"
   },
   "quote": {
     "eyebrow": "Quote",
@@ -180,6 +181,8 @@
       "A responsive site that works on any screen"
     ],
     "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
     "locationLabel": "Where",
     "response": "A reply arrives within one business day. For a tight deadline, call.",
     "form": {
@@ -321,5 +324,9 @@
       "title": "Services",
       "description": "Discover our digital solutions"
     }
+  },
+  "whatsapp": {
+    "label": "Chat with BEKNO on WhatsApp",
+    "message": "Hi! I found BEKNO's website and would like a quote."
   }
 }

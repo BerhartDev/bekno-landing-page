@@ -73,7 +73,7 @@ export default function Footer() {
   const place = [SITE.neighborhood, SITE.city].filter(hasValue).join(', ');
 
   return (
-    <footer className="border-t border-line py-8 font-mono text-xs text-muted">
+    <footer className="border-t border-line pb-24 pt-8 font-mono text-xs text-muted">
       <div className="grid gap-6 md:grid-cols-[minmax(0,24rem)_1fr] md:gap-x-12">
         <div className="grid content-start gap-3">
           <Link href="/" className="link w-fit text-sm text-fg">

@@ -166,7 +166,8 @@
     "title": "Tu empresa merece más que un sitio básico.",
     "text": "Cuéntanos qué necesita tu negocio. Te respondemos con una propuesta a medida.",
     "cta": "Pedir presupuesto",
-    "secondary": "Ver proyectos"
+    "secondary": "Ver proyectos",
+    "talkNow": "¿Prefieres hablar ahora?"
   },
   "quote": {
     "eyebrow": "Presupuesto",
@@ -180,6 +181,8 @@
       "Sitio responsive, que funciona bien en cualquier pantalla"
     ],
     "phoneLabel": "Teléfono",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Correo",
     "locationLabel": "Dónde",
     "response": "La respuesta llega en un día hábil. Si tienes poco tiempo, llámanos.",
     "form": {
@@ -321,5 +324,9 @@
       "title": "Servicios",
       "description": "Descubre nuestras soluciones digitales"
     }
+  },
+  "whatsapp": {
+    "label": "Hablar con BEKNO por WhatsApp",
+    "message": "¡Hola! Llegué por el sitio de BEKNO y me gustaría un presupuesto."
   }
 }

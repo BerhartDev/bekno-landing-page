@@ -166,7 +166,8 @@
     "title": "Sua empresa merece mais do que um site básico.",
     "text": "Conte o que o negócio precisa. A gente responde com uma proposta sob medida.",
     "cta": "Pedir orçamento",
-    "secondary": "Ver projetos"
+    "secondary": "Ver projetos",
+    "talkNow": "Prefere conversar agora?"
   },
   "quote": {
     "eyebrow": "Orçamento",
@@ -180,6 +181,8 @@
       "Site responsivo, que funciona bem em qualquer tela"
     ],
     "phoneLabel": "Telefone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mail",
     "locationLabel": "Onde",
     "response": "A resposta chega em até um dia útil. Para um prazo curto, ligue.",
     "form": {
@@ -321,5 +324,9 @@
       "title": "Serviços",
       "description": "Descubra nossas soluções digitais"
     }
+  },
+  "whatsapp": {
+    "label": "Falar com a BEKNO pelo WhatsApp",
+    "message": "Olá! Vim pelo site da BEKNO e gostaria de um orçamento."
   }
 }
