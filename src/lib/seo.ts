@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { localizedPath, routing, type AppPathname } from '@/lib/i18n/routing';
+import { SITE } from '@/lib/site';
 
 const HREFLANG = {
   pt: 'pt-BR',
@@ -52,8 +53,6 @@ export function organizationId() {
 export function websiteId() {
   return `${getSiteUrl()}/#website`;
 }
-
-const PHONE = '+5521973692691';
 
 /** Título e descrição de cada rota; a home usa o hero. */
 async function pageCopy(locale: string, path: string) {
@@ -128,12 +127,12 @@ function organizationNode(description: string) {
     name: 'BEKNO',
     url: `${getSiteUrl()}/`,
     description,
-    telephone: PHONE,
+    telephone: SITE.phoneE164,
     image: `${getSiteUrl()}/services/hero.jpg`,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Rio de Janeiro',
-      addressRegion: 'RJ',
+      addressLocality: SITE.city,
+      addressRegion: SITE.region,
       addressCountry: 'BR',
     },
     areaServed: {

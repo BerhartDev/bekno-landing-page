@@ -3,14 +3,15 @@ import QuoteForm from '@/components/QuoteForm';
 import JsonLd from '@/components/seo/JsonLd';
 import { setRequestLocale } from 'next-intl/server';
 import { quoteJsonLd } from '@/lib/seo';
+import { SITE } from '@/lib/site';
 
 function QuoteContent() {
   const t = useTranslations('quote');
   const benefits = t.raw('benefits') as string[];
 
   const contactInfo = [
-    { label: t('phoneLabel'), value: t('phone'), href: `tel:${t('phone').replace(/\s/g, '')}` },
-    { label: t('locationLabel'), value: t('location'), href: null as string | null },
+    { label: t('phoneLabel'), value: SITE.phoneDisplay, href: `tel:${SITE.phoneE164}` },
+    { label: t('locationLabel'), value: `${SITE.neighborhood}, ${SITE.region}`, href: null as string | null },
   ];
 
   return (
