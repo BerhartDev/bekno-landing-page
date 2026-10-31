@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "prebuild": "npm run check:i18n",
     "build": "next build",
     "start": "npx serve@latest out -p 3000",
     "lint": "next lint",

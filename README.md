@@ -13,16 +13,25 @@ Site institucional da BEKNO - Soluções Digitais para o Seu Negócio. Uma landi
 
 ## 🌍 Internacionalização
 
-O site suporta múltiplos idiomas:
-- **Português (pt)** - Idioma padrão
+O site suporta quatro idiomas:
+- **Português (pt)** - Idioma padrão, na raiz, sem prefixo
 - **Inglês (en)**
+- **Espanhol (es)**
 - **Francês (fr)**
 
+Inglês, espanhol e francês usam prefixo (`/en/`, `/es/`, `/fr/`) e endereços traduzidos. A configuração fica em `src/lib/i18n/routing.ts` (`localePrefix: 'as-needed'` e `pathnames`).
+
 ### URLs Disponíveis
-- `/` - Redireciona para `/pt/`
-- `/pt/` - Site em português
-- `/en/` - Site em inglês
-- `/fr/` - Site em francês
+
+| Página    | pt           | en              | es                 | fr              |
+|-----------|--------------|-----------------|--------------------|-----------------|
+| Home      | `/`          | `/en/`          | `/es/`             | `/fr/`          |
+| Projetos  | `/projetos/` | `/en/projects/` | `/es/proyectos/`   | `/fr/projets/`  |
+| Orçamento | `/orcamento/`| `/en/quote/`    | `/es/presupuesto/` | `/fr/devis/`    |
+
+O `vercel.json` redireciona (301) os endereços antigos: `/pt` e `/pt/*` vão para a raiz, e `/en|es|fr/projetos` e `/en|es|fr/orcamento` vão para o endereço traduzido.
+
+Para conferir se as traduções têm as mesmas chaves do `pt.json`, rode `npm run check:i18n`. O `npm run build` roda essa checagem antes do build.
 
 ## 🛠️ Desenvolvimento Local
 
@@ -51,8 +60,10 @@ npm run lint
 
 ### URLs de Desenvolvimento
 - **Desenvolvimento**: [http://localhost:3000](http://localhost:3000)
-- **Português**: [http://localhost:3000/pt/](http://localhost:3000/pt/)
+- **Português**: [http://localhost:3000/](http://localhost:3000/)
 - **Inglês**: [http://localhost:3000/en/](http://localhost:3000/en/)
+- **Espanhol**: [http://localhost:3000/es/](http://localhost:3000/es/)
+- **Francês**: [http://localhost:3000/fr/](http://localhost:3000/fr/)
 
 ## Build e Deploy
 
@@ -96,6 +107,7 @@ bekno-landing-page/
 │   └── locales/               # Traduções
 │       ├── pt.json            # Português
 │       ├── en.json            # Inglês
+│       ├── es.json            # Espanhol
 │       └── fr.json            # Francês
 ├── next.config.js
 ├── package.json
@@ -120,7 +132,7 @@ bekno-landing-page/
 ## 📱 Funcionalidades
 
 - ✅ **Design Responsivo** - Mobile-first
-- ✅ **Internacionalização** - PT/EN
+- ✅ **Internacionalização** - PT/EN/ES/FR
 - ✅ **SEO Otimizado** - Meta tags dinâmicas
 - ✅ **Formulário de Contato** - Integração Formspree
 - ✅ **Scroll Suave** - Navegação entre seções
