@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
-import { demoImage } from '@/lib/portfolio';
+import { serviceImages } from '@/lib/service-images';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -27,47 +27,15 @@ export default function Hero() {
         </div>
         <p className="font-mono text-sm text-muted">{t('reassurance')}</p>
       </div>
-      {/* Montagem com capas do portfólio: notebook, cartão e celular, desenhados em CSS. */}
-      <div role="img" aria-label={t('imageAlt')} className="relative aspect-[4/3] w-full">
-        <div className="absolute left-0 top-0 w-[84%]">
-          <div className="border border-fg bg-bg">
-            <div className="flex h-5 items-center gap-1.5 border-b border-line px-2 md:h-6" aria-hidden="true">
-              <span className="h-1.5 w-1.5 bg-line" />
-              <span className="h-1.5 w-1.5 bg-line" />
-              <span className="h-1.5 w-1.5 bg-line" />
-            </div>
-            <div className="relative aspect-[16/10]">
-              <Image
-                src={demoImage('fornalha/hero.webp')}
-                alt=""
-                fill
-                priority
-                sizes="(min-width: 768px) 42vw, 84vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div className="h-2 w-full border border-t-0 border-fg bg-surface" aria-hidden="true" />
-        </div>
-
-        <div className="absolute bottom-0 left-[4%] w-[36%] border border-fg bg-bg p-1.5">
-          <div className="relative aspect-[4/3]">
-            <Image src={demoImage('alvea/sorriso.webp')} alt="" fill sizes="(min-width: 768px) 18vw, 36vw" className="object-cover" />
-          </div>
-        </div>
-
-        <div className="absolute bottom-0 right-0 w-[26%] overflow-hidden rounded-[14px] border-[3px] border-fg bg-bg">
-          <div className="relative aspect-[9/19]">
-            <Image
-              src={demoImage('mare-atelier/hero.webp')}
-              alt=""
-              fill
-              sizes="(min-width: 768px) 13vw, 26vw"
-              className="object-cover"
-            />
-            <span className="absolute left-1/2 top-1.5 h-1.5 w-1/3 -translate-x-1/2 rounded-full bg-fg" aria-hidden="true" />
-          </div>
-        </div>
+      <div className="photo border border-line">
+        <Image
+          src={serviceImages.hero}
+          alt={t('imageAlt')}
+          width={1600}
+          height={1200}
+          priority
+          className="aspect-[4/3] w-full object-cover"
+        />
       </div>
     </section>
   );
