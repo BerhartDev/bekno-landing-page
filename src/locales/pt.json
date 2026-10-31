@@ -40,6 +40,7 @@
     "title": "Método 6D",
     "subtitle": "Seis cuidados em todo projeto, para o seu site ficar bonito, rápido, seguro e trazer clientes.",
     "cta": "Agendar uma conversa",
+    "speedBadge": "Este site abre em {s} segundos no celular. O seu também vai.",
     "steps": [
       {
         "title": "Design",

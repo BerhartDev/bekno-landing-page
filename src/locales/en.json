@@ -40,6 +40,7 @@
     "title": "The 6D method",
     "subtitle": "Six things we take care of in every project, so your site looks good, loads fast, stays safe and brings in customers.",
     "cta": "Book a conversation",
+    "speedBadge": "This site opens in {s} seconds on a phone. Yours will too.",
     "steps": [
       {
         "title": "Design",

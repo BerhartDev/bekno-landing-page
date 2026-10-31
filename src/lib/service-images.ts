@@ -1,13 +1,13 @@
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 export const serviceImages = {
-  hero: `${basePath}/services/hero.jpg`,
-  website: `${basePath}/services/website.jpg`,
-  landing: `${basePath}/services/landing.jpg`,
-  ecommerce: `${basePath}/services/ecommerce.jpg`,
-  cms: `${basePath}/services/cms.jpg`,
-  seo: `${basePath}/services/seo.jpg`,
-  systems: `${basePath}/services/systems.jpg`,
+  hero: `${basePath}/services/hero.webp`,
+  website: `${basePath}/services/website.webp`,
+  landing: `${basePath}/services/landing.webp`,
+  ecommerce: `${basePath}/services/ecommerce.webp`,
+  cms: `${basePath}/services/cms.webp`,
+  seo: `${basePath}/services/seo.webp`,
+  systems: `${basePath}/services/systems.webp`,
 } as const;
 
 export type ServiceImageId = keyof typeof serviceImages;

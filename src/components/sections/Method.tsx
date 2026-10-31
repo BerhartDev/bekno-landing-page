@@ -1,8 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
 import Section from '@/components/ui/Section';
+import { hasValue, SITE } from '@/lib/site';
 
 type Step = {
   title: string;
@@ -14,6 +15,11 @@ type Step = {
 export default function Method() {
   const t = useTranslations('method');
   const steps = t.raw('steps') as Step[];
+  const locale = useLocale();
+  // Só aparece com medição real (docs/medicoes-velocidade.md). Vírgula em PT/ES/FR, ponto em EN.
+  const seconds = hasValue(SITE.loadTimeSeconds)
+    ? new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(SITE.loadTimeSeconds)
+    : '';
 
   return (
     <Section id="method" title={t('title')} intro={t('subtitle')}>
@@ -26,6 +32,9 @@ export default function Method() {
           </li>
         ))}
       </ol>
+      {seconds && (
+        <p className="mt-6 w-fit border border-line px-4 py-3 font-mono text-sm">{t('speedBadge', { s: seconds })}</p>
+      )}
       <div className="mt-10">
         <Link href="/orcamento" className="cta">
           {t('cta')}

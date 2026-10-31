@@ -31,7 +31,7 @@ export const PORTFOLIO: PortfolioProject[] = [
     slug: 'fornalha',
     client: 'Fornalha',
     siteType: 'institutional',
-    cover: 'fornalha/hero.jpg',
+    cover: 'fornalha/hero.webp',
     theme: {
       bg: '#14100d',
       surface: '#1f1914',
@@ -60,7 +60,7 @@ export const PORTFOLIO: PortfolioProject[] = [
     slug: 'mare-atelier',
     client: 'Maré Atelier',
     siteType: 'store',
-    cover: 'mare-atelier/hero.jpg',
+    cover: 'mare-atelier/hero.webp',
     theme: {
       bg: '#f4efe8',
       surface: '#ebe3d8',
@@ -75,7 +75,7 @@ export const PORTFOLIO: PortfolioProject[] = [
     slug: 'alvea',
     client: 'Alvéa',
     siteType: 'institutional',
-    cover: 'alvea/sorriso.jpg',
+    cover: 'alvea/sorriso.webp',
     theme: {
       bg: '#f7f3ec',
       surface: '#ece7dc',
@@ -90,7 +90,7 @@ export const PORTFOLIO: PortfolioProject[] = [
     slug: 'forja',
     client: 'Forja',
     siteType: 'landing',
-    cover: 'forja/hero.jpg',
+    cover: 'forja/hero.webp',
     theme: {
       bg: '#0a0a0a',
       surface: '#161616',
@@ -105,7 +105,7 @@ export const PORTFOLIO: PortfolioProject[] = [
     slug: 'altair-advocacia',
     client: 'Altair Advocacia',
     siteType: 'institutional',
-    cover: 'altair-advocacia/hero.jpg',
+    cover: 'altair-advocacia/hero.webp',
     theme: {
       bg: '#0f1a2b',
       surface: '#16243a',

@@ -74,9 +74,9 @@ export async function buildPageMetadata(locale: string, path = ''): Promise<Meta
   const { title, description } = await pageCopy(locale, path);
   const url = pageUrl(locale, path);
   const image = {
-    url: `${getSiteUrl()}/services/hero.jpg`,
-    width: 1600,
-    height: 1200,
+    url: `${getSiteUrl()}/og-image.jpg`,
+    width: 1200,
+    height: 630,
     alt: hero('imageAlt'),
   };
 
@@ -128,7 +128,7 @@ function organizationNode(description: string) {
     url: `${getSiteUrl()}/`,
     description,
     telephone: SITE.phoneE164,
-    image: `${getSiteUrl()}/services/hero.jpg`,
+    image: `${getSiteUrl()}/og-image.jpg`,
     address: {
       '@type': 'PostalAddress',
       addressLocality: SITE.city,
@@ -180,9 +180,9 @@ export async function homeJsonLd(locale: string) {
         about: { '@id': organizationId() },
         primaryImageOfPage: {
           '@type': 'ImageObject',
-          url: `${getSiteUrl()}/services/hero.jpg`,
-          width: 1600,
-          height: 1200,
+          url: `${getSiteUrl()}/og-image.jpg`,
+          width: 1200,
+          height: 630,
         },
       },
       {

@@ -40,6 +40,7 @@
     "title": "La méthode 6D",
     "subtitle": "Six points soignés dans chaque projet, pour que votre site soit beau, rapide, sûr et vous apporte des clients.",
     "cta": "Planifier un échange",
+    "speedBadge": "Ce site s’ouvre en {s} secondes sur téléphone. Le vôtre aussi.",
     "steps": [
       {
         "title": "Design",
