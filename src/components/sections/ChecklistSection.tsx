@@ -11,7 +11,7 @@ type ChecklistItem = {
   descriptionResponseTime?: string;
 };
 
-type ChecklistNamespace = 'commitment' | 'whyBekno';
+type ChecklistNamespace = 'commitment' | 'whyBekno' | 'included';
 
 const COLUMNS = {
   2: 'sm:grid-cols-2',
@@ -24,7 +24,7 @@ interface ChecklistSectionProps {
   columns?: keyof typeof COLUMNS;
 }
 
-/** Lista de itens com marcador, usada por Compromisso e Por que escolher a BEKNO. */
+/** Lista de itens com marcador, usada por Compromisso, O que está incluso e Por que escolher a BEKNO. */
 export default function ChecklistSection({ namespace, columns = 3 }: ChecklistSectionProps) {
   const t = useTranslations(namespace);
   const items = t.raw('items') as ChecklistItem[];

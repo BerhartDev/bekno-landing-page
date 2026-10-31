@@ -67,6 +67,59 @@
       }
     ]
   },
+  "process": {
+    "title": "Cómo trabajamos",
+    "intro": "Del primer contacto al sitio en línea",
+    "introWeeks": "Del primer contacto al sitio en línea en unas {n} semanas",
+    "steps": [
+      {
+        "title": "Conversación",
+        "description": "Entendemos tu negocio y a quién te compra."
+      },
+      {
+        "title": "Apruebas el aspecto",
+        "description": "Te mostramos cómo va a quedar el sitio y lo ajustamos hasta que lo apruebes."
+      },
+      {
+        "title": "Construcción",
+        "description": "Armamos el sitio con textos, fotos y todo funcionando."
+      },
+      {
+        "title": "Pruebas",
+        "description": "Revisamos todo en el celular y en la computadora."
+      },
+      {
+        "title": "En línea",
+        "description": "Lo publicamos, lo registramos en Google y te enseñamos a usarlo."
+      }
+    ]
+  },
+  "included": {
+    "title": "Lo que incluye todo sitio",
+    "subtitle": "Sin letra pequeña: esto viene con tu sitio.",
+    "items": [
+      {
+        "title": "Funciona bien en el celular",
+        "description": "Pensado primero para la pantalla pequeña."
+      },
+      {
+        "title": "Capacitación para usar el sitio",
+        "description": "Aprendes a manejar el día a día."
+      },
+      {
+        "title": "Registro en Google",
+        "description": "Tu sitio se envía a Google desde el primer día."
+      },
+      {
+        "title": "Candado de sitio seguro",
+        "description": "El navegador muestra que tu sitio es confiable."
+      },
+      {
+        "title": "Textos escritos por nosotros",
+        "description": "No tienes que escribir nada solo."
+      }
+    ]
+  },
   "commitment": {
     "title": "Compromiso",
     "subtitle": "Lo que puedes esperar durante y después del proyecto.",

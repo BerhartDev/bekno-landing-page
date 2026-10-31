@@ -67,6 +67,59 @@
       }
     ]
   },
+  "process": {
+    "title": "Como trabalhamos",
+    "intro": "Do primeiro contato ao site no ar",
+    "introWeeks": "Do primeiro contato ao site no ar em cerca de {n} semanas",
+    "steps": [
+      {
+        "title": "Conversa",
+        "description": "Entendemos seu negócio e quem compra de você."
+      },
+      {
+        "title": "Você aprova o visual",
+        "description": "Mostramos como o site vai ficar e ajustamos até você aprovar."
+      },
+      {
+        "title": "Construção",
+        "description": "Montamos o site com textos, fotos e tudo funcionando."
+      },
+      {
+        "title": "Testes",
+        "description": "Conferimos tudo no celular e no computador."
+      },
+      {
+        "title": "No ar",
+        "description": "Publicamos, cadastramos no Google e ensinamos você a usar."
+      }
+    ]
+  },
+  "included": {
+    "title": "O que está incluso em todo site",
+    "subtitle": "Sem letras miúdas: isso vem junto com o seu site.",
+    "items": [
+      {
+        "title": "Funciona bem no celular",
+        "description": "Pensado primeiro para a tela pequena."
+      },
+      {
+        "title": "Treinamento para usar o site",
+        "description": "Você aprende a fazer o dia a dia."
+      },
+      {
+        "title": "Cadastro no Google",
+        "description": "Seu site é enviado para o Google desde o primeiro dia."
+      },
+      {
+        "title": "Cadeado de site seguro",
+        "description": "O navegador mostra que o seu site é confiável."
+      },
+      {
+        "title": "Textos escritos por nós",
+        "description": "Você não precisa escrever nada sozinho."
+      }
+    ]
+  },
   "commitment": {
     "title": "Compromisso",
     "subtitle": "O que você pode esperar durante e depois do projeto.",

@@ -67,6 +67,59 @@
       }
     ]
   },
+  "process": {
+    "title": "How we work",
+    "intro": "From the first conversation to your site going live",
+    "introWeeks": "From the first conversation to your site going live in about {n} weeks",
+    "steps": [
+      {
+        "title": "Conversation",
+        "description": "We get to know your business and the people who buy from you."
+      },
+      {
+        "title": "You approve the look",
+        "description": "We show you how the site will look and adjust it until you approve."
+      },
+      {
+        "title": "Building",
+        "description": "We put the site together with text, photos and everything working."
+      },
+      {
+        "title": "Testing",
+        "description": "We check everything on phones and computers."
+      },
+      {
+        "title": "Live",
+        "description": "We publish it, register it with Google and show you how to use it."
+      }
+    ]
+  },
+  "included": {
+    "title": "What comes with every site",
+    "subtitle": "No fine print: all of this comes with your site.",
+    "items": [
+      {
+        "title": "Works well on phones",
+        "description": "Designed for the small screen first."
+      },
+      {
+        "title": "Training to use your site",
+        "description": "You learn how to handle the day-to-day."
+      },
+      {
+        "title": "Registered with Google",
+        "description": "Your site is sent to Google from day one."
+      },
+      {
+        "title": "Secure site padlock",
+        "description": "The browser shows visitors your site can be trusted."
+      },
+      {
+        "title": "Text written by us",
+        "description": "You don't have to write anything yourself."
+      }
+    ]
+  },
   "commitment": {
     "title": "Commitment",
     "subtitle": "What to expect during and after the project.",

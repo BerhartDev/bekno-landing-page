@@ -67,6 +67,59 @@
       }
     ]
   },
+  "process": {
+    "title": "Comment nous travaillons",
+    "intro": "Du premier contact à la mise en ligne",
+    "introWeeks": "Du premier contact à la mise en ligne en environ {n} semaines",
+    "steps": [
+      {
+        "title": "Échange",
+        "description": "Nous comprenons votre activité et qui achète chez vous."
+      },
+      {
+        "title": "Vous validez l’apparence",
+        "description": "Nous vous montrons à quoi ressemblera le site et l’ajustons jusqu’à votre accord."
+      },
+      {
+        "title": "Construction",
+        "description": "Nous montons le site avec les textes, les photos et tout ce qui doit fonctionner."
+      },
+      {
+        "title": "Tests",
+        "description": "Nous vérifions tout sur téléphone et sur ordinateur."
+      },
+      {
+        "title": "En ligne",
+        "description": "Nous le publions, l’inscrivons sur Google et vous apprenons à l’utiliser."
+      }
+    ]
+  },
+  "included": {
+    "title": "Ce qui est inclus dans chaque site",
+    "subtitle": "Pas de petites lignes : tout cela est fourni avec votre site.",
+    "items": [
+      {
+        "title": "Fonctionne bien sur téléphone",
+        "description": "Pensé d’abord pour les petits écrans."
+      },
+      {
+        "title": "Formation pour utiliser le site",
+        "description": "Vous apprenez à gérer le quotidien."
+      },
+      {
+        "title": "Inscription sur Google",
+        "description": "Votre site est envoyé à Google dès le premier jour."
+      },
+      {
+        "title": "Cadenas de site sécurisé",
+        "description": "Le navigateur montre que votre site est fiable."
+      },
+      {
+        "title": "Textes écrits par nous",
+        "description": "Vous n’avez rien à écrire vous-même."
+      }
+    ]
+  },
   "commitment": {
     "title": "Engagement",
     "subtitle": "Ce à quoi vous attendre pendant et après le projet.",
