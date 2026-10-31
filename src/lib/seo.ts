@@ -68,16 +68,32 @@ async function pageCopy(locale: string, path: string) {
   return { title: `${hero('kicker')} | BEKNO`, description: `${hero('kicker')}. ${hero('headline')}` };
 }
 
-export async function buildPageMetadata(locale: string, path = ''): Promise<Metadata> {
+/** Páginas com imagem de compartilhamento própria (geradas por scripts/generate-og.mjs, uma por idioma). */
+const OG_PAGES: Record<string, string> = {
+  '': 'home',
+  '/projetos': 'projetos',
+  '/orcamento': 'orcamento',
+  '/sobre': 'sobre',
+  '/design': 'design',
+  '/marketing': 'marketing',
+};
+
+/** Imagem de compartilhamento da rota; sem imagem própria, usa og/default.png. */
+export function ogImageUrl(locale: string, path = '') {
+  const page = OG_PAGES[path];
+  return `${getSiteUrl()}/og/${page ? `${asLocale(locale)}/${page}` : 'default'}.png`;
+}
+
+/** `image` troca a imagem de compartilhamento da rota (URL absoluta); sem ela, vale ogImageUrl. */
+export async function buildPageMetadata(locale: string, path = '', image = ogImageUrl(locale, path)): Promise<Metadata> {
   const current = asLocale(locale);
-  const hero = await getTranslations({ locale, namespace: 'hero' });
   const { title, description } = await pageCopy(locale, path);
   const url = pageUrl(locale, path);
-  const image = {
-    url: `${getSiteUrl()}/og-image.jpg`,
+  const ogImage = {
+    url: image,
     width: 1200,
     height: 630,
-    alt: hero('imageAlt'),
+    alt: title,
   };
 
   return {
@@ -98,13 +114,13 @@ export async function buildPageMetadata(locale: string, path = ''): Promise<Meta
       alternateLocale: routing.locales
         .filter((item) => item !== current)
         .map((item) => OG_LOCALE[asLocale(item)]),
-      images: [image],
+      images: [ogImage],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [image.url],
+      images: [ogImage.url],
     },
     robots: {
       index: true,
@@ -144,7 +160,7 @@ function organizationNode(description: string) {
     email: SITE.email,
     foundingDate: String(SITE.foundedYear),
     logo: `${getSiteUrl()}/logo.png`,
-    image: `${getSiteUrl()}/og-image.jpg`,
+    image: `${getSiteUrl()}/og/default.png`,
     sameAs: Object.values(SITE.social).filter(hasValue),
     address: compact({
       '@type': 'PostalAddress',
@@ -210,7 +226,7 @@ export async function homeJsonLd(locale: string) {
         about: { '@id': organizationId() },
         primaryImageOfPage: {
           '@type': 'ImageObject',
-          url: `${getSiteUrl()}/og-image.jpg`,
+          url: ogImageUrl(locale),
           width: 1200,
           height: 630,
         },

@@ -42,15 +42,6 @@ for (const folder of folders) {
   }
 }
 
-// Share image: social networks don't all accept WebP, so it stays a JPEG at 1200×630.
-const og = join(targetDir, 'og-image.jpg');
-await sharp(join(sourceDir, 'services', 'hero.jpg'))
-  .rotate()
-  .resize({ width: 1200, height: 630, fit: 'cover' })
-  .jpeg({ quality: QUALITY, mozjpeg: true })
-  .toFile(og);
-console.log(`og-image.jpg: ${kb((await stat(og)).size)}`);
-
 // Logo for structured data: Google wants a raster image, so the SVG icon becomes a 512px PNG.
 const logo = join(targetDir, 'logo.png');
 await sharp(join(root, 'src', 'app', 'icon.svg'), { density: 384 }).resize(512, 512).png().toFile(logo);
