@@ -51,4 +51,9 @@ await sharp(join(sourceDir, 'services', 'hero.jpg'))
   .toFile(og);
 console.log(`og-image.jpg: ${kb((await stat(og)).size)}`);
 
+// Logo for structured data: Google wants a raster image, so the SVG icon becomes a 512px PNG.
+const logo = join(targetDir, 'logo.png');
+await sharp(join(root, 'src', 'app', 'icon.svg'), { density: 384 }).resize(512, 512).png().toFile(logo);
+console.log(`logo.png: ${kb((await stat(logo)).size)}`);
+
 console.log(`\nTotal: ${kb(before)} → ${kb(after)}`);

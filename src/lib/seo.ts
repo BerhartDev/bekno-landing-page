@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { localizedPath, routing, type AppPathname } from '@/lib/i18n/routing';
-import { SITE } from '@/lib/site';
+import { hasValue, SITE } from '@/lib/site';
 
 const HREFLANG = {
   pt: 'pt-BR',
@@ -120,27 +120,57 @@ export async function buildPageMetadata(locale: string, path = ''): Promise<Meta
   };
 }
 
+/** Remove as chaves com texto vazio, 0 ou lista vazia, para não publicar dado ausente. */
+function compact<T extends Record<string, unknown>>(node: T): Partial<T> {
+  return Object.fromEntries(
+    Object.entries(node).filter(([, value]) => {
+      if (typeof value === 'string' || typeof value === 'number') return hasValue(value);
+      if (Array.isArray(value)) return value.length > 0;
+      return value !== undefined && value !== null;
+    }),
+  ) as Partial<T>;
+}
+
 function organizationNode(description: string) {
-  return {
+  return compact({
     '@type': 'ProfessionalService',
     '@id': organizationId(),
-    name: 'BEKNO',
+    name: SITE.brand,
+    legalName: SITE.legalName,
+    taxID: SITE.cnpj,
     url: `${getSiteUrl()}/`,
     description,
     telephone: SITE.phoneE164,
+    email: SITE.email,
+    foundingDate: String(SITE.foundedYear),
+    logo: `${getSiteUrl()}/logo.png`,
     image: `${getSiteUrl()}/og-image.jpg`,
-    address: {
+    sameAs: Object.values(SITE.social).filter(hasValue),
+    address: compact({
       '@type': 'PostalAddress',
+      streetAddress: SITE.streetAddress,
       addressLocality: SITE.city,
       addressRegion: SITE.region,
       addressCountry: 'BR',
-    },
+    }),
     areaServed: {
       '@type': 'Country',
       name: 'BR',
     },
     knowsLanguage: ['pt-BR', 'en', 'es', 'fr'],
-  };
+  });
+}
+
+/** Serviço oferecido pela BEKNO, para as páginas de serviço (Design, Marketing e outras). */
+export function serviceNode({ name, description, url }: { name: string; description: string; url: string }) {
+  return compact({
+    '@type': 'Service',
+    name,
+    description,
+    url,
+    provider: { '@id': organizationId() },
+    areaServed: { '@type': 'Country', name: 'BR' },
+  });
 }
 
 function websiteNode(description: string) {
