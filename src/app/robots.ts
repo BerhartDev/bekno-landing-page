@@ -6,7 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      // Sites de projetos conceito (negócios fictícios) não devem ser indexados.
+      // /portfolio/ guarda versões de demonstração anonimizadas de projetos de clientes reais.
+      // Fica fora do Google para não ser confundido com os negócios reais.
       disallow: '/portfolio/',
     },
     sitemap: `${getSiteUrl()}/sitemap.xml`,

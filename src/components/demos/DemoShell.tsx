@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react';
 import type { Metadata } from 'next';
+import DemoCredit from './DemoCredit';
 import DemoNotice from './DemoNotice';
 import { demoThemeStyle, getProject } from '@/lib/portfolio';
 
@@ -12,7 +13,7 @@ interface DemoShellProps {
   children: ReactNode;
 }
 
-/** Documento de um site do portfólio: tema e fontes do negócio fictício, sem a identidade da BEKNO. */
+/** Documento de um site do portfólio: tema e fontes da versão de demonstração anonimizada de projeto real, sem a identidade da BEKNO. */
 export default function DemoShell({ slug, display, body, children }: DemoShellProps) {
   const style = {
     ...demoThemeStyle(getProject(slug).theme),
@@ -24,6 +25,7 @@ export default function DemoShell({ slug, display, body, children }: DemoShellPr
     <html lang="pt-BR" style={style}>
       <body className="min-h-screen bg-d-bg font-body text-d-fg antialiased">
         {children}
+        <DemoCredit />
         <DemoNotice />
       </body>
     </html>
@@ -34,7 +36,7 @@ export function demoMetadata(client: string, description: string): Metadata {
   return {
     title: client,
     description,
-    // Negócios fictícios não devem aparecer em buscas.
+    // Versão de demonstração anonimizada de projeto real: fora das buscas para não ser confundida com o negócio real.
     robots: { index: false, follow: false },
   };
 }

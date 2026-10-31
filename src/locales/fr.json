@@ -33,61 +33,91 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Six entreprises, six identités, créées avec soin pour montrer notre travail.",
+    "subtitle": "Six vrais clients, chacun avec sa propre identité. Les noms ont été modifiés pour protéger chacun d’eux.",
     "cta": "Voir tous les projets"
-  },
-  "exclusivity": {
-    "title": "Exclusivité",
-    "subtitle": "Votre site ne ressemble à aucun autre.",
-    "items": [
-      {
-        "title": "Aucun template"
-      },
-      {
-        "title": "Mise en page 100 % sur mesure"
-      },
-      {
-        "title": "Délais respectés"
-      },
-      {
-        "title": "Maintenance continue"
-      },
-      {
-        "title": "Accompagnement humain"
-      },
-      {
-        "title": "Qualité garantie"
-      }
-    ]
   },
   "method": {
     "title": "La méthode 6D",
-    "subtitle": "Six axes traités dans chaque projet, du design au texte.",
+    "subtitle": "Six points soignés dans chaque projet, pour que votre site soit beau, rapide, sûr et vous apporte des clients.",
     "cta": "Planifier un échange",
+    "speedBadge": "Ce site s’ouvre en {s} secondes sur téléphone. Le vôtre aussi.",
     "steps": [
       {
         "title": "Design",
-        "description": "La mise en page part de zéro, à partir de l’activité et du profil des clients."
+        "description": "Avant de construire, vous voyez et validez l’apparence du site. Vous pouvez demander des retouches jusqu’à ce qu’il vous plaise."
       },
       {
         "title": "Développement",
-        "description": "Une navigation simple qui mène le visiteur, sans effort, à l’action qui compte."
+        "description": "Votre site fonctionne bien sur téléphone, tablette et ordinateur. Nous le testons sur plusieurs appareils avant la livraison."
       },
       {
-        "title": "Débit",
-        "description": "Des pages légères et rapides, mieux classées sur Google et qui convertissent plus."
+        "title": "Rapidité",
+        "description": "Un site rapide : il s’ouvre en quelques secondes, même sur téléphone. Un site lent fait fuir le client vers un concurrent."
       },
       {
         "title": "Défense",
-        "description": "Protection du site et des données contre les attaques, avec correction des failles."
+        "description": "Votre site est protégé contre les intrusions, avec une copie de sécurité et un suivi pour qu’il reste en ligne."
       },
       {
         "title": "Diffusion",
-        "description": "Un SEO intégré dès le départ, pour apparaître dans les recherches et attirer des visites qualifiées."
+        "description": "Votre site est prêt dès le départ à être trouvé sur Google et recommandé par des assistants comme ChatGPT."
       },
       {
         "title": "Discours",
-        "description": "Des textes originaux et stratégiques qui montrent la valeur de l’activité et aident à vendre."
+        "description": "Nous écrivons les textes du site pour expliquer ce que vous faites d’une façon qui convainc. Vous n’avez rien à écrire vous-même."
+      }
+    ]
+  },
+  "process": {
+    "title": "Comment nous travaillons",
+    "intro": "Du premier contact à la mise en ligne",
+    "introWeeks": "Du premier contact à la mise en ligne en environ {n} semaines",
+    "steps": [
+      {
+        "title": "Échange",
+        "description": "Nous comprenons votre activité et qui achète chez vous."
+      },
+      {
+        "title": "Vous validez l’apparence",
+        "description": "Nous vous montrons à quoi ressemblera le site et l’ajustons jusqu’à votre accord."
+      },
+      {
+        "title": "Construction",
+        "description": "Nous montons le site avec les textes, les photos et tout ce qui doit fonctionner."
+      },
+      {
+        "title": "Tests",
+        "description": "Nous vérifions tout sur téléphone et sur ordinateur."
+      },
+      {
+        "title": "En ligne",
+        "description": "Nous le publions, l’inscrivons sur Google et vous apprenons à l’utiliser."
+      }
+    ]
+  },
+  "included": {
+    "title": "Ce qui est inclus dans chaque site",
+    "subtitle": "Pas de petites lignes : tout cela est fourni avec votre site.",
+    "items": [
+      {
+        "title": "Fonctionne bien sur téléphone",
+        "description": "Pensé d’abord pour les petits écrans."
+      },
+      {
+        "title": "Formation pour utiliser le site",
+        "description": "Vous apprenez à gérer le quotidien."
+      },
+      {
+        "title": "Inscription sur Google",
+        "description": "Votre site est envoyé à Google dès le premier jour."
+      },
+      {
+        "title": "Cadenas de site sécurisé",
+        "description": "Le navigateur montre que votre site est fiable."
+      },
+      {
+        "title": "Textes écrits par nous",
+        "description": "Vous n’avez rien à écrire vous-même."
       }
     ]
   },
@@ -97,19 +127,20 @@
     "items": [
       {
         "title": "Transparence",
-        "description": "Chaque étape est convenue et livrée avec soin du détail."
+        "description": "Vous savez ce qui est fait à chaque étape et vous validez avant que nous continuions."
       },
       {
-        "title": "Sur mesure et confidentiel",
-        "description": "Des fonctionnalités créées pour votre cas, avec vos informations protégées."
+        "title": "Sur mesure et en toute discrétion",
+        "description": "Votre site est fait pour votre cas, et les informations de votre entreprise restent protégées. C’est pour cela que nous montrons nos projets avec des noms modifiés."
       },
       {
-        "title": "Partenariat durable",
-        "description": "Une communication ouverte avant, pendant et après le lancement."
+        "title": "Partenariat dans la durée",
+        "description": "Nous restons à vos côtés après la mise en ligne."
       },
       {
-        "title": "Support premium",
-        "description": "Suivi des performances, de la sécurité et de la stabilité du site."
+        "title": "Accompagnement premium",
+        "description": "Nous répondons vite sur WhatsApp et vérifions que votre site reste rapide, sûr et en ligne.",
+        "descriptionResponseTime": "Nous répondons sous {h} heures ouvrées sur WhatsApp et vérifions que votre site reste rapide, sûr et en ligne."
       }
     ]
   },
@@ -117,6 +148,7 @@
     "title": "Types de site",
     "subtitle": "Choisissez le format adapté au moment de l’entreprise.",
     "cta": "Demander un devis",
+    "priceFrom": "À partir de {price}",
     "items": [
       {
         "type": "institutional",
@@ -141,24 +173,33 @@
     ],
     "projectsCta": "Voir les projets"
   },
-  "differentiators": {
-    "title": "Pourquoi BEKNO",
-    "subtitle": "Ce qui fait la différence.",
+  "whyBekno": {
+    "title": "Pourquoi choisir BEKNO",
+    "subtitle": "Ce qui change pour vous quand c’est nous qui faisons votre site.",
     "items": [
       {
-        "title": "Une méthode propre"
+        "title": "Votre site est unique",
+        "description": "Créé de zéro pour votre entreprise, sans modèle tout fait."
       },
       {
-        "title": "Aucun template tout fait"
+        "title": "Délai convenu, délai tenu",
+        "description": "Vous connaissez la date de livraison dès le départ."
       },
       {
-        "title": "SEO et GEO dès le développement"
+        "title": "De vraies personnes à votre écoute",
+        "description": "Vous parlez directement à ceux qui font votre site."
       },
       {
-        "title": "Un spécialiste par étape"
+        "title": "Fait pour apparaître sur Google",
+        "description": "Prêt dès le premier jour à être trouvé."
       },
       {
-        "title": "Engagement sur les délais"
+        "title": "Suivi après la livraison",
+        "description": "Nous continuons à prendre soin de votre site une fois en ligne."
+      },
+      {
+        "title": "Une méthode à nous",
+        "description": "Six points soignés dans chaque projet, de l’apparence au texte."
       }
     ]
   },
@@ -166,7 +207,8 @@
     "title": "Votre entreprise mérite mieux qu’un site basique.",
     "text": "Dites-nous ce dont l’activité a besoin. Nous répondons avec une proposition sur mesure.",
     "cta": "Demander un devis",
-    "secondary": "Voir les projets"
+    "secondary": "Voir les projets",
+    "talkNow": "Vous préférez parler maintenant ?"
   },
   "quote": {
     "eyebrow": "Devis",
@@ -180,9 +222,9 @@
       "Un site responsive, lisible sur tous les écrans"
     ],
     "phoneLabel": "Téléphone",
-    "phone": "+55 21 97369-2691",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mail",
     "locationLabel": "Où",
-    "location": "Ipanema, Rio de Janeiro",
     "response": "La réponse arrive sous un jour ouvré. Pour un délai court, appelez.",
     "form": {
       "title": "Demander un devis",
@@ -237,9 +279,13 @@
     }
   },
   "footer": {
-    "copyright": "© 2022 BEKNO - Solutions numériques complètes pour votre entreprise",
-    "tagline": "Sites et pages d'atterrissage pour que l'entreprise explique ce qu'elle fait et reçoive des contacts.",
+    "copyright": "© {start}–{year} BEKNO. Tous droits réservés.",
+    "tagline": "Sites, design et marketing pour les entreprises qui veulent se développer sur internet.",
     "links": "Navigation",
+    "contact": "Contact",
+    "coverage": "Partout au Brésil",
+    "social": "Réseaux sociaux",
+    "socialLink": "BEKNO sur {network}",
     "backToTop": "Haut de page"
   },
   "navigation": {
@@ -251,14 +297,21 @@
     "language": "Langue",
     "theme": "Thème",
     "method": "Méthode",
-    "quote": "Devis"
+    "quote": "Devis",
+    "design": "Design",
+    "marketing": "Marketing",
+    "about": "À propos",
+    "faq": "Questions fréquentes",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   },
   "projects": {
     "title": "Projets",
     "subtitle": "Une identité pour chaque activité.",
-    "description": "Des sites que nous avons conçus et développés pour six entreprises, chacune avec sa marque, sa typographie et ses interactions.",
+    "description": "Six projets de vrais clients, chacun avec sa marque, sa typographie et ses interactions.",
     "open": "Ouvrir le site",
-    "disclaimer": "Les entreprises présentées sont fictives, créées par BEKNO pour montrer notre travail. Photos : Unsplash.",
+    "badge": "Projet réel · nom modifié",
+    "disclaimer": "<strong>Tous les projets sont ceux de vrais clients.</strong> Vous voyez ici des versions de démonstration, avec des noms, des marques, des images et des textes modifiés pour préserver la vie privée de chaque client. C’est le même soin que nous apporterons à votre entreprise. Certaines photos viennent d’Unsplash.",
     "ctaContact": "Demander un devis",
     "ctaBack": "Retour à l’accueil",
     "siteTypes": {
@@ -312,5 +365,9 @@
       "title": "Services",
       "description": "Découvrez nos solutions numériques"
     }
+  },
+  "whatsapp": {
+    "label": "Écrire à BEKNO sur WhatsApp",
+    "message": "Bonjour ! Je viens du site de BEKNO et j’aimerais un devis."
   }
 }

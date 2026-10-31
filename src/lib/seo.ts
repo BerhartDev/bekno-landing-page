@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { localizedPath, routing, type AppPathname } from '@/lib/i18n/routing';
+import { hasValue, SITE } from '@/lib/site';
 
 const HREFLANG = {
   pt: 'pt-BR',
@@ -53,8 +54,6 @@ export function websiteId() {
   return `${getSiteUrl()}/#website`;
 }
 
-const PHONE = '+5521973692691';
-
 /** Título e descrição de cada rota; a home usa o hero. */
 async function pageCopy(locale: string, path: string) {
   if (path === '/projetos') {
@@ -69,16 +68,32 @@ async function pageCopy(locale: string, path: string) {
   return { title: `${hero('kicker')} | BEKNO`, description: `${hero('kicker')}. ${hero('headline')}` };
 }
 
-export async function buildPageMetadata(locale: string, path = ''): Promise<Metadata> {
+/** Páginas com imagem de compartilhamento própria (geradas por scripts/generate-og.mjs, uma por idioma). */
+const OG_PAGES: Record<string, string> = {
+  '': 'home',
+  '/projetos': 'projetos',
+  '/orcamento': 'orcamento',
+  '/sobre': 'sobre',
+  '/design': 'design',
+  '/marketing': 'marketing',
+};
+
+/** Imagem de compartilhamento da rota; sem imagem própria, usa og/default.png. */
+export function ogImageUrl(locale: string, path = '') {
+  const page = OG_PAGES[path];
+  return `${getSiteUrl()}/og/${page ? `${asLocale(locale)}/${page}` : 'default'}.png`;
+}
+
+/** `image` troca a imagem de compartilhamento da rota (URL absoluta); sem ela, vale ogImageUrl. */
+export async function buildPageMetadata(locale: string, path = '', image = ogImageUrl(locale, path)): Promise<Metadata> {
   const current = asLocale(locale);
-  const hero = await getTranslations({ locale, namespace: 'hero' });
   const { title, description } = await pageCopy(locale, path);
   const url = pageUrl(locale, path);
-  const image = {
-    url: `${getSiteUrl()}/services/hero.jpg`,
-    width: 1600,
-    height: 1200,
-    alt: hero('imageAlt'),
+  const ogImage = {
+    url: image,
+    width: 1200,
+    height: 630,
+    alt: title,
   };
 
   return {
@@ -99,13 +114,13 @@ export async function buildPageMetadata(locale: string, path = ''): Promise<Meta
       alternateLocale: routing.locales
         .filter((item) => item !== current)
         .map((item) => OG_LOCALE[asLocale(item)]),
-      images: [image],
+      images: [ogImage],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [image.url],
+      images: [ogImage.url],
     },
     robots: {
       index: true,
@@ -121,27 +136,57 @@ export async function buildPageMetadata(locale: string, path = ''): Promise<Meta
   };
 }
 
+/** Remove as chaves com texto vazio, 0 ou lista vazia, para não publicar dado ausente. */
+function compact<T extends Record<string, unknown>>(node: T): Partial<T> {
+  return Object.fromEntries(
+    Object.entries(node).filter(([, value]) => {
+      if (typeof value === 'string' || typeof value === 'number') return hasValue(value);
+      if (Array.isArray(value)) return value.length > 0;
+      return value !== undefined && value !== null;
+    }),
+  ) as Partial<T>;
+}
+
 function organizationNode(description: string) {
-  return {
+  return compact({
     '@type': 'ProfessionalService',
     '@id': organizationId(),
-    name: 'BEKNO',
+    name: SITE.brand,
+    legalName: SITE.legalName,
+    taxID: SITE.cnpj,
     url: `${getSiteUrl()}/`,
     description,
-    telephone: PHONE,
-    image: `${getSiteUrl()}/services/hero.jpg`,
-    address: {
+    telephone: SITE.phoneE164,
+    email: SITE.email,
+    foundingDate: String(SITE.foundedYear),
+    logo: `${getSiteUrl()}/logo.png`,
+    image: `${getSiteUrl()}/og/default.png`,
+    sameAs: Object.values(SITE.social).filter(hasValue),
+    address: compact({
       '@type': 'PostalAddress',
-      addressLocality: 'Rio de Janeiro',
-      addressRegion: 'RJ',
+      streetAddress: SITE.streetAddress,
+      addressLocality: SITE.city,
+      addressRegion: SITE.region,
       addressCountry: 'BR',
-    },
+    }),
     areaServed: {
       '@type': 'Country',
       name: 'BR',
     },
     knowsLanguage: ['pt-BR', 'en', 'es', 'fr'],
-  };
+  });
+}
+
+/** Serviço oferecido pela BEKNO, para as páginas de serviço (Design, Marketing e outras). */
+export function serviceNode({ name, description, url }: { name: string; description: string; url: string }) {
+  return compact({
+    '@type': 'Service',
+    name,
+    description,
+    url,
+    provider: { '@id': organizationId() },
+    areaServed: { '@type': 'Country', name: 'BR' },
+  });
 }
 
 function websiteNode(description: string) {
@@ -181,9 +226,9 @@ export async function homeJsonLd(locale: string) {
         about: { '@id': organizationId() },
         primaryImageOfPage: {
           '@type': 'ImageObject',
-          url: `${getSiteUrl()}/services/hero.jpg`,
-          width: 1600,
-          height: 1200,
+          url: ogImageUrl(locale),
+          width: 1200,
+          height: 630,
         },
       },
       {

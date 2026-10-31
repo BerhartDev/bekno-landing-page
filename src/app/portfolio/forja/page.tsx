@@ -6,10 +6,10 @@ import TrialButton from './_components/TrialButton';
 import { brl, PLANS } from './_data';
 
 const MODALITIES = [
-  { name: 'Força', text: 'Barra, anilha e progressão de carga com técnica.', image: 'forja/forca.jpg' },
-  { name: 'Boxe', text: 'Do jab ao sparring, com luvas e manoplas da casa.', image: 'forja/boxe.jpg' },
-  { name: 'Funcional', text: 'Circuitos curtos e intensos para o corpo todo.', image: 'forja/funcional.jpg' },
-  { name: 'LPO', text: 'Levantamento olímpico para quem quer potência.', image: 'forja/mulher.jpg' },
+  { name: 'Força', text: 'Barra, anilha e progressão de carga com técnica.', image: 'forja/forca.webp' },
+  { name: 'Boxe', text: 'Do jab ao sparring, com luvas e manoplas da casa.', image: 'forja/boxe.webp' },
+  { name: 'Funcional', text: 'Circuitos curtos e intensos para o corpo todo.', image: 'forja/funcional.webp' },
+  { name: 'LPO', text: 'Levantamento olímpico para quem quer potência.', image: 'forja/mulher.webp' },
 ];
 
 const RESULTS = [
@@ -47,7 +47,7 @@ export default function ForjaPage() {
         {/* Hero */}
         <section className="relative isolate flex min-h-[100svh] items-end">
           <Image
-            src={demoImage('forja/hero.jpg')}
+            src={demoImage('forja/hero.webp')}
             alt="Atleta ao lado de uma barra carregada em academia escura."
             fill
             priority
@@ -168,7 +168,7 @@ export default function ForjaPage() {
         {/* Resultados + CTA */}
         <section className="relative isolate overflow-hidden py-24 md:py-36">
           <Image
-            src={demoImage('forja/espaco.jpg')}
+            src={demoImage('forja/espaco.webp')}
             alt=""
             fill
             sizes="100vw"

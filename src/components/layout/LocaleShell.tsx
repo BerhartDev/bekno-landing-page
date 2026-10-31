@@ -7,6 +7,7 @@ import { fontVariables } from '@/lib/fonts';
 import { themeScript } from '@/lib/theme-script';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import '@/app/globals.css';
 
 /** Documento das páginas da BEKNO, usado pela raiz (PT) e por /[locale] (EN, ES, FR). */
@@ -26,6 +27,7 @@ export default async function LocaleShell({ locale, children }: { locale: string
             <main id="main">{children}</main>
             <Footer />
           </div>
+          <WhatsAppButton />
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />

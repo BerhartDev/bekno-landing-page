@@ -24,7 +24,7 @@ export const DISHES: Dish[] = [
     name: 'Picanha na lenha',
     description: 'Maturada 21 dias, sal grosso e chimichurri da casa. Serve duas pessoas.',
     price: 168,
-    image: 'fornalha/picanha.jpg',
+    image: 'fornalha/picanha.webp',
     tag: 'Mais pedido',
   },
   {
@@ -33,7 +33,7 @@ export const DISHES: Dish[] = [
     name: 'Costela 12 horas',
     description: 'Fogo baixo durante a noite, desfiando no garfo. Farofa de manteiga de garrafa.',
     price: 124,
-    image: 'fornalha/costela.jpg',
+    image: 'fornalha/costela.webp',
   },
   {
     id: 'ancho',
@@ -41,7 +41,7 @@ export const DISHES: Dish[] = [
     name: 'Ancho com legumes tostados',
     description: 'Corte alto, selado na grelha de ferro, com abóbora e cebola na brasa.',
     price: 139,
-    image: 'fornalha/ancho.jpg',
+    image: 'fornalha/ancho.webp',
   },
   {
     id: 'polvo',
@@ -49,7 +49,7 @@ export const DISHES: Dish[] = [
     name: 'Polvo e peixe do dia',
     description: 'Polvo tostado, peixe inteiro na grelha, batatas ao murro e salada verde.',
     price: 152,
-    image: 'fornalha/polvo.jpg',
+    image: 'fornalha/polvo.webp',
     tag: 'Para dividir',
   },
   {
@@ -58,7 +58,7 @@ export const DISHES: Dish[] = [
     name: 'Horta na brasa',
     description: 'Legumes da estação defumados, coalhada de ervas e azeite de alho negro.',
     price: 64,
-    image: 'fornalha/legumes.jpg',
+    image: 'fornalha/legumes.webp',
     tag: 'Vegetariano',
   },
   {
@@ -67,7 +67,7 @@ export const DISHES: Dish[] = [
     name: 'Negroni defumado',
     description: 'Gin, vermute e bitter, servido sob fumaça de lenha de laranjeira.',
     price: 42,
-    image: 'fornalha/negroni.jpg',
+    image: 'fornalha/negroni.webp',
   },
   {
     id: 'oldfashioned',
@@ -75,7 +75,7 @@ export const DISHES: Dish[] = [
     name: 'Old fashioned de rapadura',
     description: 'Bourbon, xarope de rapadura e bitter aromático.',
     price: 44,
-    image: 'fornalha/oldfashioned.jpg',
+    image: 'fornalha/oldfashioned.webp',
   },
   {
     id: 'vinho',
@@ -83,7 +83,7 @@ export const DISHES: Dish[] = [
     name: 'Taça de tinto da casa',
     description: 'Seleção do sommelier, pensada para acompanhar as carnes.',
     price: 38,
-    image: 'fornalha/vinho.jpg',
+    image: 'fornalha/vinho.webp',
   },
   {
     id: 'petitgateau',
@@ -91,7 +91,7 @@ export const DISHES: Dish[] = [
     name: 'Brasa de chocolate',
     description: 'Bolo de chocolate 70% quente, sorvete de creme e flor de sal.',
     price: 36,
-    image: 'fornalha/petitgateau.jpg',
+    image: 'fornalha/petitgateau.webp',
   },
   {
     id: 'torta',
@@ -99,7 +99,7 @@ export const DISHES: Dish[] = [
     name: 'Torta de cacau e café',
     description: 'Massa amanteigada, ganache de café coado e cacau em pó.',
     price: 32,
-    image: 'fornalha/torta.jpg',
+    image: 'fornalha/torta.webp',
   },
 ];
 

@@ -18,9 +18,9 @@ import {
   type Segment,
   type SiteType,
 } from '@/lib/contact';
+import { whatsappUrl } from '@/lib/site';
 
 const ENDPOINT = 'https://api.web3forms.com/submit';
-const WHATSAPP = '5521973692691';
 const openedAt = Date.now();
 
 type Notice = 'fast' | 'limit' | 'links' | 'sent' | 'sentLinks' | 'error';
@@ -119,7 +119,7 @@ const QuoteForm = () => {
     if (!ready) return;
     setNotice(ready.stripped ? 'links' : null);
     const popup = window.open(
-      `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(ready.text)}`,
+      whatsappUrl(ready.text),
       '_blank',
       'noopener,noreferrer',
     );

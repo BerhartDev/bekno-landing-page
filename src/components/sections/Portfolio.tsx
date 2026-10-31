@@ -21,6 +21,7 @@ export default function Portfolio() {
               summary={p(`items.${project.slug}.summary`)}
               siteType={p(`siteTypes.${project.siteType}`)}
               open={p('open')}
+                badge={p('badge')}
             />
           </li>
         ))}

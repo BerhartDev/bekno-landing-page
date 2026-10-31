@@ -19,6 +19,24 @@ export default async function ProjectsView({ locale }: { locale: string }) {
           {t('subtitle')}
         </h1>
         <p className="max-w-[68ch] text-lg leading-relaxed text-muted">{t('description')}</p>
+        <div className="flex max-w-[68ch] gap-3 border border-line p-4 text-sm leading-relaxed text-muted">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="mt-0.5 shrink-0 text-fg"
+            aria-hidden="true"
+          >
+            <rect x="4" y="11" width="16" height="10" rx="1" />
+            <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+          </svg>
+          <p>{t.rich('disclaimer', { strong: (chunks) => <strong className="font-semibold text-fg">{chunks}</strong> })}</p>
+        </div>
       </section>
 
       <section className="pb-16 md:pb-24">
@@ -31,11 +49,11 @@ export default async function ProjectsView({ locale }: { locale: string }) {
                 summary={t(`items.${project.slug}.summary`)}
                 siteType={t(`siteTypes.${project.siteType}`)}
                 open={t('open')}
+                badge={t('badge')}
               />
             </li>
           ))}
         </ul>
-        <p className="mt-6 max-w-[68ch] font-mono text-xs text-muted">{t('disclaimer')}</p>
         <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
           <Link href="/orcamento" className="cta">
             {t('ctaContact')}
